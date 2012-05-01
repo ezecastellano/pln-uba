@@ -22,7 +22,7 @@ public class Regex {
 	static String apostrofe = palabra +"'"+palabra;
 	static String palabra_capital_con_punto = "[A-Z]+[a-z]*\\.";
 	static String abreviatura = "("+palabra_capital_con_punto + ")+";
-	static String simbolo = "[^("+caracter+"|"+digito+")]";
+	static String simbolo = "\\W";
 	static String simbolos = simbolo + "+";
 	static String nombres = file +"|"+ url ;
 	static String espacio = "\\s";
