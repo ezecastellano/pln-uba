@@ -14,6 +14,7 @@ public class Main {
 	 * tipoSalida: "A", un archivo con una línea por cada token. "P", debe salir por pantalla una línea por cada token.
 	 */
 	static BufferedWriter out;
+	static BufferedWriter tok;
 	static String tipoSalida;
 	public static void main(String[] args) {
 		if(args.length != 2){
@@ -35,6 +36,7 @@ public class Main {
 		if(tipoSalida.equals("A")){
 			try {
 				out = new BufferedWriter(new FileWriter(nombreArchivo.replace(".txt", "") + ".out"));
+				tok = new BufferedWriter(new FileWriter(nombreArchivo.replace(".txt", "") + ".tok"));
 			} catch (IOException e) {
 				System.out.println("No se pudo crear el archivo de salida.");
 				return;
@@ -53,7 +55,7 @@ public class Main {
 				if(linea.isEmpty())
 				{
 					if(!anteriorEraParrafo)	
-						write(new Token("", Regla.parrafo));
+						write(new Token("<PP>", Regla.parrafo));
 					anteriorEraParrafo = true;
 				}
 				else{
@@ -70,18 +72,28 @@ public class Main {
 		} catch (IOException e) {
 			System.out.println("Error al de lectura/escritura.");
 			return;
+		}finally{
+			try {
+				out.close();
+				tok.close();
+			} catch (IOException e) {
+				System.out.println("ERROR:Uno de los archivos de salida no pudo ser cerrado correctamente.");
+			}
+			lector.close();
 		}
 	}
 	
 	static void write(Token token) throws IOException{
-		String texto = token.toString();
 		if(tipoSalida.equals("A")){
-			out.write(texto);
+			out.write(token.valor);
 			out.newLine();
 			out.flush();
 		}else{
-			System.out.println(texto);
+			System.out.println(token.valor);
 		}
+		tok.write(token.toString());
+		tok.newLine();
+		tok.flush();
 	}
 	
 
