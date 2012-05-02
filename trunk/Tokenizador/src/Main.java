@@ -49,7 +49,7 @@ public class Main {
 				//Lee la siguiente linea. 
 				String linea = lector.nextLine();
 				//Separa la linea por espacios.
-				String[] palabras = linea.split(" ");
+				String[] palabras = linea.split("\\s");
 				if(linea.isEmpty())
 				{
 					if(!anteriorEraParrafo)	

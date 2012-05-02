@@ -90,7 +90,7 @@
 <palabra>debris<palabra>
 <simbolo>.<simbolo>
 <simbolo>(<simbolo>
-<nombres>1.4MB/25<nombres>
+<raro>1.4MB/25<raro>
 <palabra>sec<palabra>
 <simbolo>.<simbolo>
 <palabra>QuickTime<palabra>
@@ -147,7 +147,6 @@
 <palabra>Corral<palabra>
 <palabra>said<palabra>
 <simbolo>.<simbolo>
-<simbolo>	<simbolo>
 <parrafo><parrafo>
 <palabra>The<palabra>
 <palabra>wall<palabra>
@@ -155,10 +154,10 @@
 <palabra>at<palabra>
 <palabra>about<palabra>
 <numero>9<numero>
-<nombres>a.m.<nombres>
+<raro>a.m.<raro>
 <simbolo>(<simbolo>
 <numero>10<numero>
-<nombres>a.m.<nombres>
+<raro>a.m.<raro>
 <palabra>EST<palabra>
 <simbolo>)<simbolo>
 <palabra>in<palabra>
@@ -299,7 +298,8 @@
 <simbolo>,<simbolo>
 <palabra>go<palabra>
 <palabra>to<palabra>
-<nombres>www.cnn.com,<nombres>
+<nombres>www.cnn.com<nombres>
+<simbolo>,<simbolo>
 <palabra>and<palabra>
 <palabra>click<palabra>
 <palabra>on<palabra>
