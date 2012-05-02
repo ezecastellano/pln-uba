@@ -1,12 +1,16 @@
 
 public class Regex {
 
-	static String generic_domain = ".*\\.(com|net|org|aero|edu|gob|gov|uba).*";
-	static String http = "http://*.";
-	static String www = "www\\..+";
-	static String url = www+"|"+generic_domain+"|"+http;
-	//Ojo que no sea un double...
-	static String file = ".+\\..+";
+	//static String url2	 = "(ht|f)tps?:\/\/\w+([\.\-\w]+)?\.([a-z]{2,4}|travel)(:\d{2,5})?(\/.*)?$/i";
+	static String nombres = "((ht|f)tps?://)?\\w+([\\.\\-\\w]+)?\\.([a-zA-Z]{2,4}|travel)(:\\d{2,5})?(/[\\.\\-\\w]*)*";
+	
+//	static String generic_domain = ".*\\.(com|net|org|aero|edu|gob|gov|uba).*";
+//	static String http = "http://.*";
+//	static String www = "www\\..+";
+//	static String url = www+"|"+generic_domain+"|"+http;
+//	Ojo que no sea un double...
+//	static String file = ".+\\..+";
+//	static String nombres = file +"|"+ url ;
 	
 	static String digito = "\\d";
 	static String entero = digito + "+";
@@ -24,9 +28,8 @@ public class Regex {
 	static String abreviatura = "("+palabra_capital_con_punto + ")+";
 	static String simbolo = "\\W";
 	static String simbolos = simbolo + "+";
-	static String nombres = file +"|"+ url ;
 	static String espacio = "\\s";
-	
+
 	
 	/**
 	 * @param args
@@ -35,6 +38,8 @@ public class Regex {
 		
 				
 		DiccionarioDeContracciones diccionarioContracciones = new DiccionarioDeContracciones();
+		
+		System.out.println("http://cnn.com/US/9701/30/wall.fall.texas/index.html".matches(nombres));
 		
 		//Primero hago el split y me quedo con los parrafos. 
 		String word = "http://cnn.com/US/9701/30/wall.fall.texas/index.html";
@@ -66,33 +71,3 @@ public class Regex {
 	}
 
 }
-
-//		System.out.println("test.html".matches(nombres));
-//		System.out.println("www.dc.uba.ar".matches(nombres));
-//		System.out.println("google.com".matches(nombres));
-//		System.out.println("http://wiki.net".matches(nombres));
-//		System.out.println("dc.uba.ar".matches(nombres));
-//		String generic_domain = ".*\\.(com|net|org|aero|edu|gob|gov|uba).*";
-//		String http = "http://*.";
-//		String www = "www\\..+";
-//		String url = www+"|"+generic_domain+"|"+http;
-//		//Ojo que no sea un double...
-//		String file = ".+\\..+";
-
-
-//		String digito = "\\d";
-//		String entero = digito + "+";
-//		String decimal = entero+"\\."+entero;
-//		String numero = decimal + "|" + entero;
-//		String porcentaje = numero + "%";
-//		String caracter = "[a-zA-Z]";
-//		String palabra = caracter+"+";
-//		String caracter_digito = "("+digito + "|" + caracter+")";
-//		String palabra_numero = caracter_digito + "+";
-//		String guion = palabra_numero+"-"+palabra_numero;
-//		String barra = palabra_numero+"/"+palabra_numero;
-//		String apostrofe = palabra +"'"+palabra;
-//		String palabra_capital_con_punto = "[A-Z]+[a-z]*\\.";
-//		String abreviatura = "("+palabra_capital_con_punto + ")+";
-//		String simbolo = "[^("+caracter+"|"+digito+")]";
-//		String nombres = file +"|"+ url ;

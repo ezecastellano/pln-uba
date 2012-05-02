@@ -80,7 +80,12 @@ public class Analizador {
 				tokens.add(new Token(resto, Regla.nombres));
 				resto = "";
 			}
-			else{
+			else if(resto.matches(Regex.nombres+Regex.simbolos)){
+				System.out.println("Es un nombre termina en un simbolo");
+				tokensTraseros.add(0, new Token(resto.substring(resto.length()-1), Regla.simbolo));
+				resto = resto.substring(0,resto.length()-1);
+			}	
+			else {
 				System.out.println("Algo más complejo que una palabra...");
 				tokens.add(new Token(resto, Regla.raro));
 				resto = "";
