@@ -12,4 +12,8 @@ public class Token {
 	public String toString() {
 		return "<"+regla.name()+">"+valor+"<"+regla.name()+">";
 	}
+	
+	public String valor(){
+		return valor;
+	}
 }
