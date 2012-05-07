@@ -40,7 +40,6 @@ public class Analizador {
 				resto = "";
 			}
 			else if(diccionarioContracciones.esUnaContraccion(resto)){
-				//OJO: Si mis contracciones fueran otra cosa el stack me vuela por todos lados. 
 				System.out.println("Es una contraccion...");
 				String formaNormal = diccionarioContracciones.obtenerFormaNormal(resto);
 				for (String parte : formaNormal.split(" ")) {
