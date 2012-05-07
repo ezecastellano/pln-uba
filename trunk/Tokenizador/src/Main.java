@@ -77,7 +77,7 @@ public class Main {
 				out.close();
 				tok.close();
 			} catch (IOException e) {
-				System.out.println("ERROR:Uno de los archivos de salida no pudo ser cerrado correctamente.");
+				System.out.println("ERROR: Uno de los archivos de salida no pudo ser cerrado correctamente.");
 			}
 			lector.close();
 		}
@@ -96,5 +96,4 @@ public class Main {
 		tok.flush();
 	}
 	
-
 }
