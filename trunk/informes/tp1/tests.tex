@@ -1,0 +1,30 @@
+\section{Casos de Prueba}
+
+Realizamos dos tipos de pruebas, tests hechos en C++ de las clases implementadas
+al estilo unit testing, que se pueden ver en los archivos 
+\texttt{../src/tests/test-automata.cpp} y \texttt{../src/tests/test-graph.cpp}.
+
+Luego para validar la integridad y correctitud del programa \texttt{grep-line},
+definimos un conjunto de expresiones regulares y la salida esperada dado un corpus
+de texto. Las expresiones regulares fueron elegidas especificamente para abarcar
+la mayor cantidad de casos posibles.
+
+Las casos de prueba utilizados para validar la gramática fueron los siguientes:
+
+\lstinputlisting{../src/tests/test-regexp.}
+
+Con el siguiente corpus de texto:
+\lstinputlisting{../src/tests/texto.}
+
+Los resultados para estas expresiones regulares y estos textos se pueden encontrar 
+en el directorio \texttt{tests/cases/}, donde el número de cada archivo se corresponde 
+con el número de expresión regular del listado comenzando desde cero.
+
+Para realizar las pruebas sobre la gramática lo que realizamos fue un archivo
+de resultado esperado para cada expresión regular dado el corpus de texto, 
+luego corrimos y utilizando la herramienta diff y un script en bash para hacer 
+el chequeo más dinámico.
+
+Todos los tests fueron correctos y el programa fue testeado en los aspectos más relevantes.
+
+\bigskip
