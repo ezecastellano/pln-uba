@@ -1,5 +1,21 @@
 \section{Implementaci\'on}
 
-Para la implementaci\'on utilizamos la clase \texttt{Analizador}, \texttt{Regex}, \texttt{Regla} y \texttt{Token}
+Para la implementaci\'on utilizamos las siguientes clases.
+
+\begin{itemize}
+	\item \texttt{Main}: Es la clase principal donde se encuentra detallada toda la interacci\'on con el usuario y la entrada/salida con los archivos de texto o pantalla. Adem\'as se realiza la primera parte del proceso de tokenizaci\'on separando el texto por p\'arrafos, para luego separar cada p\'arrafo por espacios, qued\'andonos de esta forma por candidatos a token que luego son verificados o desglosado en m\'as sub-tokens  por el \texttt{Analizador}. 
+	\item \texttt{Analizador}: Esta clase es la encargada de decidir si un string es un token o debe seguir siendo desglosada en m\'as partes. Para esto tiene en cuenta los siguientes casos. 
+		\begin{itemize}
+			\item Palabra: Este es el caso donde considera que el string ingresado es ya un token. Con fines de prueba esta clase llama a un m\'etodo que permite obtener el token espec\'ifico, es decir la regla de la expresi\'on regular por la que entro. 
+			\item Contracci\'on:  En este punto para decidir si es una contracci\'on utiliza un diccionario de contracciones m\'as conocidas que permite obtener la forma normal. En este caso se devuelven dos tokens, uno con cada una de las partes de la contracci\'on. 
+			\item Posesivos: En este caso se tienen en cuenta las expresiones de la forma w+'w+, que son tokenizadas de la siguiente forma[w+,'w+]. Esto satisface los posesivos y cualquier otra palabra que use una forma contra\'ida que no se encuentre en el diccionario de contracciones. 
+			\item Palabras con un s\'imbolo al final: Este caso divide la string en dos partes, el s\'imbolo del final que lo separa como un token y el resto de la string que vuelve a ser analizado por el \texttt{Analizador} para verificar si ya es un token o debe seguir siendo desglosado. 			
+			\item Palabras con un s\'imbolo al final: Similar al punto anterior. 
+			\item Otros: En caso de no ser considerado en ninguno de los casos es devuelto como un token. 
+		\end{itemize}
+		\item \texttt{Regex}: Esta clase simplemente tiene especificada las distintas expresiones regulares que son utilizadas para decidir que \texttt{Regla} aplicar. 
+		\item \texttt{Regla}: Es un tipo enumerado basado en los distintos criterios que fueron tomados para el an\'alisis de los tokens. 
+		\item \texttt{Token}: Esta clase es la que se utiliza para definir un token en funci\'on del string y la regla que le fue aplicada. Esto fue realizado con fines de pruebas, ya que me permit\'ia analizar los resultados del texto para luego ser comparados. 
+\end{itemize}
 
 Para ver m\'as detalle sobre las estructuras en el ap\'endice se encuentra detallada la implementaci\'on.
