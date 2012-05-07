@@ -1,17 +1,7 @@
 
 public class Regex {
 
-	//static String url2	 = "(ht|f)tps?:\/\/\w+([\.\-\w]+)?\.([a-z]{2,4}|travel)(:\d{2,5})?(\/.*)?$/i";
 	static String nombres = "((ht|f)tps?://)?\\w+([\\.\\-\\w]+)?\\.([a-zA-Z]{2,4}|travel)(:\\d{2,5})?(/[\\.\\-\\w]*)*";
-	
-//	static String generic_domain = ".*\\.(com|net|org|aero|edu|gob|gov|uba).*";
-//	static String http = "http://.*";
-//	static String www = "www\\..+";
-//	static String url = www+"|"+generic_domain+"|"+http;
-//	Ojo que no sea un double...
-//	static String file = ".+\\..+";
-//	static String nombres = file +"|"+ url ;
-	
 	static String digito = "\\d";
 	static String entero = digito + "+";
 	static String decimal = entero+"\\."+entero;
@@ -25,17 +15,18 @@ public class Regex {
 	static String barra = palabra_numero+"/"+palabra_numero;
 	static String apostrofe = palabra +"'"+palabra;
 	static String palabra_capital_con_punto = "[A-Z]+[a-z]*\\.";
-	static String abreviatura = "("+palabra_capital_con_punto + ")+";
+	static String abreviatura_minuscula_mas_de_dos_siglas = "([a-z]+\\.([a-z]+\\.)+)";
+	static String abreviatura = "("+palabra_capital_con_punto + ")+|" + abreviatura_minuscula_mas_de_dos_siglas;
 	static String simbolo = "\\W";
 	static String simbolos = simbolo + "+";
 	static String espacio = "\\s";
+}
 
-	
-	/**
-	 * @param args
-	 */
+/**
+ * @param args
+ */
+/*
 	public static void main(String[] args) {
-		
 				
 		DiccionarioDeContracciones diccionarioContracciones = new DiccionarioDeContracciones();
 		
@@ -69,5 +60,4 @@ public class Regex {
 			System.out.println("Algo más complejo que una palabra...");
 		
 	}
-
-}
+ */
