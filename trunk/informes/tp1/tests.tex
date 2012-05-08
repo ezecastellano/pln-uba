@@ -1,30 +1,13 @@
 \section{Casos de Prueba}
 
-Realizamos dos tipos de pruebas, tests hechos en C++ de las clases implementadas
-al estilo unit testing, que se pueden ver en los archivos 
-\texttt{../src/tests/test-automata.cpp} y \texttt{../src/tests/test-graph.cpp}.
+Para las pruebas fuimos realizando algunas casos iniciales de prueba para las expresiones regulares generadas que fueron ejecutadas.
 
-Luego para validar la integridad y correctitud del programa \texttt{grep-line},
-definimos un conjunto de expresiones regulares y la salida esperada dado un corpus
-de texto. Las expresiones regulares fueron elegidas especificamente para abarcar
-la mayor cantidad de casos posibles.
+Luego se implement\'o una salida etiquetada que permitida saber por que caso fue separado cada token, es por esto que la clase Token permit\'ia conservar su regla. 
+Esta clase ten\'ia implementado el m\'etodo toString de la al estilo xml,  "<regla">  token "</regla"> y de
 
-Las casos de prueba utilizados para validar la gramática fueron los siguientes:
+A su vez una vez realizado un avance en la tokenizaci\'on del texto, se tom\'o uno de los archivos procesados del estilo .tok y se modifico hasta lograr un archivo que fue considerado como bueno. 
 
-\lstinputlisting{../src/tests/test-regexp.}
+Luego al procesar el archivo se comparaba utilizando el m\'etodo diff, cuales eran las diferencias entre el archivo procesado y el bueno, para ir pudiendo detectar cuales eran los detalles que faltaban corregir en el procesamiento del texto. 
 
-Con el siguiente corpus de texto:
-\lstinputlisting{../src/tests/texto.}
-
-Los resultados para estas expresiones regulares y estos textos se pueden encontrar 
-en el directorio \texttt{tests/cases/}, donde el número de cada archivo se corresponde 
-con el número de expresión regular del listado comenzando desde cero.
-
-Para realizar las pruebas sobre la gramática lo que realizamos fue un archivo
-de resultado esperado para cada expresión regular dado el corpus de texto, 
-luego corrimos y utilizando la herramienta diff y un script en bash para hacer 
-el chequeo más dinámico.
-
-Todos los tests fueron correctos y el programa fue testeado en los aspectos más relevantes.
 
 \bigskip
