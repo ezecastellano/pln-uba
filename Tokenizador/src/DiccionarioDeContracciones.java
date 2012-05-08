@@ -7,57 +7,57 @@ public class DiccionarioDeContracciones {
 		
 		DiccionarioDeContracciones(){
 			contracciones = new TreeMap<String, String>();
-			contracciones.put( "aren't","are not");
-			contracciones.put( "can't","can not");
-			contracciones.put( "couldn't","could not");
-			contracciones.put( "didn't","did not");
-			contracciones.put( "doesn't","does not");
-			contracciones.put( "don't","do not");
-			contracciones.put( "hadn't","had not");
-			contracciones.put( "hasn't","has not");
-			contracciones.put( "haven't","have not");
-			contracciones.put( "he'd","he would");//he had
-			contracciones.put( "he'll","he will");//he shall
-			contracciones.put( "he's","he is");//he has
-			contracciones.put( "I'd","I would");//I had 
-			contracciones.put( "I'll","I will");//I shall
-			contracciones.put( "I'm","I am");
-			contracciones.put( "I've","I have");
-			contracciones.put( "isn't","is not");
-			contracciones.put( "let's","let us");
-			contracciones.put( "mightn't","might not");
-			contracciones.put( "mustn't","must not");
-			contracciones.put( "shan't","shall not");
-			contracciones.put( "she'd","she would");//she had
-			contracciones.put( "she'll","she will");//she shall
-			contracciones.put( "she's","she is; she has");
-			contracciones.put( "shouldn't","should not");
-			contracciones.put( "that's","that is");//that has
-			contracciones.put( "there's","there is"); //there has
-			contracciones.put( "they'd","they would");//they would
-			contracciones.put( "they'll","they will");//they shall
-			contracciones.put( "they're","they are");
-			contracciones.put( "they've","they have");
-			contracciones.put( "we'd","we would");//we had
-			contracciones.put( "we're","we are");
-			contracciones.put( "we've","we have");
-			contracciones.put( "weren't","were not");
-			contracciones.put( "what'll","what will");//what sall
-			contracciones.put( "what're","what are");
-			contracciones.put( "what's","what is");//what has
-			contracciones.put( "what've","what have");
-			contracciones.put( "where's","where is");//where has
-			contracciones.put( "who'd","who would");//who had
-			contracciones.put( "who'll","who will");//who shall
-			contracciones.put( "who're","who are");
-			contracciones.put( "who's","who is");//who has
-			contracciones.put( "who've","who have");
-			contracciones.put( "won't","will not");
-			contracciones.put( "wouldn't","would not");
-			contracciones.put( "you'd","you would");//you had 
-			contracciones.put( "you'll","you will");//you shall
-			contracciones.put( "you're","you are");
-			contracciones.put( "you've","you have");
+			contracciones.put( "aren't","are n't");
+			contracciones.put( "can't","can n't");
+			contracciones.put( "couldn't","could n't");
+			contracciones.put( "didn't","did n't");
+			contracciones.put( "doesn't","does n't");
+			contracciones.put( "don't","do n't");
+			contracciones.put( "hadn't","had n't");
+			contracciones.put( "hasn't","has n't");
+			contracciones.put( "haven't","have n't");
+			contracciones.put( "he'd","he 'd");
+			contracciones.put( "he'll","he 'll");
+			contracciones.put( "he's","he 's");
+			contracciones.put( "I'd","I 'd"); 
+			contracciones.put( "I'll","I 'll");
+			contracciones.put( "I'm","I 'm");
+			contracciones.put( "I've","I 've");
+			contracciones.put( "isn't","is n't");
+			contracciones.put( "let's","let 's");
+			contracciones.put( "mightn't","might n't");
+			contracciones.put( "mustn't","must n't");
+			contracciones.put( "shan't","shall n't");
+			contracciones.put( "she'd","she 'd");
+			contracciones.put( "she'll","she 'll");
+			contracciones.put( "she's","she 's");
+			contracciones.put( "shouldn't","should n't");
+			contracciones.put( "that's","that 's");
+			contracciones.put( "there's","there 's");
+			contracciones.put( "they'd","they 'd");
+			contracciones.put( "they'll","they 'll");
+			contracciones.put( "they're","they 're");
+			contracciones.put( "they've","they 've");
+			contracciones.put( "we'd","we 'd");
+			contracciones.put( "we're","we 're");
+			contracciones.put( "we've","we 've");
+			contracciones.put( "weren't","were n't");
+			contracciones.put( "what'll","what 'll");
+			contracciones.put( "what're","what 're");
+			contracciones.put( "what's","what 's");
+			contracciones.put( "what've","what 've");
+			contracciones.put( "where's","where 's");
+			contracciones.put( "who'd","who 'd");
+			contracciones.put( "who'll","who 'll");
+			contracciones.put( "who're","who 're");
+			contracciones.put( "who's","who 's");
+			contracciones.put( "who've","who 've");
+			contracciones.put( "won't","will n't");
+			contracciones.put( "wouldn't","would n't");
+			contracciones.put( "you'd","you 'd"); 
+			contracciones.put( "you'll","you 'll");
+			contracciones.put( "you're","you 're");
+			contracciones.put( "you've","you 've");
 
 		}
 		
