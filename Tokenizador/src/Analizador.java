@@ -11,14 +11,14 @@ public class Analizador {
 		String resto = palabra.trim();
 		while (!resto.isEmpty()) {
 			if(resto.matches(Regex.palabra +"|"+ Regex.numero +"|"+ Regex.guion +"|"+ Regex.barra +"|"+ Regex.porcentaje
-					+"|"+ Regex.simbolo +"|"+ Regex.abreviatura +"|"+ Regex.nombres)){
+					+"|"+ Regex.simbolos +"|"+ Regex.abreviatura +"|"+ Regex.nombres)){
 				tokens.add(obtenerTokenEspecifico(resto));
 				resto = "";
 			}
 			else if(diccionarioContracciones.esUnaContraccion(resto)){
 				//Es una contraccion...
 				for (String parte : diccionarioContracciones.obtenerPartes(resto)) {
-					tokens.addAll(Analizador.obtenerTokens(parte));
+					tokens.add(new Token(parte, Regla.palabra));
 				}
 				resto = "";
 			}
@@ -70,7 +70,7 @@ public class Analizador {
 		else if(palabra.matches(Regex.abreviatura)){
 			token = (new Token(palabra,Regla.abreviatura));
 		}
-		else if(palabra.matches(Regex.simbolo)){
+		else if(palabra.matches(Regex.simbolos)){
 			token = (new Token(palabra,Regla.simbolo));
 		}
 		else if(palabra.matches(Regex.nombres)){
