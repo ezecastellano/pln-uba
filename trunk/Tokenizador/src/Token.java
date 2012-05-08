@@ -10,7 +10,7 @@ public class Token {
 	
 	@Override
 	public String toString() {
-		return "<"+regla.name()+">"+valor+"<"+regla.name()+">";
+		return "<"+regla.name()+">"+valor+"</"+regla.name()+">";
 	}
 	
 	public String valor(){
