@@ -1,0 +1,11 @@
+\section{Supuestos y decisiones}
+
+Al realizar este tokenizador supusimos que los espacios era un delimitador estricto en la tokenizaci\'on, as\'i como los saltos de l\'inea nos dividen en p\'arrafos siempre. 
+
+Esto nos trajo algunos casos no del todo satisfactorios como por ejemplo, "1.4MB/25 sec." que nuestro tokenizador lo separaba de la separaba de la siguiente manera: ["1.4MB/25", "sec", "."] 
+
+Esto se debe a la noci\'on de abreviatura que utilizamos en las expresiones regulares, pues no hab\'ia ninguna que evitara que una palabra de tres caracteres que empiece con min\'uscula y finalice con un punto sea distinguida de un palabra de fin de oraci\'on. 
+
+Para lograr salvar estos casos pensamos en la opci\'on de relevar cuales eran las abreviaturas m\'as conocidas del ingl\'es, pero no nos parec\'ia del todo correcto seguir agregando herramientas que no surgieran de las expresiones regulares. 
+
+Respecto a las contracciones supusimos que nuestro diccionario de contracciones era bastante completo, de forma de que los casos que no sean contemplados no representen un gran porcentaje de las contracciones.

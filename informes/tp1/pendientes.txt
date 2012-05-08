@@ -4,3 +4,5 @@ Ver este caso.
 <simbolo>.<simbolo>
 Chequear haber sacado todo lo del porcentaje. 
 
+Creo que no consideré el caso de que sean solo símbolos. Eso para mi es una palabra.. Ej "..."
+
