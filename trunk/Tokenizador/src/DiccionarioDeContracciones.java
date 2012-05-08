@@ -65,9 +65,9 @@ public class DiccionarioDeContracciones {
 			return contracciones.containsKey(unaPalabra);
 		}
 		
-		public String obtenerFormaNormal(String unaContraccion){
+		public String[] obtenerPartes(String unaContraccion){
 			assert(esUnaContraccion(unaContraccion));
-			return contracciones.get(unaContraccion);
+			return contracciones.get(unaContraccion).split(" ");
 		}
 		
 }

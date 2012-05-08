@@ -16,15 +16,14 @@ public class Analizador {
 				resto = "";
 			}
 			else if(diccionarioContracciones.esUnaContraccion(resto)){
-				//System.out.println("Es una contraccion...");
-				String formaNormal = diccionarioContracciones.obtenerFormaNormal(resto);
-				for (String parte : formaNormal.split(" ")) {
+				//Es una contraccion...
+				for (String parte : diccionarioContracciones.obtenerPartes(resto)) {
 					tokens.addAll(Analizador.obtenerTokens(parte));
 				}
 				resto = "";
 			}
 			else if(resto.matches(Regex.apostrofe)){
-				//System.out.println("Es un posesivo o algo raro...");
+				//Es un posesivo o algo raro...
 				String[] partes = resto.split("'");
 				assert(partes.length == 2);
 				tokens.add(new Token(partes[0], Regla.palabra));
@@ -32,16 +31,16 @@ public class Analizador {
 				resto = "";
 			}
 			else if(resto.matches(".+"+Regex.simbolo)){
-				//System.out.println("Es una palabra que termina en un simbolo");
+				//Es una palabra que termina en un simbolo.
 				tokensTraseros.add(0, new Token(resto.substring(resto.length()-1), Regla.simbolo));
 				resto = resto.substring(0,resto.length()-1);
 			}else if(resto.matches(Regex.simbolo+".+")){
-				//System.out.println("Empieza en un simbolo");
+				//Empieza en un simbolo.
 				tokens.add(new Token(resto.substring(0,1), Regla.simbolo));
 				resto = resto.substring(1);
 			}
 			else {
-				//System.out.println("Algo más complejo que una palabra...");
+				//Algo más complejo que una palabra...
 				tokens.add(new Token(resto, Regla.raro));
 				resto = "";
 			} 	
