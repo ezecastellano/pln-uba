@@ -1,4 +1,4 @@
 public enum Regla {
-	numero, palabra, palabra_compuesta, palabra_barra, abreviatura,
+	numero, palabra, guion, barra, abreviatura,
 	nombres, porcentaje, puntuacion, parrafo, apostrofe, simbolo, raro;
 }
