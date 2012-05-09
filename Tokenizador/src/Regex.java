@@ -7,7 +7,6 @@ public class Regex {
 	static String entero = digito + "+";
 	static String decimal = entero+"\\."+entero;
 	static String numero = decimal + "|" + entero;
-	static String porcentaje = numero + "%";
 	static String caracter = "[a-zA-Z]";
 	static String palabra = caracter+"+";
 	//Agregué o un caracter, porque sino este string no me lo aceptaba. 
