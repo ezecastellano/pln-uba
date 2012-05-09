@@ -1,2 +1,48 @@
 \section{Resultados}
-//TODO: Completar cuales fueron los resultados obtenidos. 
+
+\subsection{Pruebas sobre el corpus original}
+
+De la comparación en entre el archivo "bueno" y la tokenización con reglas obtuvimos una diferencia que decidimos no resolver. Este problema se debía a la aparición de una abreviatura que podía a su vez podía ser considerada con una palabra que finalizaba con punto final. 
+
+El caso no del todo satisfactorio era el siguiente, "1.4MB/25 sec." que nuestro tokenizador lo separaba de la separaba de la siguiente manera: ["1.4MB/25", "sec", "."] mientras que nosotros considerábamos como bueno ["1.4MB/25", "sec."].  
+
+Esto se debe a la noci\'on de abreviatura que utilizamos en las expresiones regulares, pues no hab\'ia ninguna que evitara que una palabra de tres caracteres que empiece con min\'uscula y finalice con un punto sea distinguida de un palabra de fin de oraci\'on. 
+
+Para lograr salvar estos casos pensamos en la opci\'on de relevar cuales eran las abreviaturas m\'as conocidas del ingl\'es, pero no nos parec\'ia del todo correcto seguir agregando herramientas que no surgieran de las expresiones regulares. 
+
+\subsection{Pruebas sobre otro corpus en inglés}
+
+Para realizar una comparación entre el archivo de control y nuestro tokenizador procesamos el texto que figura en el sitio y lo comparamos también utilizando el comando diff para ver en que puntos había diferencia en nuestra tokenización. En el siguiente cuadro se pueden ver cuales fueron las diferencias. 
+
+\begin{center}
+	\begin{tabular}{| c | c |}
+	\hline
+   	archivo.out 	& control.txt 	\\
+	\hline
+  	GCN2			& GCN2(-/-) 	\\
+  	( 				&				\\
+	-				&				\\
+	/				&				\\
+	-				&				\\
+	)				&				\\
+	\hline
+	\textless PP\textgreater			& \textless PP\textgreater		\\
+					& \textless PP\textgreater		\\
+	\hline
+	(				&(active)-mTOR	\\
+	active)-mTOR	&				\\
+	\hline
+	\end{tabular}
+\end{center}
+ 
+De la primer y la tercer diferencia podemos tomar como conclusión que la expresión regular que utilizamos para las palabras compuestas con barra o guión medio no capturaba todas las posibilidades, ya que solo tenía en cuenta palabras compuestas con palabras y/o números. A su vez si es algo más complejo y que lo que consideramos un token y tiene símbolos en los alguno de los bordes decidimos comenzar a separarlos y este es el motivo de nuestro resultado. Para solucionar este tema deberíamos generar una regular más compleja que la utilizada actualmente, pero que no permita cualquier combinación (.+(-|/).+), pues si permitiese cualquier combinación no nos permitiría, entre otras cosas, sacar los paréntesis de alrededor de estas palabras, que es algo que desearíamos que pase. Por ejemplo(GCN2(-/-)) quisieramos que fuera tokenizado de la siguiente manera ["(","GCN2(-/-)",")"].
+
+De la segunda podemos detectar una ventaja de nuestra implementación en la detección de enter dobles, que la implementación que realizó la otra tokenización no la presenta. 
+
+\subsection{Pruebas sobre un corpus en español}
+
+Respecto al texto que fue seleccionado del español el principal problema hallado fueron las tildes, pues no las reconocía como un caracter de una palabra, motivo por el cual nos etiquetaba todo lo que tuviera tilde bajo la regla \textless raro\textgreater. 
+
+Luego solo hubo una diferencia la tokenización semi-manual, \textless guion\textgreater [a-zA-Z]\textbackslash d\textless /guion\textgreater fue tokenizado como \textless simbolo\textgreater[\textless /simbolo\textgreater\textless raro\textgreater a-zA-Z]\textbackslash d\textless /raro\textgreater.
+
+En el resto de la tokenización el proceso fue satisfactorio. De todas maneras la mayoría de los problemas obtenidos fueron motivo de las tildes, por lo que fue etiquetado como algo anómalo, pero tokenizado correctamente. 
