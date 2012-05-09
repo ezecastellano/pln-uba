@@ -3,21 +3,28 @@ import java.util.List;
 
 
 public class Analizador {
-	static DiccionarioDeContracciones diccionarioContracciones = new DiccionarioDeContracciones();
+	static DiccionarioDeContracciones diccContr 
+		= new DiccionarioDeContracciones();
 	
 	public static List<Token> obtenerTokens(String palabra) {
 		List<Token> tokens = new ArrayList<Token>();
 		List<Token> tokensTraseros = new ArrayList<Token>();
 		String resto = palabra.trim();
 		while (!resto.isEmpty()) {
-			if(resto.matches(Regex.palabra +"|"+ Regex.numero +"|"+ Regex.guion +"|"+ Regex.barra +"|"+ Regex.porcentaje
-					+"|"+ Regex.simbolos +"|"+ Regex.abreviatura +"|"+ Regex.nombres)){
+			if( /*resto.matches(Regex.no_entre_llaves)&&*/ 
+				resto.matches( 
+					Regex.palabra +"|"+ Regex.numero +"|"+ 
+					Regex.guion +"|"+ Regex.barra +"|"+ 
+					Regex.simbolos +"|"+
+//					Regex.porcentaje +"|"+
+					Regex.abreviatura +"|"+ Regex.nombres 
+					)){
 				tokens.add(obtenerTokenEspecifico(resto));
 				resto = "";
 			}
-			else if(diccionarioContracciones.esUnaContraccion(resto)){
+			else if(diccContr.esUnaContraccion(resto)){
 				//Es una contraccion...
-				for (String parte : diccionarioContracciones.obtenerPartes(resto)) {
+				for (String parte : diccContr.obtenerPartes(resto)) {
 					tokens.add(new Token(parte, Regla.palabra));
 				}
 				resto = "";
@@ -30,9 +37,17 @@ public class Analizador {
 				tokens.add(new Token("'"+partes[1], Regla.apostrofe));
 				resto = "";
 			}
+//			else if(resto.matches(Regex.entre_llaves)){
+//				String llaveInicial = resto.substring(0,1);
+//				String llaveFinal = resto.substring(resto.length()-1);
+//				tokens.add(new Token(llaveInicial,Regla.simbolo));
+//				tokensTraseros.add(0,new Token(llaveFinal,Regla.simbolo));
+//				resto = resto.substring(1,resto.length()-1);
+//			}
 			else if(resto.matches(".+"+Regex.simbolo)){
 				//Es una palabra que termina en un simbolo.
-				tokensTraseros.add(0, new Token(resto.substring(resto.length()-1), Regla.simbolo));
+				String simbolo = resto.substring(resto.length()-1);
+				tokensTraseros.add(0, new Token(simbolo, Regla.simbolo));
 				resto = resto.substring(0,resto.length()-1);
 			}else if(resto.matches(Regex.simbolo+".+")){
 				//Empieza en un simbolo.
@@ -58,15 +73,9 @@ public class Analizador {
 		else if(palabra.matches(Regex.numero)){
 			token = (new Token(palabra,Regla.numero));
 		}
-		else if(palabra.matches(Regex.guion)){
-			token = (new Token(palabra,Regla.palabra_compuesta));
-		}
-		else if(palabra.matches(Regex.barra)){
-			token = (new Token(palabra,Regla.palabra_barra));
-		}
-		else if(palabra.matches(Regex.porcentaje)){
-			token = (new Token(palabra,Regla.porcentaje));
-		}
+//		else if(palabra.matches(Regex.porcentaje)){
+//			token = (new Token(palabra,Regla.porcentaje));
+//		}
 		else if(palabra.matches(Regex.abreviatura)){
 			token = (new Token(palabra,Regla.abreviatura));
 		}
@@ -75,6 +84,12 @@ public class Analizador {
 		}
 		else if(palabra.matches(Regex.nombres)){
 			token = (new Token(palabra, Regla.nombres));
+		}
+		else if(palabra.matches(Regex.barra)){
+			token = (new Token(palabra,Regla.barra));
+		}
+		else if(palabra.matches(Regex.guion)){
+			token = (new Token(palabra,Regla.guion));
 		}
 		
 		return token;
