@@ -9,12 +9,13 @@ public class Analizador {
 	public static List<Token> obtenerTokens(String palabra) {
 		List<Token> tokens = new ArrayList<Token>();
 		List<Token> tokensTraseros = new ArrayList<Token>();
-		String resto = palabra.trim();
+		String resto = acomodarComillas(palabra.trim());
+		
 		while (!resto.isEmpty()) {
 			if( resto.matches( 
 					Regex.palabra_numero +"|"+ Regex.numero +"|"+ 
 					Regex.guion +"|"+ Regex.barra +"|"+ 
-					Regex.simbolos +"|"+
+					Regex.simbolo +"|"+
 					Regex.abreviatura +"|"+ Regex.nombres 
 					)){
 				tokens.add(obtenerTokenEspecifico(resto));
@@ -55,6 +56,15 @@ public class Analizador {
 		return tokens;
 	}
 	
+	private static String acomodarComillas(String palabra) {
+		if(palabra.matches(Regex.palabra_numero+",\""))
+			return palabra.replace(",\"", "\",");
+		else if(palabra.matches(Regex.palabra_numero+",'"))
+			return palabra.replace(",'", "',");
+		else
+			return palabra;
+	}
+
 	private static Token obtenerTokenEspecifico(String palabra){
 		Token token = null;
 		
