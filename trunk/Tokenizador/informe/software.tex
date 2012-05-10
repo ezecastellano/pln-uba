@@ -21,8 +21,18 @@ En caso de elegir el tipo de salida archivo, este ser\'a dejado en el mismo dire
 
 Las siguientes son algunas de las abreviaturas de java para expresiones regulares comunes que fueron utilizadas en el desarrollo del trabajo práctico:
 
-%TODO: Completar sintaxis de expresiones regulares. 
+Caracteres predefinidos:
 
+\begin{itemize}
+	 \item . Cualquier caracter. 
+	 \item \textbackslash d	Un dígito: [0-9]
+	 \item \textbackslash D	Un no dígito: [\^0-9]
+	 \item \textbackslash s	Un caracter de espacio: [ \textbackslash t\textbackslash n\textbackslash x0B\textbackslash f\textbackslash r]
+	 \item \textbackslash S	Un caracter que no sea espacio: [\^\textbackslash s]
+	 \item \textbackslash w	Un caracter de palabra: [a-zA-Z\_0-9]
+	 \item \textbackslash W	Un caracter no de palabra: [\^\textbackslash w]
+\end{itemize}
+ 
 Para más detalle consultar la documentación de Java: \url{http://java.sun.com/developer/technicalArticles/releases/1.4regex/}.
 
 \subsection{Archivos}
