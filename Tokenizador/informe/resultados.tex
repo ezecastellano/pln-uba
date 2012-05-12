@@ -37,7 +37,7 @@ Para realizar una comparación entre el archivo de control y nuestro tokenizador 
  
 De la primer y la tercer diferencia podemos tomar como conclusión que la expresión regular que utilizamos para las palabras compuestas con barra o guión medio no capturaba todas las posibilidades, ya que solo tenía en cuenta palabras compuestas con palabras y/o números. A su vez si es algo más complejo y que lo que consideramos un token y tiene símbolos en los alguno de los bordes decidimos comenzar a separarlos y este es el motivo de nuestro resultado. Para solucionar este tema deberíamos generar una regular más compleja que la utilizada actualmente, pero que no permita cualquier combinación (.+(-|/).+), pues si permitiese cualquier combinación no nos permitiría, entre otras cosas, sacar los paréntesis de alrededor de estas palabras, que es algo que desearíamos que pase. Por ejemplo(GCN2(-/-)) quisieramos que fuera tokenizado de la siguiente manera ["(","GCN2(-/-)",")"].
 
-De la segunda podemos detectar una ventaja de nuestra implementación en la detección de enter dobles, que la implementación que realizó la otra tokenización no la presenta. 
+De la segunda podemos detectar una ventaja de nuestra implementación en la detección de dobles salto de línea, que la implementación correspondiente a la otra tokenización no la presenta. 
 
 \subsection{Pruebas sobre un corpus en español}
 
