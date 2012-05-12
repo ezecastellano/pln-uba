@@ -3,11 +3,11 @@
 Para las pruebas fuimos realizando algunas casos iniciales de prueba para las expresiones regulares generadas que fueron ejecutadas.
 
 Luego se implement\'o una salida etiquetada que permitida saber por que caso fue separado cada token, es por esto que la clase Token permit\'ia conservar su regla. 
-Esta clase ten\'ia implementado el m\'etodo toString de la al estilo xml, \textless regla\textgreater  token \textless /regla \textgreater y de esta forma podíamos formar archivos en un formato que pusimos extensión ".tok" que nos permitía realizar un análisis en base a las expresiones regulares que se aplicaron.
+Esta clase tiene sobreescrito el m\'etodo toString, permitiendo imprimir en un formato al estilo xml, \textless regla\textgreater  token \textless /regla \textgreater y de esta forma podíamos formar archivos en un formato que pusimos extensión ".tok" que nos permitía realizar un análisis en base a las expresiones regulares que se aplicaron.
 
 A su vez una vez realizado un avance en la tokenizaci\'on del texto, se tom\'o uno de los archivos procesados del estilo ".tok" y se modifico hasta lograr un archivo que fue considerado como bueno. 
 
-Luego al procesar el archivo se comparaba utilizando el m\'etodo diff, cuales eran las diferencias entre el archivo procesado y el bueno, para ir pudiendo detectar cuales eran los detalles que faltaban corregir en el procesamiento del texto. Puede verse este archivo en el apéndice.
+Luego al procesar el archivo se comparaba utilizando el m\'etodo diff, cuales eran las diferencias entre el archivo procesado y el bueno, para ir detectando cuales eran los detalles que faltaban corregir en el procesamiento del texto. Pueden verse estos archivos en la información adicional adjunta. 
 
 Por otro lado se realizaron pruebas con otro texto en inglés y con un texto en español con el objetivo de analizar cuan efectiva es la tokenización ante el cambio del corpus. 
 
