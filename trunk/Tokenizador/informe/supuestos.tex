@@ -3,3 +3,5 @@
 Al realizar este tokenizador supusimos que los espacios eran un delimitador estricto en la tokenizaci\'on, as\'i como los saltos de l\'inea nos dividen en p\'arrafos siempre. Esto nos trajo un inconveniente en un token, el cual será detallado en la sección "Resultados". 
 
 Para el análisis de algunas contracciones especiales utilizamos un diccionario de contracciones y supusimos que nuestro diccionario era bastante completo, de forma que los casos que no sean contemplados no representen un gran porcentaje de las contracciones.
+
+Respecto a las abreviaturas decidimos que una palabra que empezaba con mayúscula y terminaba en punto era considerada una abreviatura. Como no podíamos sacar información del contexto debido a una tokenización inicial por espacios no teníamos alternativas para distinguir un caso del otro, es por esto que optamos por considerarlas abreviaturas, ya que era lo que nos daba un mejor resultado en nuestro corpus de entrenamiento. 
