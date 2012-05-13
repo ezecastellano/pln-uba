@@ -1,0 +1,66 @@
+\section{Informaci\'on y requerimientos de software}
+
+En esta secci\'on se indicar\'asn los requerimientos y las instrucciones necesarias para la ejecuci\'on del trabajo pr\'actico.
+
+\subsection{Requerimientos}
+
+El trabajo pr\'actico fue implementado en Java. Para poder ejecutar el programa es necesario tener instalado la Java Runtime Enviroment. 
+
+
+\subsection{Ejecutar}
+
+Para ejecutar el programa se deber estar posicionado desde la consola en en el directorio donde se encuentre el jar.
+
+Ejecutar el siguiente comando: \texttt{java -jar tokenizador.jar archivo salida}
+
+Donde salida puede ser A (archivo) o P (pantalla). 
+
+En caso de elegir el tipo de salida archivo, este ser\'a dejado en el mismo directorio que el original con la extensi\'on .out. 
+
+\subsection{Sintaxis}
+
+Las siguientes son algunas de las abreviaturas de java para expresiones regulares comunes que fueron utilizadas en el desarrollo del trabajo práctico:
+
+Caracteres predefinidos:
+
+\begin{itemize}
+	 \item . Cualquier caracter. 
+	 \item \textbackslash d	Un dígito: [0-9]
+	 \item \textbackslash D	Un no dígito: [\^0-9]
+	 \item \textbackslash s	Un caracter de espacio: [ \textbackslash t\textbackslash n\textbackslash x0B\textbackslash f\textbackslash r]
+	 \item \textbackslash S	Un caracter que no sea espacio: [\^\textbackslash s]
+	 \item \textbackslash w	Un caracter de palabra: [a-zA-Z\_0-9]
+	 \item \textbackslash W	Un caracter no de palabra: [\^\textbackslash w]
+\end{itemize}
+ 
+Para más detalle consultar la documentación de Java: \url{http://java.sun.com/developer/technicalArticles/releases/1.4regex/}.
+
+\subsection{Archivos}
+
+En este informe se entregan los siguientes archivos que corresponden a cada una de las tokenizaciones en sus diferentes formatos. El archivo de entrada, las dos salidas y el bueno cuyo formato varia. 
+
+\begin{enumerate}
+	\item original: Archivos de entrada y salida del corpus de entrenamiento. 
+	\begin{itemize}
+		\item \texttt{original.txt}
+		\item \texttt{original.tok}
+		\item \texttt{original.out}
+		\item \texttt{original\_bueno.tok}		
+	\end{itemize}
+	\item prueba: Archivo de prueba que se encontraba en el sitio con su tokenización.
+	\begin{itemize}
+		\item \texttt{prueba.txt}
+		\item \texttt{prueba.tok}
+		\item \texttt{prueba.out}		
+		\item \texttt{prueba\_bueno.out}		
+	\end{itemize}
+	\item espanol: Archivo correspodiente al texto seleccionado del español para las pruebas. 
+	\begin{itemize}
+		\item \texttt{espanol.txt}
+		\item \texttt{espanol.tok}
+		\item \texttt{espanol.out}		
+		\item \texttt{espanol\_bueno.tok}		
+	\end{itemize}
+\end{enumerate}
+
+
