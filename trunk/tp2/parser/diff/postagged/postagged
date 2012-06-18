@@ -1,0 +1,12 @@
+Use el el comando \b{diff genia.nlp.postagged genia.original.postagged | grep "<"} para quedarme con la cantidad de lineas con diferencias. 
+
+Postagging
+
+Genia
+
+#diferencias: 7218
+#total: 45577 
+#accuracy: 0,841630647%
+
+
+
