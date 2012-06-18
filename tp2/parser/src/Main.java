@@ -10,19 +10,23 @@ public class Main {
 	/**
 	 * @param 
 	 * nombreArchivo: Nombre o ruta del archivo. 
-	 * tipoArchivo: P (Postaggged) o C (Chunked)
+	 * tipoSalida: P (Postaggged) T (Tokenized) o C (Chunked)
+	 * formatoSalida: NLP (OpenNLP) o BIO.
 	 */
 	static BufferedWriter out;
 	static String tipoSalida;
+	static String formatoSalida;
 	public static void main(String[] args) {
-		if(args.length != 2){
+		if(args.length != 3){
 			System.out.println("Se esperan dos argumentos. El primero el nombre del archivo a pasear. " +
-								"El segundo 'P' para obtener la salida de un archivo de Postagging o 'C' de Chunking. ");
+								"El segundo 'P' para obtener la salida de un archivo de Postagging, 'T' de Tokenizing o 'C' de Chunking. " +
+								"El tercero 'NLP para obtenerlo en formato OpenNLP o 'BIO' para formato BIO");
 			return;
 		} 
 		
 		String nombreArchivo = args[0];
 		tipoSalida = args[1];
+		formatoSalida = args[2];
 		
 		Scanner lector;
 		try {
@@ -37,13 +41,84 @@ public class Main {
 			System.out.println("No se pudo crear el archivo de salida.");
 			return;
 		}
-		if(!tipoSalida.matches("(P|C)") ){
-			System.out.println("Formato de entrada inválido, ingrese 'P' o 'C'.");
+		if(!tipoSalida.matches("(P|C|T)") ){
+			System.out.println("Formato de entrada inválido, ingrese 'P' o 'C' o 'T'.");
+			return;
+		}
+		if(!formatoSalida.matches("NLP|BIO")){
+			System.out.println("Formato de entrada inválido, ingrese 'NLP' o 'BIO'.");
 			return;
 		}
 		try {
-			if(tipoSalida.equals("P"))
-				while(lector.hasNext()){
+			if(formatoSalida.equals("NLP")){
+				if(tipoSalida.equals("P")){
+					String oracion = "";
+					while(lector.hasNext()){
+						//Lee la siguiente linea. 
+						String linea = lector.nextLine();
+						if(linea.isEmpty()){
+							write(oracion);
+							writeNewLine();
+							oracion = "";
+						}else{
+							String[] palabras = linea.split("\\s");
+							oracion += " " + palabras[0] + "_" + palabras[1];
+						}
+					}
+					if(!oracion.isEmpty())
+						write(oracion);
+					
+				}else if(tipoSalida.equals("C")){
+					String chunk = "[";
+					while(lector.hasNext()){
+						//Lee la siguiente linea. 
+						String linea = lector.nextLine();
+						
+						if(!linea.isEmpty()){
+							String[] palabras = linea.split("\\s");
+							if(palabras[palabras.length-1].matches("I-.*")){
+								chunk += " " + palabras[0] + "_" + palabras[1];
+							}
+							else if(palabras[palabras.length-1].equals("O")){
+								if(chunk.length()>1){
+									write(chunk + " ]");
+								}
+								write(" " + palabras[0] + "_" + palabras[1]);
+								chunk = "" ;							
+							}
+							else{
+								if(chunk.length()>1){
+									write(chunk + " ]");
+								}
+								chunk = "["+ palabras[2].replace("B-","") + " " +palabras[0] + "_" + palabras[1];
+							}
+						}else{
+							writeNewLine();
+						}
+					}
+					if(chunk.length()>1)
+						write(chunk + " ]");
+				}else{
+					String oracion = "";
+					while(lector.hasNext()){
+						//Lee la siguiente linea. 
+						String linea = lector.nextLine();
+						if(linea.isEmpty()){
+							write(oracion);
+							writeNewLine();
+							oracion = "";
+						}else{
+							String[] palabras = linea.split("\\s");
+							oracion += " " + palabras[0];
+						}
+					}
+					if(!oracion.isEmpty())
+						write(oracion);
+				}
+					
+			}else{
+				if(tipoSalida.equals("P")){
+					/*
 					//Lee la siguiente linea. 
 					String linea = lector.nextLine();
 					//Separa la linea por espacios.
@@ -52,11 +127,9 @@ public class Main {
 						for (String palabra : palabras) {
 							write(palabra);
 						}
-				}
-			else
-				while(lector.hasNext()){
-					//Lee la siguiente linea. 
-					String linea = lector.nextLine();
+					 */
+				}else{
+					/*
 					if(!linea.isEmpty()){
 						if(!linea.matches("(\\s)*\\[(.*)\\](\\s)*")){
 //						System.out.println("El archivo no se encontraba correctamente chunkeado en el formato [X A_Y B_Z]");
@@ -84,9 +157,10 @@ public class Main {
 								}
 							}
 						}
-					}
-					}
-				
+					}*/
+				}
+			}
+			
 		} catch (IOException e) {
 			System.out.println("Error al de lectura/escritura.");
 			return;
@@ -111,6 +185,9 @@ public class Main {
 	
 	static void write(String palabra)throws IOException{
 		out.write(palabra);
+		out.flush();
+	}
+	static void writeNewLine()throws IOException{
 		out.newLine();
 		out.flush();
 	}
