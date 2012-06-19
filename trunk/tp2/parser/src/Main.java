@@ -62,7 +62,9 @@ public class Main {
 							oracion = "";
 						}else{
 							String[] palabras = linea.split("\\s");
-							oracion += " " + palabras[0] + "_" + palabras[1];
+							if(oracion.length()>0)
+								oracion += " ";
+							oracion +=  palabras[0] + "_" + palabras[1];
 						}
 					}
 					if(!oracion.isEmpty())
@@ -83,8 +85,8 @@ public class Main {
 								if(chunk.length()>1){
 									write(chunk + " ]");
 								}
-								write(" " + palabras[0] + "_" + palabras[1]);
-								chunk = "" ;							
+								write(" " + palabras[0] + "_" + palabras[1] + " ");
+								chunk = "[" ;							
 							}
 							else{
 								if(chunk.length()>1){
@@ -109,7 +111,9 @@ public class Main {
 							oracion = "";
 						}else{
 							String[] palabras = linea.split("\\s");
-							oracion += " " + palabras[0];
+							if(oracion.length()>0)
+								oracion += " ";
+							oracion += palabras[0];
 						}
 					}
 					if(!oracion.isEmpty())
