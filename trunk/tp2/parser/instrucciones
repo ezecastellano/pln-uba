@@ -1,0 +1,28 @@
+Aprender a tokenizar:
+
+./bin/opennlp TokenizerME ./bin/en-token.bin
+
+Tokenizar desde archivo:
+
+./bin/opennlp TokenizerME ./bin/en-token.bin < input > tokenized
+
+
+Postaggear de un archivo tokenizado:
+
+./bin/opennlp POSTagger ./bin/en-pos-maxent.bin < tokenized > postagged
+
+ 
+Chunkear de un archivo PosTaggeado:
+
+./bin/opennlp ChunkerME ./bin/en-chunker.bin < postagged > chunked
+
+
+Todo:
+
+/home/ezecastellano/Documentos/pln/tp2/opennlp/bin/opennlp TokenizerME /home/ezecastellano/Documentos/pln/tp2/opennlp/bin/en-token.bin < input > tokenized
+/home/ezecastellano/Documentos/pln/tp2/opennlp/bin/opennlp POSTagger /home/ezecastellano/Documentos/pln/tp2/opennlp/bin/en-pos-maxent.bin < tokenized > postagged
+/home/ezecastellano/Documentos/pln/tp2/opennlp/bin/opennlp ChunkerME /home/ezecastellano/Documentos/pln/tp2/opennlp/bin/en-chunker.bin < postagged > chunked
+
+
+
+
