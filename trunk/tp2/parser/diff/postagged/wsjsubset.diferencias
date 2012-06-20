@@ -1,1503 +1,5788 @@
-< concern_VBP
-< telecommunications_NNS
-< served_VBN
-< chief_JJ
-< executive_JJ
-< earlier_RBR
-< bank_VBP
-< Great_NNP
-< operating_VBG
-< bank_VBP
-< 5_NN
-< only_RB
-< continue_VBP
-< had_VBN
-< about_RB
-< about_RB
-< about_RB
-< right_NN
-< many_NN
-< so_RB
-< as_IN
-< Products_NNP
-< concern_VBP
-< Facilities_NNP
-< down_RB
-< future_NN
-< US_PRP
-< US_PRP
-< US_PRP
-< US_PRP
-< US_PRP
-< third-quarter_JJ
-< segment_VBP
-< Intense_JJ
-< led_VBN
-< up_IN
-< more_RBR
-< about_RB
-< lipid_NN
-< increased_VBN
-< 5_NN
-< Confectionery_JJ
-< increased_VBN
-< up_IN
-< received_VBD
-< anti-depressant_NN
-< led_VBN
-< more_JJR
-< offset_VB
-< Systems_NNP
-< medical-instrument_JJ
-< increased_VBN
-< operating_VBG
-< manufacturing_NN
-< estimated_VBN
-< great_JJ
-< that_IN
-< -LCB-_(
-< -RCB-_)
-< more_JJR
+116c116
+< concern_NN
+---
+> concern_VBP
+125c125
+< telecommunications_NN
+---
+> telecommunications_NNS
+150c150
+< served_VBD
+---
+> served_VBN
+195c195
+< chief_NN
+---
+> chief_JJ
+278c278
 < executive_NN
-< Manufacturers_NNP
-< look_VB
-< spare_VB
-< on_IN
-< Berry_NNP
-< will_MD
-< right_NN
-< as_IN
-< -LCB-_(
-< drawing_VBG
-< -RCB-_)
-< 'd_MD
-< -LRB-_(
-< appears_VBZ
-< pervert_NN
-< -RRB-_)
-< Will_MD
-< -LRB-_(
-< looks_VBZ
-< -RRB-_)
-< think_VBP
-< cut_VB
-< the_IN
-< both_DT
-< Nature_NNP
-< Good-bye_UH
-< -LRB-_(
-< Arts_NNP
-< -RRB-_)
-< Earth_NNP
-< ago_RB
-< hunting_NN
-< one_CD
-< more_JJR
-< data_NNS
-< base_VBP
-< more_JJR
-< 5_NN
-< about_RB
-< let_VBP
-< 5_NN
-< over_IN
-< scour_VBP
-< cracked_VBN
-< rages_VBZ
-< monitoring_NN
-< with_RB
-< most_RBS
-< that_IN
-< stretches_NNS
-< set_VBN
-< out_IN
-< most_RBS
-< elite_NN
-< rein_NN
-< in_IN
-< cut_NN
-< filed_VBN
-< 55-year-old_NNP
-< Philippines_NNP
-< still_JJ
-< hope_NN
-< cornered_VBN
-< out_RB
-< that_WDT
-< named_VBD
-< fellow_NN
-< pockmarked_JJ
-< la_FW
-< mean_NN
-< most_RBS
-< many_NN
-< peaked_VBD
-< gold_NN
-< fellow_NN
-< commanding_NN
-< Communist_NNP
-< del_NNP
-< says_NNS
-< monthly_JJ
-< gain_VBP
-< drunk_JJ
-< divided_VBD
-< 5th_NNP
-< off_IN
-< up_IN
-< counter-intelligence_JJ
-< secret_NN
-< Americas_NNP
-< socalled_JJ
-< that_IN
-< first_JJ
-< milk_NN
-< States_NNPS
-< deputy_NN
-< first_JJ
-< as_IN
-< up_IN
-< discovered_VBN
-< 470th_NNP
-< much_JJ
-< in_IN
-< worry_NN
-< troubled_JJ
-< gun-running_JJ
-< Panamanians_NNS
-< in_IN
-< longtime_JJ
-< American_JJ
-< routine_NN
-< read_VBP
-< assistant_NN
-< Alcohol_NN
-< Firearms_NNP
-< find_NN
-< over_IN
-< top_JJ
-< put_VB
-< close_NN
-< general_JJ
-< allowed_VBN
-< up_IN
-< limited_JJ
-< enough_RB
-< served_VBN
-< up_IN
-< then_JJ
-< record_NN
-< ruling_NN
-< mounted_VBN
-< most_RBS
-< finger_NN
-< close_NN
-< that_WDT
-< summarized_VBD
-< clean_JJ
-< up_IN
-< -LCB-_(
-< -RCB-_)
-< on_IN
-< -LCB-_(
-< -RCB-_)
-< up_IN
-< down_RB
-< Few_NNP
-< willing_JJ
-< any_RB
-< prepared_VBN
-< power_VB
-< up_IN
-< allowed_VBN
-< much_JJ
-< up_VB
-< manufacturing_NN
-< slowing_NN
-< expanded_VBN
-< Capital_NNP
-< earlier_RBR
-< manufacturing_NN
-< dropped_VBN
-< give_VB
-< further_VB
-< operated_VBN
-< more_JJR
-< operated_VBN
-< more_JJR
-< coming_VBG
-< average_JJ
-< report_VBP
-< warning_NN
-< date_VB
-< mid-1970s_NNS
-< mid-1980s_NNS
-< 35-44_JJ
-< 55_NN
-< affect_NN
-< says_NNS
-< Smoking_NNP
-< that_DT
-< advertising_VBG
-< boost_VB
-< promote_VB
-< currently_JJ
-< smoke_NN
-< up_IN
-< comparing_VBG
-< Asians_NNS
-< currently_JJ
-< purchasing_VBG
-< staff_VBP
-< executive_JJ
-< profit-driven_CD
-< cheap_NN
-< composite_JJ
-< most_RBS
-< up_IN
-< up_IN
-< down_RB
-< 's_POS
-< one_CD
-< as_IN
-< unsettled_JJ
-< cooled_VBN
-< off_IN
+---
+> executive_JJ
+319c319
+< earlier_RB
+---
+> earlier_RBR
+323c323
+< bank_NN
+---
+> bank_VBP
+375c375
+< Great_JJ
+---
+> Great_NNP
+416c416
+< operating_NN
+---
+> operating_VBG
+460c460
+< bank_NN
+---
+> bank_VBP
+467c467
+< 5_CD
+---
+> 5_NN
+510c510
+< only_JJ
+---
+> only_RB
+572c572
+< continue_VB
+---
+> continue_VBP
+623c623
+< had_VBD
+---
+> had_VBN
+675c675
 < about_IN
-< that_WDT
-< traded_VBD
-< anti-anemia_NN
-< fourthquarter_NN
-< Communications_NNPS
-< improved_VBN
-< Brands_NNP
-< thirdquarter_JJ
-< 5_VB
-< net_JJ
-< ended_VBN
-< chief_JJ
-< more_JJR
-< on_IN
-< daily_JJ
-< chief_JJ
-< less_JJR
-< executive_NN
-< limited_JJ
-< -LRB-_(
-< Saving_VBG
-< 5_NN
-< -RRB-_)
-< made_VBD
-< cast-iron_NN
-< Medicine_NNP
-< eliminated_VBN
-< public-health_JJ
-< that_WDT
-< advanced_VBD
-< that_DT
-< many_RB
-< be_VBP
-< Environmentalists_NNS
-< opposed_VBN
-< Environmentalists_NNS
-< Environmentalists_NNS
-< -LRB-_(
-< -RRB-_)
-< -LRB-_(
-< -RRB-_)
-< oppose_VB
-< 's_POS
-< The_DT
-< First_NNP
-< foremost_JJ
-< judge_NN
-< harder_JJR
-< that_IN
-< physics_NN
-< destabilizing_VBG
-< interrelated_VBN
-< No_DT
-< Affairs_NNP
-< forecast_NN
-< giant_NN
-< earlier_RBR
-< much_JJ
-< sticks_NNS
-< 5_VB
-< third-quarter_JJ
-< spending_NN
-< up_IN
-< about_RB
-< Jewelers_NNP
-< filed_VBN
-< financial-services_NNS
-< much_NN
-< much_JJ
-< chief_JJ
-< executive_JJ
-< familiar_NN
-< up_IN
-< familiar_NN
-< Jewelers_NNP
-< split_NN
-< subject_NN
-< reported_VBD
-< Industries_NNP
-< animated_JJ
-< set_VBN
-< shows_VBZ
-< talk_VB
-< president_NNP
-< shows_VBZ
-< 5_NN
-< no_RB
-< shows_VBZ
-< shows_VBZ
-< outside_IN
-< cost_NN
-< about_RB
-< net_JJ
-< up_IN
-< up_IN
-< down_RB
-< 55_NN
-< Reduced_NNP
-< Drugs_NNS
-< 5-fluorouracil_JJ
-< read_VB
-< New_NNP
-< 5-fluorouracil_JJ
-< stopping_VBG
-< alternative_NN
-< up_IN
-< out_IN
-< alternative_NN
-< attempt_VBP
-< off_IN
-< date_VB
-< up_IN
-< Resources_NNP
-< Oil_NNP
-< clean-fuels_NNS
-< program_VBP
-< up_IN
-< much_JJ
-< savings-and-loan_JJ
-< created_VBN
-< Lincoln_NNP
-< that_WDT
-< made_VBD
-< put_VBP
-< -LCB-_(
-< -RCB-_)
-< seized_VBN
-< except_VB
-< embarrassing_JJ
-< -LRB-_(
-< -RRB-_)
-< push_VBP
-< -LCB-_(
-< -RCB-_)
-< -LRB-_(
-< -RRB-_)
-< -LRB-_(
-< -RRB-_)
-< -LRB-_(
-< -RRB-_)
-< -LRB-_(
-< -RRB-_)
-< -LRB-_(
-< -RRB-_)
-< out_IN
-< off_IN
-< Airlines_NNPS
-< earlier_RBR
-< made_VBD
-< Chapter_NN
-< early_JJ
-< anticipate_VB
-< filing_NN
-< that_WDT
-< amended_VBD
-< off_IN
-< South_JJ
-< American_JJ
-< about_RB
-< presented_VBD
-< present_JJ
-< far_RB
-< daily_JJ
-< out_IN
-< calls_VBZ
-< -LCB-_(
-< -RCB-_)
-< come_VB
-< along_IN
-< forecast_NN
-< pre-bankruptcy_NN
-< minimum_JJ
-< figured_VBD
-< thanks_VBZ
-< most_RBS
-< in_IN
-< off_IN
-< Ways_NNS
-< Means_NNP
-< House_NNP
-< out_IN
-< 'S_VBZ
-< offset_VB
-< elect_VBP
-< amended_VBN
-< notes_NNS
-< -LRB-_(
-< -RRB-_)
-< late-payment_NN
-< Notice_NN
-< request_VB
-< pay_VB
-< few_NN
-< aboard_RB
-< tax_VB
-< Procedure_NN
-< reporting_VBG
-< hardworking_JJ
-< hidden_VBN
-< had_VBN
-< kept_VBD
-< hidden_VBN
-< so_RB
-< -LRB-_(
-< -RRB-_)
-< mounts_NNS
-< up_IN
-< Indian-summer_JJ
-< back_JJ
-< reached_VBD
-< share_VBP
-< set_VBN
-< up_IN
-< use_NN
-< fast_RB
-< overrun_VBN
-< fire_VB
-< up_IN
-< many_NN
-< proclaim_VB
-< back_JJ
-< Key_NNP
-< adept_JJ
-< down_RB
-< public-land_JJ
-< adopted_VBN
-< hiking_VBG
-< motorized_JJ
-< run_VB
-< down_RP
+---
+> about_RB
+716c716
+< about_IN
+---
+> about_RB
+769c769
+< about_IN
+---
+> about_RB
+815c815
+< right_JJ
+---
+> right_NN
+930c930
 < many_JJ
-< drives_NNS
-< Biking_NNP
-< Francisco-area_JJ
-< school_VB
-< most_RBS
-< simply_JJ
-< scorn_NN
-< much_JJ
-< such_JJ
-< that_IN
-< first_JJ
-< mass_NN
+---
+> many_NN
+941c941
+< so_IN
+---
+> so_RB
+977c977
+< as_RB
+---
+> as_IN
+1017c1017
+< Products_NNPS
+---
+> Products_NNP
+1057c1057
+< concern_NN
+---
+> concern_VBP
+1060c1060
+< Facilities_NNPS
+---
+> Facilities_NNP
+1069c1069
+< down_RP
+---
+> down_RB
+1089c1089
+< future_JJ
+---
+> future_NN
+1110c1110
+< US_NNP
+---
+> US_PRP
+1140c1140
+< US_NNP
+---
+> US_PRP
+1166c1166
+< US_NNP
+---
+> US_PRP
+1177c1177
+< US_NNP
+---
+> US_PRP
+1230c1230
+< US_NNP
+---
+> US_PRP
+1245c1245
+< third-quarter_NN
+---
+> third-quarter_JJ
+1330c1330
+< segment_NN
+---
+> segment_VBP
+1429c1429
+< Intense_NNP
+---
+> Intense_JJ
+1434c1434
+< led_VBD
+---
+> led_VBN
+1472c1472
+< up_RB
+---
+> up_IN
+1506c1506
 < more_JJR
-< City_NN
-< bounce_VB
-< roll_NN
-< fewer_RBR
-< attracted_VBN
-< following_VBG
-< Securities_NNP
-< first_JJ
-< preferred_JJ
-< Markets_NNPS
-< Technologies_NNP
-< in_IN
-< mixed_VBN
-< Early_JJ
-< mounted_VBN
-< most_RBS
-< cut_NN
-< short_VB
-< depressed_JJ
-< more_JJR
-< Long-term_NNP
-< 5_NN
-< Securities_NNP
-< Gold_NNP
-< higher_JJR
-< up_IN
-< pumped_VBN
-< Fed_JJ
-< any_DT
-< further_JJ
-< one-quarter_NN
-< that_DT
-< borrowing_NN
-< down_RB
-< That_DT
-< third-quarter_JJ
-< shot_NN
-< Associates_NNP
-< 30-year_NNP
-< Late_JJ
-< Homeowner_NNP
-< learned_VBD
-< mine_VB
-< feel_VBP
-< strengthened_VBN
-< up_IN
-< Pulp_NNP
-< Bankers_NNP
-< third-quarter_JJ
-< Step_NN
-< up_IN
-< approving_VBG
-< Citicorp_NN
-< net_JJ
-< that_DT
-< horrible_NN
-< called_VBN
-< attributes_NNS
-< both_DT
-< third-quarter_JJ
-< much_RB
-< control_VBP
-< increased_VBN
-< only_RB
-< worries_VBZ
-< Manufacturers_NNP
-< Manufacturers_NNP
-< improved_VBN
-< interest_VB
-< interest_VB
-< up_IN
-< Trust_NN
-< increased_VBN
-< ruling_NN
-< -LRB-_(
-< I_PRP
-< -RRB-_)
-< Party_NNP
-< Indian_NNP
-< minister_NNP
-< promises_VBZ
-< ruling_NN
-< -LRB-_(
-< -RRB-_)
-< -LRB-_(
-< I_PRP
-< -RRB-_)
-< remain_VB
-< down_RB
-< up_IN
-< Indian_NNP
-< arms-kickback_NN
-< spent_VBD
-< -LRB-_(
-< I_PRP
-< -RRB-_)
-< Indian_NNP
-< power_VB
-< -LRB-_(
-< I_PRP
-< -RRB-_)
-< Indian_NNP
-< Most_JJS
-< most_RBS
-< -LRB-_(
-< I_PRP
-< -RRB-_)
-< -LRB-_(
-< I_PRP
-< -RRB-_)
-< -LRB-_(
-< I_PRP
-< -RRB-_)
-< arms-kickback_NN
-< talking_NN
-< Indian_NNP
-< Industries_NNP
-< charged_VBN
-< Indian_NNP
-< many_NN
-< documentary_NN
-< propelled_VBN
-< front_NN
-< supported_VBN
-< up_IN
-< ruling_NN
+---
+> more_RBR
+1547c1547
+< about_IN
+---
+> about_RB
+1600c1600
+< lipid_JJ
+---
+> lipid_NN
+1634c1634
+< increased_VBD
+---
+> increased_VBN
+1649c1649
+< 5_CD
+---
+> 5_NN
+1652c1652
+< Confectionery_NN
+---
+> Confectionery_JJ
+1680c1680
+< increased_VBD
+---
+> increased_VBN
+1697c1697
+< up_RB
+---
+> up_IN
+1763c1763
+< received_VBN
+---
+> received_VBD
+1839c1839
+< anti-depressant_JJ
+---
+> anti-depressant_NN
+1841c1841
+< led_VBD
+---
+> led_VBN
+1853c1853
 < more_RBR
-< like_IN
-< -LRB-_(
-< I_PRP
-< -RRB-_)
-< Gujarat_NN
-< well_JJ
-< -LRB-_(
-< I_PRP
-< -RRB-_)
-< -LRB-_(
-< I_PRP
-< -RRB-_)
-< lost_VBD
-< hated_VBD
-< fear_NN
-< Industries_NNP
-< 155-mm_JJ
-< then_RB
-< have_VBP
-< reports_NNS
-< about_RB
-< releases_NNS
-< about_RB
-< neither_DT
-< -LRB-_(
-< I_PRP
-< -RRB-_)
-< Indian_NNP
-< Retired_JJ
-< cancel_NN
-< state_VBP
-< Indian_NNP
-< Partners_NNP
-< restructuring_NN
-< Securities_NNP
-< hold_VB
-< close_NN
-< bidding_NN
-< mounted_VBN
-< more_JJR
-< Treasury_NN
-< Bond_NNP
-< Investors_NNP
-< stabilized_VBN
+---
+> more_JJR
+1855c1855
+< offset_VBP
+---
+> offset_VB
+1880c1880
+< Systems_NNPS
+---
+> Systems_NNP
+1891c1891
+< medical-instrument_NN
+---
+> medical-instrument_JJ
+1984c1984
+< increased_VBD
+---
+> increased_VBN
+2048c2048
+< operating_NN
+---
+> operating_VBG
+2095c2095
+< manufacturing_VBG
+---
+> manufacturing_NN
+2113c2113
+< estimated_JJ
+---
+> estimated_VBN
+2194c2194
+< great_RB
+---
+> great_JJ
+2233c2233
+< that_DT
+---
+> that_IN
+2261c2261
+< -LCB-_-LRB-
+---
+> -LCB-_(
+2264c2264
+< -RCB-_-RRB-
+---
+> -RCB-_)
+2270c2270
+< more_RBR
+---
+> more_JJR
+2358c2358
+< executive_JJ
+---
+> executive_NN
+2373c2373
+< Manufacturers_NNPS
+---
+> Manufacturers_NNP
+2390c2390
+< look_NN
+---
+> look_VB
+2427c2427
+< spare_VBP
+---
+> spare_VB
+2432c2432
+< on_RP
+---
+> on_IN
+2454c2454
+< Berry_NN
+---
+> Berry_NNP
+2490c2490
+< will_NN
+---
+> will_MD
+2529c2529
+< right_RB
+---
+> right_NN
+2544c2544
+< as_RB
+---
+> as_IN
+2617c2617
+< -LCB-_-LRB-
+---
+> -LCB-_(
+2619,2620c2619,2620
+< drawing_NN
+< -RCB-_-RRB-
+---
+> drawing_VBG
+> -RCB-_)
+2640c2640
+< 'd_VBD
+---
+> 'd_MD
+2668c2668
+< -LRB-_-LRB-
+---
+> -LRB-_(
+2670c2670
+< appears_NNS
+---
+> appears_VBZ
+2674c2674
+< pervert_JJ
+---
+> pervert_NN
+2676c2676
+< -RRB-_-RRB-
+---
+> -RRB-_)
+2678c2678
+< Will_NNP
+---
+> Will_MD
+2680c2680
+< -LRB-_-LRB-
+---
+> -LRB-_(
+2682c2682
+< looks_NNS
+---
+> looks_VBZ
+2691c2691
+< -RRB-_-RRB-
+---
+> -RRB-_)
+2792c2792
+< think_VB
+---
+> think_VBP
+2821c2821
+< cut_VBN
+---
+> cut_VB
+2823c2823
+< the_DT
+---
+> the_IN
+2832c2832
+< both_PDT
+---
+> both_DT
+2838,2839c2838,2839
+< Nature_NN
+< Good-bye_NN
+---
+> Nature_NNP
+> Good-bye_UH
+2844c2844
+< -LRB-_-LRB-
+---
+> -LRB-_(
+2847c2847
+< Arts_NNPS
+---
+> Arts_NNP
+2851c2851
+< -RRB-_-RRB-
+---
+> -RRB-_)
+2884c2884
+< Earth_NN
+---
+> Earth_NNP
+2900c2900
+< ago_IN
+---
+> ago_RB
+2942c2942
+< hunting_VBG
+---
+> hunting_NN
+2994c2994
+< one_NN
+---
+> one_CD
+3054c3054
+< more_RBR
+---
+> more_JJR
+3115,3116c3115,3116
+< data_NN
+< base_NN
+---
+> data_NNS
+> base_VBP
+3170c3170
+< more_RBR
+---
+> more_JJR
+3173c3173
+< 5_CD
+---
+> 5_NN
+3177c3177
+< about_IN
+---
+> about_RB
+3202c3202
+< let_VBD
+---
+> let_VBP
+3236c3236
+< 5_CD
+---
+> 5_NN
+3246c3246
+< over_RP
+---
+> over_IN
+3424c3424
+< scour_VB
+---
+> scour_VBP
+3557c3557
+< cracked_VBD
+---
+> cracked_VBN
+3616c3616
+< rages_NNS
+---
+> rages_VBZ
+3646c3646
+< monitoring_VBG
+---
+> monitoring_NN
+3727c3727
+< with_IN
+---
+> with_RB
+3749c3749
+< most_JJS
+---
+> most_RBS
+3788,3789c3788,3789
 < that_WDT
-< Fed_JJ
-< injected_VBN
-< meaning_NN
-< money-market_JJ
-< further_JJ
-< other_NN
-< benchmark_NN
-< 5_NN
-< most_RBS
-< opening_NN
-< subordinated_VBD
-< up_IN
-< Treasurys_NNPS
-< -LCB-_(
-< -RCB-_)
-< Securities_NNP
-< served_VBN
-< managing_VBG
-< Treasurys_NNPS
-< market_VB
-< Banks_NNP
-< expanded_VBN
-< up_IN
-< Securities_NNPS
-< Treasury_NN
-< benchmark_NN
-< increased_VBN
-< most_RBS
-< owned_VBD
-< refinancing_NN
-< off_IN
-< offering_NN
-< Securities_NNPS
-< revived_VBN
-< talk_VB
-< Brothers_NNP
-< Markets_NNPS
-< up_IN
-< better_JJR
-< down_RB
-< down_RB
-< down_RB
-< down_RB
-< Long_NNP
-< whipsaw_JJ
-< Securities_NNP
-< total_JJ
-< down_RB
-< up_IN
-< on_IN
-< benchmark_NN
-< off_IN
-< Securities_NNP
-< 11-2_JJ
-< undercut_VBP
-< spending_NN
-< cast_NN
-< limit_NN
-< 64-35_JJ
-< Republicans_NNP
-< Democrats_NNP
-< standing_VBG
-< that_IN
-< further_JJ
+< stretches_VBZ
+---
+> that_IN
+> stretches_NNS
+3827,3828c3827,3828
+< set_VBD
+< out_RP
+---
+> set_VBN
+> out_IN
+3852c3852
+< most_JJS
+---
+> most_RBS
+3881c3881
+< elite_JJ
+---
+> elite_NN
+3933,3934c3933,3934
+< rein_VB
+< in_RB
+---
+> rein_NN
+> in_IN
+3936c3936
 < cut_VB
-< much_JJ
-< advanced_VBN
-< appropriated_VBN
-< about_RB
-< most_RBS
-< longer_RB
-< indicate_VB
-< 383-30_JJ
-< process_VBP
-< Defense_NNP
-< attached_VBN
-< separate_VB
-< Services_NNP
-< over_IN
-< Nations_NNP
-< Activities_NNP
-< get_VB
-< noticed_VBD
-< plunge_NN
-< Gold_NNP
-< achieved_VBN
-< both_DT
-< either_DT
-< particular_NN
-< traded_VBN
-< Gold_NNP
-< gold_NN
-< gold_NN
-< -LCB-_(
-< -RCB-_)
+---
+> cut_NN
+3943c3943
+< filed_VBD
+---
+> filed_VBN
+4002c4002
+< 55-year-old_JJ
+---
+> 55-year-old_NNP
+4030c4030
+< Philippines_NNPS
+---
+> Philippines_NNP
+4063,4064c4063,4064
+< still_RB
+< hope_VB
+---
+> still_JJ
+> hope_NN
+4276c4276
+< cornered_JJ
+---
+> cornered_VBN
+4303c4303
 < out_IN
-< regard_NN
-< more_JJR
-< -LCB-_(
-< -RCB-_)
-< up_IN
-< gold_NN
-< so_RB
-< drops_VBZ
-< chief_JJ
-< safety_VB
-< '_POS
-< handcuffed_VBN
-< gold_NN
-< gold_NN
+---
+> out_RB
+4341c4341
+< that_IN
+---
+> that_WDT
+4412c4412
+< named_VBN
+---
+> named_VBD
+4447c4447
+< fellow_JJ
+---
+> fellow_NN
+4472c4472
+< pockmarked_VBN
+---
+> pockmarked_JJ
+4487c4487
+< la_NNP
+---
+> la_FW
+4508c4508
+< mean_JJ
+---
+> mean_NN
+4525c4525
+< most_JJS
+---
+> most_RBS
+4556c4556
+< many_DT
+---
+> many_NN
+4583c4583
+< peaked_JJ
+---
+> peaked_VBD
+4619c4619
+< gold_JJ
+---
+> gold_NN
+4647c4647
+< fellow_JJ
+---
+> fellow_NN
+4677c4677
+< commanding_JJ
+---
+> commanding_NN
+4734c4734
+< Communist_JJ
+---
+> Communist_NNP
+4749c4749
+< del_FW
+---
+> del_NNP
+4812c4812
+< says_VBZ
+---
+> says_NNS
+4844c4844
+< monthly_RB
+---
+> monthly_JJ
+4879c4879
+< gain_VB
+---
+> gain_VBP
+4944c4944
+< drunk_NN
+---
+> drunk_JJ
+5029c5029
+< divided_VBN
+---
+> divided_VBD
+5122c5122
+< 5th_JJ
+---
+> 5th_NNP
+5143c5143
+< off_RP
+---
+> off_IN
+5202c5202
+< up_RP
+---
+> up_IN
+5206c5206
+< counter-intelligence_NN
+---
+> counter-intelligence_JJ
+5236c5236
+< secret_JJ
+---
+> secret_NN
+5264c5264
+< Americas_NNPS
+---
+> Americas_NNP
+5308c5308
+< socalled_VBN
+---
+> socalled_JJ
+5399c5399
 < that_DT
-< gold_NN
-< back_RB
-< off_IN
-< rise_VBP
-< much_JJ
-< reacted_VBN
-< much_JJ
-< so_RB
-< either_DT
-< ENERGY_NN
-< up_IN
-< Heating_NN
-< all_DT
-< contract_VBP
-< traded_VBN
-< off_IN
-< most_RBS
-< signs_VBZ
-< most_RBS
-< overseas_JJ
-< Investors_NNP
-< about_RB
-< A-1_JJ
-< preferred_JJ
-< rental_JJ
-< know_VB
-< better_JJR
-< Greens_NNPS
-< surrendered_VBD
-< Zimbabwean_NNP
-< fat_NN
-< come_VB
-< most_RBS
-< about_RB
-< up_IN
-< business-to-business_JJ
-< broadcast_NN
-< hot-line_NN
-< calls_VBZ
-< fill_VBP
-< out_IN
-< better_JJR
-< 's_VBZ
-< says_NNS
-< deficit-reduction_NN
-< voting_NN
-< pre-empt_VB
-< -LRB-_(
-< -RRB-_)
-< in_IN
-< offering_NN
-< JUMPING_NNP
-< -LRB-_(
-< -RRB-_)
-< -LRB-_(
-< -RRB-_)
-< protests_NNS
-< work_VB
-< auto-repair_JJ
-< -LRB-_(
-< -RRB-_)
-< Manufacturers_NNP
-< oppose_VB
-< longer_RB
-< longer_RB
-< find_VB
-< non-warranty_NN
-< longer_RB
-< costs_NNS
-< much_JJ
-< most_RBS
-< take_VB
-< recruiting_VBG
-< executive_JJ
-< merged_VBN
-< Investors_NNP
-< about_RB
-< concern_VBP
-< subordinated_VBN
-< single-B-3_NNP
-< potential_JJ
-< preferred_JJ
-< calls_VBZ
-< comment_VB
-< much_JJ
-< drowned_VBN
-< out_IN
-< '_''
-< as_IN
-< means_VBZ
-< off_IN
-< reduced_VBN
-< cut_NN
-< further_JJ
-< so_RB
-< expected_VBN
-< behind_IN
-< more_JJR
-< worth_JJ
-< equivalent_NN
-< more_JJR
-< T-72_NN
-< BMP_NN
-< MiG-23BN_NN
-< MiG-29s_NNS
-< F16s_NNS
-< SU-27_NN
-< MiG-29s_NNS
-< no_RB
-< longer_RB
-< only_RB
-< East_NNP
-< more_JJR
-< -LRB-_(
-< KHAD\/WAD_NN
-< -RRB-_)
-< Indian_NNP
-< Indian_NNP
-< cut_NN
-< future_NN
-< -LRB-_(
-< -RRB-_)
-< reports_NNS
+---
+> that_IN
+5403c5403
+< first_RB
+---
+> first_JJ
+5431c5431
+< milk_VB
+---
+> milk_NN
+5441c5441
+< States_NNP
+---
+> States_NNPS
+5452c5452
+< deputy_JJ
+---
+> deputy_NN
+5461c5461
+< first_RB
+---
+> first_JJ
+5492c5492
+< as_RB
+---
+> as_IN
+5538c5538
+< up_RP
+---
+> up_IN
+5639c5639
+< discovered_VBD
+---
+> discovered_VBN
+5659c5659
+< 470th_JJ
+---
+> 470th_NNP
+5752c5752
+< much_RB
+---
+> much_JJ
+5756c5756
+< in_RP
+---
+> in_IN
+5772c5772
+< worry_VB
+---
+> worry_NN
+5791c5791
+< troubled_VBN
+---
+> troubled_JJ
+5818c5818
+< gun-running_NN
+---
+> gun-running_JJ
+5826c5826
+< Panamanians_NNPS
+---
+> Panamanians_NNS
+5868c5868
+< in_RP
+---
+> in_IN
+5891c5891
+< longtime_NN
+---
+> longtime_JJ
+5893c5893
 < American_NNP
-< Saudi_NNP
-< Islamic_NNP
-< heavy_NN
-< outside_IN
-< hated_VBD
-< feared_VBD
-< through_IN
-< even_JJ
-< pressured_VBN
-< more_JJR
-< fight_NN
-< off_IN
-< much_NN
-< defenseless_JJ
-< what_WP
-< up_IN
-< long_JJ
-< The_DT
-< -LRB-_(
-< -RRB-_)
-< much_JJ
-< out_IN
-< preferred_JJ
-< around_IN
-< up_IN
-< 's_VBZ
-< more_JJR
-< down_RP
-< national-priority_JJ
-< both_DT
-< Republican_NNP
-< neither_DT
-< next_JJ
-< off_IN
-< next_JJ
-< 's_VBZ
-< best_JJS
-< Wars_NNP
-< listing_NN
-< little_JJ
-< off_IN
-< spending_NN
-< out_IN
-< high-visibility_JJ
-< up_IN
-< strategic-arms_JJ
-< hard_JJ
-< down_RP
-< plans_VBZ
-< strain_NN
-< short_NN
-< sour_VB
-< longtime_JJ
-< longtime_JJ
-< neither_DT
-< much_JJ
-< further_JJ
-< more_RBR
-< All_DT
-< causes_NNS
-< up_IN
-< up_IN
-< hustings_NN
-< says_NNS
-< tired_VBN
-< Minority_NNP
-< caused_VBN
-< leaked_VBN
-< out_RB
-< read_VB
+---
+> American_JJ
+5991c5991
+< routine_JJ
+---
+> routine_NN
+6023c6023
+< read_VBD
+---
+> read_VBP
+6101c6101
+< assistant_JJ
+---
+> assistant_NN
+6122c6122
+< Alcohol_NNP
+---
+> Alcohol_NN
+6126c6126
+< Firearms_NNPS
+---
+> Firearms_NNP
+6237c6237
+< find_VBP
+---
+> find_NN
+6341c6341
+< over_RP
+---
+> over_IN
+6356c6356
+< top_NN
+---
+> top_JJ
+6393c6393
+< put_VBD
+---
+> put_VB
+6519c6519
+< close_JJ
+---
+> close_NN
+6544,6545c6544,6545
+< general_NN
+< allowed_VBD
+---
+> general_JJ
+> allowed_VBN
+6550c6550
+< up_RP
+---
+> up_IN
+6609c6609
+< limited_VBN
+---
+> limited_JJ
+6613c6613
+< enough_JJ
+---
+> enough_RB
+6634c6634
+< served_VBD
+---
+> served_VBN
+6761c6761
+< up_RP
+---
+> up_IN
+6782,6783c6782,6783
+< then_RB
+< record_VB
+---
+> then_JJ
+> record_NN
+6856c6856
+< ruling_VBG
+---
+> ruling_NN
+6895c6895
+< mounted_VBD
+---
+> mounted_VBN
+6912c6912
+< most_JJS
+---
+> most_RBS
+6922c6922
+< finger_VB
+---
+> finger_NN
+6944c6944
+< close_JJ
+---
+> close_NN
+7004,7005c7004,7005
 < that_IN
-< such_JJ
-< subject_NN
-< select_VB
-< put_VBP
-< 's_VBZ
-< made_VBN
-< Indian_NNP
-< elevated_VBN
-< Indian_NNP
-< Rights_NNP
-< executive_JJ
-< chief_JJ
-< chief_JJ
-< chief_JJ
-< power-transmission_JJ
-< chief_JJ
-< Machines_NNP
-< stand_VB
-< computer-chip_NN
-< key_JJ
-< down_RB
-< Industries_NNP
-< yen_NN
-< -LRB-_(
-< -RRB-_)
-< missile-guidance_JJ
-< Sale_NNP
-< Communist_NNP
-< as_IN
-< Soviet_JJ
-< as_IN
-< headquarters_NN
-< -LRB-_(
-< -RRB-_)
-< up_IN
-< next_JJ
+< summarized_VBN
+---
+> that_WDT
+> summarized_VBD
+7030,7031c7030,7031
+< clean_VB
+< up_RP
+---
+> clean_JJ
+> up_IN
+7041c7041
+< -LCB-_-LRB-
+---
+> -LCB-_(
+7044c7044
+< -RCB-_-RRB-
+---
+> -RCB-_)
+7063c7063
+< on_RB
+---
+> on_IN
+7107c7107
+< -LCB-_-LRB-
+---
+> -LCB-_(
+7111c7111
+< -RCB-_-RRB-
+---
+> -RCB-_)
+7117c7117
+< up_RP
+---
+> up_IN
+7156c7156
+< down_RP
+---
+> down_RB
+7264c7264
+< Few_JJ
+---
+> Few_NNP
+7268,7269c7268,7269
+< willing_VBG
+< any_DT
+---
+> willing_JJ
+> any_RB
+7286c7286
+< prepared_JJ
+---
+> prepared_VBN
+7382c7382
+< power_NN
+---
+> power_VB
+7436c7436
+< up_RP
+---
+> up_IN
+7441c7441
+< allowed_VBD
+---
+> allowed_VBN
+7462c7462
+< much_RB
+---
+> much_JJ
+7474c7474
+< up_RP
+---
+> up_VB
+7544c7544
+< manufacturing_VBG
+---
+> manufacturing_NN
+7548c7548
+< slowing_VBG
+---
+> slowing_NN
+7566c7566
+< expanded_VBD
+---
+> expanded_VBN
+7593c7593
+< Capital_NN
+---
+> Capital_NNP
+7645c7645
+< earlier_JJR
+---
+> earlier_RBR
+7650c7650
+< manufacturing_VBG
+---
+> manufacturing_NN
+7652c7652
+< dropped_VBD
+---
+> dropped_VBN
+7658c7658
+< give_VBP
+---
+> give_VB
+7664c7664
+< further_RB
+---
+> further_VB
+7701c7701
+< operated_VBD
+---
+> operated_VBN
+7722c7722
 < more_RBR
-< Major_NNP
-< de_FW
-< along_IN
-< less_JJR
-< concerned_VBN
-< proposed_VBN
-< aimed_VBD
-< Islands_NNPS
-< more_JJR
-< base_VB
-< told_VBN
-< up_IN
-< most_RBS
-< paled_VBD
-< off_IN
-< most_RBS
-< up_IN
-< over_IN
-< ever-faster_JJ
-< pension-fund_NN
-< Services_NNP
-< listen_VB
+---
+> more_JJR
+7748c7748
+< operated_VBD
+---
+> operated_VBN
+7885c7885
+< more_RBR
+---
+> more_JJR
+7914c7914
+< coming_JJ
+---
+> coming_VBG
+7945c7945
+< average_NN
+---
+> average_JJ
+8026c8026
+< report_NN
+---
+> report_VBP
+8113c8113
+< warning_VBG
+---
+> warning_NN
+8125c8125
+< date_NN
+---
+> date_VB
+8217c8217
+< mid-1970s_CD
+---
+> mid-1970s_NNS
+8234c8234
+< mid-1980s_CD
+---
+> mid-1980s_NNS
+8320c8320
+< 35-44_CD
+---
+> 35-44_JJ
+8380c8380
+< 55_CD
+---
+> 55_NN
+8452c8452
+< affect_VBP
+---
+> affect_NN
+8470c8470
+< says_VBZ
+---
+> says_NNS
+8473c8473
+< Smoking_NN
+---
+> Smoking_NNP
+8564c8564
 < that_IN
-< now_JJ
-< account_NN
-< most_RBS
-< up_IN
-< up_IN
-< own_JJ
-< easy_JJ
-< out_IN
-< get_VB
-< shifts_NNS
-< 55_NN
-< 5_NN
-< both_DT
-< even_JJ
-< fro_RB
-< above_IN
-< require_VB
-< be_VBP
-< that_DT
-< 1970s_NNS
-< -LRB-_(
-< -RRB-_)
-< down_RB
-< executive_JJ
-< put_VB
-< contract_VBP
-< off_IN
-< now_JJ
-< trading_NN
-< that_NN
-< much_NN
-< less_JJR
-< average_JJ
-< about_IN
-< short_NN
-< out_IN
-< say_VBP
-< expected_VBN
-< once_RB
-< only_RB
-< operating_VBG
-< infected_VBN
-< operating_VBG
-< boring_JJ
-< up_IN
-< logs_NNS
-< on_IN
-< that_DT
-< Against_IN
-< prepare_VB
-< Do_VBP
-< up_IN
-< on_IN
-< space-shuttle_NN
-< before_RB
-< do_VBP
-< up_IN
-< Yet_RB
-< long_JJ
-< Dirks_NNP
-< her_PRP$
-< her_PRP$
-< Hearing_NNP
-< breach_NN
-< -LRB-_(
-< -RRB-_)
-< -LRB-_(
-< -RRB-_)
-< -LRB-_(
-< one_PRP
-< -RRB-_)
-< head_VBP
-< many_VB
-< trial_VB
-< there_EX
-< have_VBP
-< notice_NN
-< more_RBR
-< very_RB
-< making_VBG
-< hoc_FW
-< -LRB-_(
-< -RRB-_)
-< one_CD
-< reverse_NN
-< call_NN
-< have_VB
-< law-making_NNS
-< -LRB-_(
-< 1_CD
-< -RRB-_)
-< -LRB-_(
-< 2_CD
-< -RRB-_)
-< -LRB-_(
-< -RRB-_)
-< lawmaking_JJ
-< most_RBS
-< McNally_NNP
-< one-sentence_JJ
-< -LRB-_(
-< -RRB-_)
-< Such_JJ
-< less_JJR
-< laboratory-services_JJ
-< tax-loss_NN
-< executive_JJ
-< operating_VBG
-< overseas_JJ
-< affected_VBN
-< hair-trigger_JJ
-< 11:13_CD
-< down_RB
+---
+> that_DT
+8604c8604
+< advertising_NN
+---
+> advertising_VBG
+8606c8606
+< boost_VBP
+---
+> boost_VB
+8610c8610
+< promote_VBP
+---
+> promote_VB
+8710,8711c8710,8711
+< currently_RB
+< smoke_VBP
+---
+> currently_JJ
+> smoke_NN
+8720c8720
+< up_RP
+---
+> up_IN
+8726c8726
+< comparing_NN
+---
+> comparing_VBG
+8746c8746
+< Asians_NNPS
+---
+> Asians_NNS
+8790c8790
+< currently_RB
+---
+> currently_JJ
+8795c8795
+< purchasing_NN
+---
+> purchasing_VBG
+8828c8828
+< staff_NN
+---
+> staff_VBP
+8849c8849
+< executive_NN
+---
+> executive_JJ
+8949c8949
+< profit-driven_JJ
+---
+> profit-driven_CD
+8961c8961
+< cheap_JJ
+---
+> cheap_NN
+8976c8976
+< composite_NN
+---
+> composite_JJ
+9067c9067
+< most_JJS
+---
+> most_RBS
+9095c9095
+< up_RB
+---
+> up_IN
+9128c9128
+< up_RP
+---
+> up_IN
+9157c9157
+< down_RP
+---
+> down_RB
+9196c9196
+< 's_VBZ
+---
+> 's_POS
+9200c9200
+< one_NN
+---
+> one_CD
+9233c9233
+< as_RB
+---
+> as_IN
+9261c9261
+< unsettled_VBN
+---
+> unsettled_JJ
+9314,9315c9314,9315
+< cooled_VBD
+< off_RP
+---
+> cooled_VBN
+> off_IN
+9334c9334
+< about_RB
+---
+> about_IN
+9341c9341
+< that_IN
+---
+> that_WDT
+9373c9373
 < traded_VBN
-< used_VBD
-< witching_JJ
-< stock-index_NN
-< Securities_NNP
-< premier_NN
-< Securities_NNP
-< closed_VBD
-< Manufacturers_NNP
-< Manufacturers_NNP
-< shares_VBZ
-< -LRB-_(
-< sell_VB
-< -RRB-_)
-< many_NN
-< as_IN
-< filing_NN
-< off_IN
-< high_JJ
-< plans_NNS
-< off_IN
-< Fruit_NNP
-< Lines_NNP
-< A_DT
-< preferred_JJ
-< filed_VBN
-< Class_NNP
-< preferred_JJ
-< E_NN
-< preferred_JJ
-< wider_RBR
-< fourth-quarter_JJ
-< preferred_JJ
-< stock_VB
-< such_JJ
-< required_VBN
-< small-denomination_NN
-< Markets_NNPS
-< Banks_NNP
-< about_RB
-< 5_NN
-< chief_JJ
-< small-denomination_NN
-< average_JJ
-< aimed_VBN
-< less_JJR
-< ended_VBN
-< down_RB
-< large-denomination_NN
-< aimed_VBN
-< sold_VBN
-< posted_VBD
-< drops_VBZ
-< fifth_NN
-< short-term_JJ
-< offering_NN
-< more_JJR
-< CD_JJ
-< further_JJ
-< reported_VBD
-< make_VB
-< down_RB
-< Manufacturers_NNP
-< CD_NNP
-< exchange-rate_NN
-< 1970s_NNS
-< further_JJ
-< approved_VBD
-< feeling_NN
-< -LRB-_(
-< -RRB-_)
-< that_IN
-< up_IN
-< around_RB
-< key_JJ
-< point_VBP
-< inflated_JJ
-< give_NN
-< limit_NN
-< G-7_NNP
-< shortchanged_VBN
-< -LRB-_(
-< -RRB-_)
-< future_NN
-< calls_VBZ
-< up_IN
-< planning_NN
-< further_RBR
-< year-end_NN
-< up_IN
-< Republican_NNP
-< suspended_VBN
-< other_NN
-< cheated_VBN
-< Merc_NN
-< suspended_VBN
-< Neither_CC
-< indicted_VBD
-< both_DT
-< Tele-Communications_NNP
-< half_NN
-< Networks_NNP
-< close_RB
-< up_IN
-< The_DT
-< further_JJ
-< comment_VB
+---
+> traded_VBD
+9440c9440
+< anti-anemia_JJ
+---
+> anti-anemia_NN
+9526c9526
+< fourthquarter_JJ
+---
+> fourthquarter_NN
+9650c9650
 < Communications_NNP
-< chief_JJ
+---
+> Communications_NNPS
+9690c9690
+< improved_VBD
+---
+> improved_VBN
+9728c9728
+< Brands_NNPS
+---
+> Brands_NNP
+9736c9736
+< thirdquarter_NN
+---
+> thirdquarter_JJ
+9757c9757
+< 5_CD
+---
+> 5_VB
+9771c9771
+< net_NN
+---
+> net_JJ
+9780c9780
+< ended_VBD
+---
+> ended_VBN
+9794c9794
+< chief_NN
+---
+> chief_JJ
+9809c9809
+< more_RBR
+---
+> more_JJR
+9842c9842
+< on_RP
+---
+> on_IN
+9873c9873
+< daily_RB
+---
+> daily_JJ
+9896c9896
+< chief_NN
+---
+> chief_JJ
+9904c9904
+< less_RBR
+---
+> less_JJR
+9916c9916
 < executive_JJ
-< called_VBN
-< off_IN
-< labeled_VBN
-< Employees_NNP
-< back_JJ
-< off_IN
-< purchased_VBN
-< encouraging_VBG
-< alarmed_VBN
-< more_JJR
-< sweeping_VBG
-< estimated_VBN
-< provide_VBP
-< off_IN
-< intraday_JJ
-< low_NN
-< intraday_JJ
-< low_NN
-< stabilized_VBN
-< intraday_JJ
-< Manufacturers_NNP
-< that_WDT
-< manufactured_VBD
-< currencny_NN
-< up_IN
-< Sterling_NNP
-< yen_NN
-< well_JJ
-< bid_NN
-< G-7_NNP
-< so-called_NNP
-< repurchase_NN
-< interest_VBP
-< other_NN
-< up_IN
-< future_NN
-< binding_NN
-< analog_NN
-< about_IN
-< concern_VBP
-< broadcast_NN
-< -LRB-_(
-< point_VBP
-< -RRB-_)
-< Giants_NNP
-< shows_VBZ
-< No._NN
-< Houston-based_NNP
-< about_RB
-< Tender_NN
-< Leaf_NN
-< coffee-roasting_JJ
-< -LRB-_(
-< -RRB-_)
-< concern_VBP
-< Services_NNP
-< put_VBP
-< off_IN
-< up_IN
-< said_VBD
-< open_VB
-< NEWSPAPERS_NNS
-< Publications_NNP
-< Associates_NNPS
-< pay_VB
-< -LRB-_(
-< -RRB-_)
-< investment-bank_JJ
-< securities-firm_NN
-< that_WDT
+---
+> executive_NN
+9929c9929
+< limited_VBN
+---
+> limited_JJ
+9940c9940
+< -LRB-_-LRB-
+---
+> -LRB-_(
+9946c9946
+< Saving_NNP
+---
+> Saving_VBG
+9959,9960c9959,9960
+< 5_CD
+< -RRB-_-RRB-
+---
+> 5_NN
+> -RRB-_)
+9976c9976
 < made_VBN
-< infected_VBN
-< individual_JJ
-< infected_VBN
-< infected_VBN
-< deteriorate_VB
-< -LRB-_(
-< -RRB-_)
-< Hills_NNP
-< put_VBP
-< up_IN
-< restructuring_NN
-< announced_VBD
-< accepted_VBD
-< accepted_VBD
-< next_JJ
-< first-half_JJ
-< consolidated_JJ
-< -LRB-_(
-< -RRB-_)
-< -LRB-_(
-< -RRB-_)
-< before_RB
-< -LRB-_(
-< -RRB-_)
-< -LRB-_(
-< -RRB-_)
-< voting_NN
+---
+> made_VBD
+9990c9990
+< cast-iron_JJ
+---
+> cast-iron_NN
+10013c10013
+< Medicine_NN
+---
+> Medicine_NNP
+10054c10054
+< eliminated_VBD
+---
+> eliminated_VBN
+10065c10065
+< public-health_NN
+---
+> public-health_JJ
+10102,10103c10102,10103
 < that_IN
-< sets_NNS
-< Fed_JJ
-< talks_NNS
-< more_JJR
-< segment_VBP
-< operating_NN
-< group_VBP
-< shares_VBZ
-< Il_FW
-< foremost_JJ
-< closer_JJR
-< that_DT
-< exchanges_VBZ
-< executive_JJ
-< future_NN
-< on_IN
-< 5_NN
-< rival_JJ
-< set_VBN
-< operating_NN
-< more_JJR
-< Will_MD
-< -LRB-_(
-< -RRB-_)
-< much_NN
-< cooling_NN
-< put_NN
-< Will_MD
-< tight_JJ
-< firms_VBZ
-< up_IN
-< -LRB-_(
-< -RRB-_)
-< Jaguar_NN
-< such_JJ
-< early_JJ
-< out_IN
-< -LCB-_(
-< -RCB-_)
-< takeover-stock_JJ
-< votes_VBZ
-< counterbid_NN
-< Will_MD
-< -LRB-_(
-< -RRB-_)
-< -LCB-_(
-< -RCB-_)
-< up_IN
-< out_IN
-< rival_JJ
-< -LCB-_(
-< -RCB-_)
-< sold_VBN
-< ADRs_NNS
-< holding_VBG
-< -LCB-_(
-< -RCB-_)
-< -LRB-_(
-< -RRB-_)
-< First_JJ
-< vs._IN
-< Averae_NNP
-< next_JJ
-< alternative_NN
-< acquired_VBN
-< most_RBS
-< -LRB-_(
-< -RRB-_)
-< led_VBN
-< Swiss_JJ
-< -LRB-_(
-< -RRB-_)
-< -LRB-_(
-< -RRB-_)
-< increased_VB
-< most_RBS
-< up_IN
-< high_NN
-< early_JJ
-< aftertax_JJ
-< quarter-to-quarter_JJ
-< low-end_NN
-< even_RB
-< sales_VBZ
-< Systems_NNP
-< future_NN
-< computing_VBG
-< Computers_NNP
-< British_JJ
-< earlier_RBR
-< selling_VBG
-< off_IN
-< bottomed_VBN
-< out_IN
-< Bankers_NNP
-< such_JJ
-< Manufacturers_NNP
-< lay_VBD
-< off_IN
-< Airlines_NNPS
-< alternative_NN
-< half_NN
-< Networks_NNP
-< plans_VBZ
-< sell_VB
+< advanced_VBN
+---
+> that_WDT
+> advanced_VBD
+10164c10164
+< that_IN
+---
+> that_DT
+10183c10183
+< many_JJ
+---
+> many_RB
+10199c10199
+< be_VB
+---
+> be_VBP
+10245c10245
+< Environmentalists_NNPS
+---
+> Environmentalists_NNS
+10247c10247
+< opposed_VBD
+---
+> opposed_VBN
+10253c10253
+< Environmentalists_NNPS
+---
+> Environmentalists_NNS
+10270c10270
+< Environmentalists_NNPS
+---
+> Environmentalists_NNS
+10275c10275
+< -LRB-_-LRB-
+---
+> -LRB-_(
+10284c10284
+< -RRB-_-RRB-
+---
+> -RRB-_)
+10288c10288
+< -LRB-_-LRB-
+---
+> -LRB-_(
+10297c10297
+< -RRB-_-RRB-
+---
+> -RRB-_)
+10317c10317
+< oppose_VBP
+---
+> oppose_VB
+10350c10350
+< 's_PRP
+---
+> 's_POS
+10383c10383
+< The_NNP
+---
+> The_DT
+10392c10392
+< First_RB
+---
+> First_NNP
+10394c10394
+< foremost_RB
+---
+> foremost_JJ
+10445c10445
+< judge_VBP
+---
+> judge_NN
+10554c10554
+< harder_RBR
+---
+> harder_JJR
+10566c10566
+< that_WDT
+---
+> that_IN
+10605c10605
+< physics_NNS
+---
+> physics_NN
+10625c10625
+< destabilizing_JJ
+---
+> destabilizing_VBG
+10639c10639
+< interrelated_JJ
+---
+> interrelated_VBN
+10694c10694
+< No_UH
+---
+> No_DT
+10708c10708
+< Affairs_NNPS
+---
+> Affairs_NNP
+10719c10719
+< forecast_VBN
+---
+> forecast_NN
+10746c10746
+< giant_JJ
+---
+> giant_NN
+10777c10777
+< earlier_RB
+---
+> earlier_RBR
+10806c10806
+< much_RB
+---
+> much_JJ
+10819c10819
+< sticks_VBZ
+---
+> sticks_NNS
+10886c10886
+< 5_CD
+---
+> 5_VB
+10908c10908
+< third-quarter_NN
+---
+> third-quarter_JJ
+10967c10967
+< spending_VBG
+---
+> spending_NN
+11034c11034
+< up_RP
+---
+> up_IN
+11090c11090
+< about_IN
+---
+> about_RB
+11272c11272
+< Jewelers_NNPS
+---
+> Jewelers_NNP
+11291c11291
+< filed_VBD
+---
+> filed_VBN
+11331c11331
+< financial-services_JJ
+---
+> financial-services_NNS
+11340c11340
 < much_JJ
-< spending_NN
-< third-quarter_JJ
-< off_IN
-< off_IN
-< off_IN
-< up_IN
+---
+> much_NN
+11395c11395
+< much_RB
+---
+> much_JJ
+11423,11424c11423,11424
+< chief_NN
+< executive_NN
+---
+> chief_JJ
+> executive_JJ
+11534c11534
+< familiar_JJ
+---
+> familiar_NN
+11600c11600
+< up_RP
+---
+> up_IN
+11609c11609
+< familiar_JJ
+---
+> familiar_NN
+11624c11624
+< Jewelers_NNPS
+---
+> Jewelers_NNP
+11686c11686
+< split_VBD
+---
+> split_NN
+11715c11715
+< subject_JJ
+---
+> subject_NN
+11729c11729
+< reported_VBN
+---
+> reported_VBD
+11821c11821
+< Industries_NNPS
+---
+> Industries_NNP
+11856c11856
+< animated_VBN
+---
+> animated_JJ
+11892c11892
+< set_NN
+---
+> set_VBN
+11915c11915
+< shows_NNS
+---
+> shows_VBZ
+11933c11933
+< talk_NN
+---
+> talk_VB
+11981c11981
+< president_NN
+---
+> president_NNP
+12024c12024
+< shows_NNS
+---
+> shows_VBZ
+12122c12122
+< 5_CD
+---
+> 5_NN
+12196c12196
+< no_DT
+---
+> no_RB
+12212c12212
+< shows_NNS
+---
+> shows_VBZ
+12334c12334
+< shows_NNS
+---
+> shows_VBZ
+12350c12350
+< outside_JJ
+---
+> outside_IN
+12354c12354
+< cost_VBD
+---
+> cost_NN
+12357c12357
+< about_IN
+---
+> about_RB
+12369c12369
+< net_NN
+---
+> net_JJ
+12412c12412
+< up_RB
+---
+> up_IN
+12514c12514
+< up_RP
+---
+> up_IN
+12542c12542
+< down_IN
+---
+> down_RB
+12602c12602
+< 55_CD
+---
+> 55_NN
+12744c12744
+< Reduced_VBN
+---
+> Reduced_NNP
+12748c12748
+< Drugs_NNP
+---
+> Drugs_NNS
+12819c12819
+< 5-fluorouracil_NN
+---
+> 5-fluorouracil_JJ
+12889c12889
+< read_VBD
+---
+> read_VB
+12912c12912
+< New_JJ
+---
+> New_NNP
+13008c13008
+< 5-fluorouracil_NN
+---
+> 5-fluorouracil_JJ
+13011c13011
+< stopping_NN
+---
+> stopping_VBG
+13045c13045
+< alternative_JJ
+---
+> alternative_NN
+13056c13056
+< up_RP
+---
+> up_IN
+13076c13076
+< out_RP
+---
+> out_IN
+13116c13116
+< alternative_JJ
+---
+> alternative_NN
+13173c13173
+< attempt_NN
+---
+> attempt_VBP
+13176c13176
+< off_RP
+---
+> off_IN
+13243c13243
+< date_NN
+---
+> date_VB
+13365c13365
+< up_RP
+---
+> up_IN
+13380c13380
+< Resources_NNPS
+---
+> Resources_NNP
+13398c13398
+< Oil_NN
+---
+> Oil_NNP
+13435,13436c13435,13436
+< clean-fuels_JJ
+< program_NN
+---
+> clean-fuels_NNS
+> program_VBP
+13466c13466
+< up_RP
+---
+> up_IN
+13508c13508
+< much_RB
+---
+> much_JJ
+13548c13548
+< savings-and-loan_NN
+---
+> savings-and-loan_JJ
+13622c13622
+< created_VBD
+---
+> created_VBN
+13630c13630
+< Lincoln_NN
+---
+> Lincoln_NNP
+13646c13646
+< that_IN
+---
+> that_WDT
+13649c13649
+< made_VBN
+---
+> made_VBD
+13738c13738
+< put_VBD
+---
+> put_VBP
+13824c13824
+< -LCB-_-LRB-
+---
+> -LCB-_(
+13827c13827
+< -RCB-_-RRB-
+---
+> -RCB-_)
+13883c13883
+< seized_VBD
+---
+> seized_VBN
+13905c13905
+< except_IN
+---
+> except_VB
+13948c13948
+< embarrassing_VBG
+---
+> embarrassing_JJ
+13976c13976
+< -LRB-_-LRB-
+---
+> -LRB-_(
+13980c13980
+< -RRB-_-RRB-
+---
+> -RRB-_)
+13999c13999
+< push_VB
+---
+> push_VBP
+14047c14047
+< -LCB-_-LRB-
+---
+> -LCB-_(
+14050c14050
+< -RCB-_-RRB-
+---
+> -RCB-_)
+14063c14063
+< -LRB-_-LRB-
+---
+> -LRB-_(
+14068c14068
+< -RRB-_-RRB-
+---
+> -RRB-_)
+14085c14085
+< -LRB-_-LRB-
+---
+> -LRB-_(
+14089c14089
+< -RRB-_-RRB-
+---
+> -RRB-_)
+14094c14094
+< -LRB-_-LRB-
+---
+> -LRB-_(
+14098c14098
+< -RRB-_-RRB-
+---
+> -RRB-_)
+14102c14102
+< -LRB-_-LRB-
+---
+> -LRB-_(
+14106c14106
+< -RRB-_-RRB-
+---
+> -RRB-_)
+14129c14129
+< -LRB-_-LRB-
+---
+> -LRB-_(
+14133c14133
+< -RRB-_-RRB-
+---
+> -RRB-_)
+14190c14190
+< out_RP
+---
+> out_IN
+14237c14237
+< off_RP
+---
+> off_IN
+14246c14246
+< Airlines_NNP
+---
+> Airlines_NNPS
+14329c14329
+< earlier_JJR
+---
+> earlier_RBR
+14382c14382
+< made_VBN
+---
+> made_VBD
+14430c14430
+< Chapter_NNP
+---
+> Chapter_NN
+14435c14435
+< early_RB
+---
+> early_JJ
+14497,14500c14497,14500
+< anticipate_VBP
+< filing_VBG
+< that_IN
+< amended_VBN
+---
+> anticipate_VB
+> filing_NN
+> that_WDT
+> amended_VBD
+14561c14561
+< off_RP
+---
+> off_IN
+14588,14589c14588,14589
+< South_NNP
+< American_NNP
+---
+> South_JJ
+> American_JJ
+14611c14611
+< about_IN
+---
+> about_RB
+14706c14706
+< presented_VBN
+---
+> presented_VBD
+14802c14802
+< present_NN
+---
+> present_JJ
+14890c14890
+< far_JJ
+---
+> far_RB
+14934c14934
+< daily_RB
+---
+> daily_JJ
+14950c14950
+< out_RP
+---
+> out_IN
+15001c15001
+< calls_NNS
+---
+> calls_VBZ
+15052c15052
+< -LCB-_-LRB-
+---
+> -LCB-_(
+15054,15056c15054,15056
+< -RCB-_-RRB-
+< come_VBP
+< along_RP
+---
+> -RCB-_)
+> come_VB
+> along_IN
+15180c15180
+< forecast_VBN
+---
+> forecast_NN
+15226c15226
+< pre-bankruptcy_JJ
+---
+> pre-bankruptcy_NN
+15263c15263
+< minimum_NN
+---
+> minimum_JJ
+15284c15284
+< figured_VBN
+---
+> figured_VBD
+15297c15297
+< thanks_NNS
+---
+> thanks_VBZ
+15305c15305
+< most_JJS
+---
+> most_RBS
+15317c15317
+< in_RB
+---
+> in_IN
+15328c15328
+< off_RP
+---
+> off_IN
+15332c15332
+< Ways_NNPS
+---
+> Ways_NNS
+15334c15334
+< Means_NNPS
+---
+> Means_NNP
+15344c15344
+< House_NN
+---
+> House_NNP
+15352c15352
+< out_RP
+---
+> out_IN
+15471c15471
+< 'S_POS
+---
+> 'S_VBZ
+15475c15475
+< offset_VBN
+---
+> offset_VB
+15510c15510
+< elect_VB
+---
+> elect_VBP
+15519c15519
+< amended_VBD
+---
+> amended_VBN
+15562c15562
+< notes_VBZ
+---
+> notes_NNS
+15617c15617
+< -LRB-_-LRB-
+---
+> -LRB-_(
+15620c15620
+< -RRB-_-RRB-
+---
+> -RRB-_)
+15716c15716
+< late-payment_JJ
+---
+> late-payment_NN
+15740c15740
+< Notice_NNP
+---
+> Notice_NN
+15773c15773
+< request_VBP
+---
+> request_VB
+15778c15778
+< pay_VBP
+---
+> pay_VB
+15876c15876
+< few_JJ
+---
+> few_NN
+15883c15883
+< aboard_IN
+---
+> aboard_RB
+15908c15908
+< tax_NN
+---
+> tax_VB
+15991c15991
+< Procedure_NNP
+---
+> Procedure_NN
+15995c15995
+< reporting_NN
+---
+> reporting_VBG
+16036c16036
+< hardworking_NN
+---
+> hardworking_JJ
+16062c16062
+< hidden_JJ
+---
+> hidden_VBN
+16072c16072
+< had_VBD
+---
+> had_VBN
+16110c16110
+< kept_VBN
+---
+> kept_VBD
+16194c16194
+< hidden_JJ
+---
+> hidden_VBN
+16200c16200
+< so_IN
+---
+> so_RB
+16265c16265
+< -LRB-_-LRB-
+---
+> -LRB-_(
+16269c16269
+< -RRB-_-RRB-
+---
+> -RRB-_)
+16290c16290
+< mounts_VBZ
+---
+> mounts_NNS
+16295c16295
+< up_RP
+---
+> up_IN
+16330c16330
+< Indian-summer_NNP
+---
+> Indian-summer_JJ
+16340c16340
+< back_NN
+---
+> back_JJ
+16351c16351
+< reached_VBN
+---
+> reached_VBD
+16409c16409
+< share_VB
+---
+> share_VBP
+16478,16479c16478,16479
+< set_VB
+< up_RP
+---
+> set_VBN
+> up_IN
+16483c16483
+< use_VB
+---
+> use_NN
+16488c16488
+< fast_JJ
+---
+> fast_RB
+16518c16518
+< overrun_RB
+---
+> overrun_VBN
+16547c16547
+< fire_NN
+---
+> fire_VB
+16598c16598
+< up_RP
+---
+> up_IN
+16626c16626
+< many_JJ
+---
+> many_NN
+16632c16632
+< proclaim_VBP
+---
+> proclaim_VB
+16695c16695
+< back_NN
+---
+> back_JJ
+16698c16698
+< Key_NN
+---
+> Key_NNP
+16727c16727
+< adept_NN
+---
+> adept_JJ
+16752c16752
+< down_IN
+---
+> down_RB
+16782c16782
+< public-land_NN
+---
+> public-land_JJ
+16811c16811
+< adopted_VBD
+---
+> adopted_VBN
+16817c16817
+< hiking_NN
+---
+> hiking_VBG
+16835c16835
+< motorized_VBN
+---
+> motorized_JJ
+17084c17084
+< run_VBN
+---
+> run_VB
+17091c17091
+< down_IN
+---
+> down_RP
+17196c17196
+< many_DT
+---
+> many_JJ
+17255c17255
+< drives_VBZ
+---
+> drives_NNS
+17269c17269
+< Biking_VBG
+---
+> Biking_NNP
+17311c17311
+< Francisco-area_NNP
+---
+> Francisco-area_JJ
+17338c17338
+< school_NN
+---
+> school_VB
+17358c17358
+< most_JJS
+---
+> most_RBS
+17369,17370c17369,17370
+< simply_RB
+< scorn_VBP
+---
+> simply_JJ
+> scorn_NN
+17373c17373
+< much_RB
+---
+> much_JJ
+17417c17417
+< such_PDT
+---
+> such_JJ
+17484c17484
+< that_WDT
+---
+> that_IN
+17493c17493
+< first_RB
+---
+> first_JJ
+17495c17495
+< mass_JJ
+---
+> mass_NN
+17535c17535
+< more_RBR
+---
+> more_JJR
+17558c17558
+< City_NNP
+---
+> City_NN
+17569c17569
+< bounce_VBP
+---
+> bounce_VB
+17574c17574
+< roll_VBP
+---
+> roll_NN
+17580c17580
+< fewer_JJR
+---
+> fewer_RBR
+17640c17640
+< attracted_VBD
+---
+> attracted_VBN
+17713c17713
+< following_JJ
+---
+> following_VBG
+17720c17720
+< Securities_NNPS
+---
+> Securities_NNP
+17760,17761c17760,17761
+< first_RB
+< preferred_VBD
+---
+> first_JJ
+> preferred_JJ
+17770c17770
+< Markets_NNP
+---
+> Markets_NNPS
+17807c17807
+< Technologies_NNPS
+---
+> Technologies_NNP
+17843c17843
+< in_RP
+---
+> in_IN
+17845c17845
+< mixed_JJ
+---
+> mixed_VBN
+17848c17848
+< Early_RB
+---
+> Early_JJ
+17865c17865
+< mounted_VBD
+---
+> mounted_VBN
+17878c17878
+< most_JJS
+---
+> most_RBS
+17885,17886c17885,17886
+< cut_VBD
+< short_RB
+---
+> cut_NN
+> short_VB
+17893c17893
+< depressed_VBN
+---
+> depressed_JJ
+17909c17909
+< more_RBR
+---
+> more_JJR
+17925c17925
+< Long-term_JJ
+---
+> Long-term_NNP
+17936c17936
+< 5_CD
+---
+> 5_NN
+17966c17966
+< Securities_NNPS
+---
+> Securities_NNP
+17989c17989
+< Gold_NN
+---
+> Gold_NNP
+18034c18034
+< higher_RBR
+---
+> higher_JJR
+18056c18056
+< up_RP
+---
+> up_IN
+18077c18077
+< pumped_VBD
+---
+> pumped_VBN
+18096c18096
+< Fed_NNP
+---
+> Fed_JJ
+18105,18106c18105,18106
+< any_RB
+< further_RB
+---
+> any_DT
+> further_JJ
+18133c18133
+< one-quarter_JJ
+---
+> one-quarter_NN
+18171c18171
+< that_IN
+---
+> that_DT
+18191c18191
+< borrowing_VBG
+---
+> borrowing_NN
+18197c18197
+< down_RP
+---
+> down_RB
+18202c18202
+< That_IN
+---
+> That_DT
+18207c18207
+< third-quarter_NN
+---
+> third-quarter_JJ
+18254c18254
+< shot_VBD
+---
+> shot_NN
+18276c18276
+< Associates_NNPS
+---
+> Associates_NNP
+18312c18312
+< 30-year_JJ
+---
+> 30-year_NNP
+18333c18333
+< Late_RB
+---
+> Late_JJ
+18494c18494
+< Homeowner_NN
+---
+> Homeowner_NNP
+18552c18552
+< learned_VBN
+---
+> learned_VBD
+18586c18586
+< mine_PRP
+---
+> mine_VB
+18600c18600
+< feel_VB
+---
+> feel_VBP
+18790c18790
+< strengthened_VBD
+---
+> strengthened_VBN
+18838c18838
+< up_RB
+---
+> up_IN
+18895c18895
+< Pulp_NN
+---
+> Pulp_NNP
+18910c18910
+< Bankers_NNPS
+---
+> Bankers_NNP
+18936c18936
+< third-quarter_NN
+---
+> third-quarter_JJ
+19002,19003c19002,19003
+< Step_VB
+< up_RP
+---
+> Step_NN
+> up_IN
+19039c19039
+< approving_NN
+---
+> approving_VBG
+19074c19074
+< Citicorp_NNP
+---
+> Citicorp_NN
+19159c19159
+< net_NN
+---
+> net_JJ
+19190c19190
+< that_IN
+---
+> that_DT
+19192c19192
+< horrible_JJ
+---
+> horrible_NN
+19431c19431
+< called_VBD
+---
+> called_VBN
+19465c19465
+< attributes_VBZ
+---
+> attributes_NNS
+19470c19470
+< both_PDT
+---
+> both_DT
+19528c19528
+< third-quarter_NN
+---
+> third-quarter_JJ
+19570c19570
+< much_JJ
+---
+> much_RB
+19628c19628
+< control_VB
+---
+> control_VBP
+19696c19696
+< increased_VBD
+---
+> increased_VBN
+19788,19789c19788,19789
+< only_JJ
+< worries_NNS
+---
+> only_RB
+> worries_VBZ
+19844c19844
+< Manufacturers_NNPS
+---
+> Manufacturers_NNP
+19846c19846
+< Manufacturers_NNPS
+---
+> Manufacturers_NNP
+19953c19953
+< improved_VBD
+---
+> improved_VBN
+20010c20010
+< interest_NN
+---
+> interest_VB
+20031c20031
+< interest_NN
+---
+> interest_VB
+20048c20048
+< up_RP
+---
+> up_IN
+20057c20057
+< Trust_NNP
+---
+> Trust_NN
+20075c20075
+< increased_VBD
+---
+> increased_VBN
+20125c20125
+< ruling_VBG
+---
+> ruling_NN
+20127,20130c20127,20130
+< -LRB-_-LRB-
+< I_NN
+< -RRB-_-RRB-
+< Party_NN
+---
+> -LRB-_(
+> I_PRP
+> -RRB-_)
+> Party_NNP
+20140c20140
+< Indian_JJ
+---
+> Indian_NNP
+20199c20199
+< minister_NN
+---
+> minister_NNP
+20234c20234
+< promises_NNS
+---
+> promises_VBZ
+20254c20254
+< ruling_VBG
+---
+> ruling_NN
+20288c20288
+< -LRB-_-LRB-
+---
+> -LRB-_(
+20307c20307
+< -RRB-_-RRB-
+---
+> -RRB-_)
+20322,20324c20322,20324
+< -LRB-_-LRB-
+< I_NN
+< -RRB-_-RRB-
+---
+> -LRB-_(
+> I_PRP
+> -RRB-_)
+20381c20381
+< remain_VBP
+---
+> remain_VB
+20383c20383
+< down_IN
+---
+> down_RB
+20392c20392
+< up_RP
+---
+> up_IN
+20396c20396
+< Indian_JJ
+---
+> Indian_NNP
+20417c20417
+< arms-kickback_JJ
+---
+> arms-kickback_NN
+20437c20437
+< spent_VBN
+---
+> spent_VBD
+20517,20519c20517,20519
+< -LRB-_-LRB-
+< I_NN
+< -RRB-_-RRB-
+---
+> -LRB-_(
+> I_PRP
+> -RRB-_)
+20551c20551
+< Indian_JJ
+---
+> Indian_NNP
+20569c20569
+< power_NN
+---
+> power_VB
+20594,20596c20594,20596
+< -LRB-_-LRB-
+< I_NN
+< -RRB-_-RRB-
+---
+> -LRB-_(
+> I_PRP
+> -RRB-_)
+20608c20608
+< Indian_JJ
+---
+> Indian_NNP
+20713c20713
+< Most_RBS
+---
+> Most_JJS
+20729c20729
+< most_JJS
+---
+> most_RBS
+20734,20736c20734,20736
+< -LRB-_-LRB-
+< I_NN
+< -RRB-_-RRB-
+---
+> -LRB-_(
+> I_PRP
+> -RRB-_)
+20750,20752c20750,20752
+< -LRB-_-LRB-
+< I_NN
+< -RRB-_-RRB-
+---
+> -LRB-_(
+> I_PRP
+> -RRB-_)
+20777,20779c20777,20779
+< -LRB-_-LRB-
+< I_NN
+< -RRB-_-RRB-
+---
+> -LRB-_(
+> I_PRP
+> -RRB-_)
+20834c20834
+< arms-kickback_JJ
+---
+> arms-kickback_NN
+20844c20844
+< talking_VBG
+---
+> talking_NN
+20860c20860
+< Indian_JJ
+---
+> Indian_NNP
+20881c20881
+< Industries_NNPS
+---
+> Industries_NNP
+20929c20929
+< charged_VBD
+---
+> charged_VBN
+20937c20937
+< Indian_JJ
+---
+> Indian_NNP
+20951c20951
+< many_JJ
+---
+> many_NN
+20965c20965
+< documentary_JJ
+---
+> documentary_NN
+20978c20978
+< propelled_VBD
+---
+> propelled_VBN
+20983c20983
+< front_JJ
+---
+> front_NN
+21074c21074
+< supported_VBD
+---
+> supported_VBN
+21105c21105
+< up_RP
+---
+> up_IN
+21129c21129
+< ruling_VBG
+---
+> ruling_NN
+21131c21131
+< more_JJR
+---
+> more_RBR
+21157c21157
+< like_VB
+---
+> like_IN
+21160,21162c21160,21162
+< -LRB-_-LRB-
+< I_NN
+< -RRB-_-RRB-
+---
+> -LRB-_(
+> I_PRP
+> -RRB-_)
+21176c21176
+< Gujarat_NNP
+---
+> Gujarat_NN
+21198c21198
+< well_RB
+---
+> well_JJ
+21226,21228c21226,21228
+< -LRB-_-LRB-
+< I_NN
+< -RRB-_-RRB-
+---
+> -LRB-_(
+> I_PRP
+> -RRB-_)
+21257,21260c21257,21260
+< -LRB-_-LRB-
+< I_NN
+< -RRB-_-RRB-
+< lost_VBN
+---
+> -LRB-_(
+> I_PRP
+> -RRB-_)
+> lost_VBD
+21269c21269
+< hated_VBN
+---
+> hated_VBD
+21284c21284
+< fear_VBP
+---
+> fear_NN
+21303c21303
+< Industries_NNPS
+---
+> Industries_NNP
+21324c21324
+< 155-mm_CD
+---
+> 155-mm_JJ
+21341c21341
+< then_JJ
+---
+> then_RB
+21354c21354
+< have_VB
+---
+> have_VBP
+21366c21366
+< reports_VBZ
+---
+> reports_NNS
+21368c21368
+< about_IN
+---
+> about_RB
+21400c21400
+< releases_VBZ
+---
+> releases_NNS
+21406c21406
+< about_IN
+---
+> about_RB
+21481c21481
+< neither_CC
+---
+> neither_DT
+21565,21567c21565,21567
+< -LRB-_-LRB-
+< I_NN
+< -RRB-_-RRB-
+---
+> -LRB-_(
+> I_PRP
+> -RRB-_)
+21583c21583
+< Indian_JJ
+---
+> Indian_NNP
+21620c21620
+< Retired_VBN
+---
+> Retired_JJ
+21640c21640
+< cancel_VB
+---
+> cancel_NN
+21699c21699
+< state_NN
+---
+> state_VBP
+21708c21708
+< Indian_JJ
+---
+> Indian_NNP
+21720c21720
 < Partners_NNPS
-< said_VBD
-< Associates_NNP
-< disclosed_VBN
-< tender_VBP
-< indicated_VBN
-< -LRB-_(
-< -RRB-_)
+---
+> Partners_NNP
+21735c21735
+< restructuring_VBG
+---
+> restructuring_NN
+21746c21746
+< Securities_NNPS
+---
+> Securities_NNP
+21757c21757
+< hold_VBP
+---
+> hold_VB
+21949c21949
+< close_JJ
+---
+> close_NN
+21963c21963
+< bidding_VBG
+---
+> bidding_NN
+21972c21972
+< mounted_VBD
+---
+> mounted_VBN
+21998c21998
+< more_RBR
+---
+> more_JJR
+22009c22009
+< Treasury_NNP
+---
+> Treasury_NN
+22042c22042
+< Bond_NN
+---
+> Bond_NNP
+22064c22064
+< Investors_NNPS
+---
+> Investors_NNP
+22072c22072
+< stabilized_VBD
+---
+> stabilized_VBN
+22074c22074
 < that_DT
-< posted_VBD
-< net_JJ
-< double_VB
-< spread_NN
-< most_RBS
-< spread_NN
-< projects_NNS
+---
+> that_WDT
+22103c22103
+< Fed_NNP
+---
+> Fed_JJ
+22105c22105
+< injected_VBD
+---
+> injected_VBN
+22151c22151
+< meaning_VBG
+---
+> meaning_NN
+22168c22168
+< money-market_NN
+---
+> money-market_JJ
+22195c22195
+< further_RB
+---
+> further_JJ
+22234c22234
+< other_JJ
+---
+> other_NN
+22272c22272
+< benchmark_JJ
+---
+> benchmark_NN
+22284c22284
+< 5_CD
+---
+> 5_NN
+22317c22317
+< most_JJS
+---
+> most_RBS
+22323c22323
+< opening_VBG
+---
+> opening_NN
+22348c22348
+< subordinated_JJ
+---
+> subordinated_VBD
+22358c22358
+< up_RP
+---
+> up_IN
+22424c22424
+< Treasurys_NNS
+---
+> Treasurys_NNPS
+22432c22432
+< -LCB-_-LRB-
+---
+> -LCB-_(
+22434c22434
+< -RCB-_-RRB-
+---
+> -RCB-_)
+22451c22451
+< Securities_NNPS
+---
+> Securities_NNP
+22459c22459
+< served_VBD
+---
+> served_VBN
+22480c22480
+< managing_NN
+---
+> managing_VBG
+22524c22524
+< Treasurys_NNS
+---
+> Treasurys_NNPS
+22566c22566
+< market_NN
+---
+> market_VB
+22578c22578
+< Banks_NNPS
+---
+> Banks_NNP
+22622c22622
+< expanded_VBD
+---
+> expanded_VBN
+22633c22633
+< up_RB
+---
+> up_IN
+22657,22658c22657,22658
+< Securities_NNS
+< Treasury_NNP
+---
+> Securities_NNPS
+> Treasury_NN
+22670c22670
+< benchmark_JJ
+---
+> benchmark_NN
+22720c22720
+< increased_VBD
+---
+> increased_VBN
+22772c22772
+< most_JJS
+---
+> most_RBS
+22851c22851
+< owned_VBN
+---
+> owned_VBD
+22868c22868
+< refinancing_VBG
+---
+> refinancing_NN
+22872c22872
+< off_RP
+---
+> off_IN
+22899c22899
+< offering_VBG
+---
+> offering_NN
+22906c22906
+< Securities_NNS
+---
+> Securities_NNPS
+22911c22911
+< revived_VBD
+---
+> revived_VBN
+22927c22927
+< talk_NN
+---
+> talk_VB
+22998c22998
+< Brothers_NNPS
+---
+> Brothers_NNP
+23014c23014
+< Markets_NNP
+---
+> Markets_NNPS
+23031,23032c23031,23032
+< up_RP
+< better_RB
+---
+> up_IN
+> better_JJR
+23057c23057
+< down_IN
+---
+> down_RB
+23068c23068
+< down_IN
+---
+> down_RB
+23079c23079
+< down_IN
+---
+> down_RB
+23092c23092
+< down_IN
+---
+> down_RB
+23150c23150
+< Long_JJ
+---
+> Long_NNP
+23163c23163
+< whipsaw_NN
+---
+> whipsaw_JJ
+23186c23186
+< Securities_NNPS
+---
+> Securities_NNP
+23213c23213
+< total_VBP
+---
+> total_JJ
+23369c23369
+< down_RP
+---
+> down_RB
+23378c23378
+< up_RB
+---
+> up_IN
+23440c23440
+< on_RP
+---
+> on_IN
+23473c23473
+< benchmark_JJ
+---
+> benchmark_NN
+23492c23492
+< off_RB
+---
+> off_IN
+23597c23597
+< Securities_NNPS
+---
+> Securities_NNP
+23631c23631
+< 11-2_CD
+---
+> 11-2_JJ
+23654c23654
+< undercut_JJ
+---
+> undercut_VBP
+23716c23716
+< spending_VBG
+---
+> spending_NN
+23724c23724
+< cast_VBD
+---
+> cast_NN
+23831c23831
+< limit_VB
+---
+> limit_NN
+23872c23872
+< 64-35_CD
+---
+> 64-35_JJ
+23892c23892
+< Republicans_NNPS
+---
+> Republicans_NNP
+23899c23899
+< Democrats_NNPS
+---
+> Democrats_NNP
+23945c23945
+< standing_NN
+---
+> standing_VBG
+23951c23951
+< that_DT
+---
+> that_IN
+24083c24083
+< further_RB
+---
+> further_JJ
+24136c24136
+< cut_VBN
+---
+> cut_VB
+24144c24144
+< much_RB
+---
+> much_JJ
+24171c24171
+< advanced_JJ
+---
+> advanced_VBN
+24201c24201
+< appropriated_VBD
+---
+> appropriated_VBN
+24253c24253
+< about_IN
+---
+> about_RB
+24448c24448
+< most_JJS
+---
+> most_RBS
+24459c24459
+< longer_JJR
+---
+> longer_RB
+24475c24475
+< indicate_VBP
+---
+> indicate_VB
+24512c24512
+< 383-30_CD
+---
+> 383-30_JJ
+24525c24525
+< process_NN
+---
+> process_VBP
+24534c24534
+< Defense_NN
+---
+> Defense_NNP
+24567c24567
+< attached_VBD
+---
+> attached_VBN
+24569c24569
+< separate_JJ
+---
+> separate_VB
+24582c24582
+< Services_NNPS
+---
+> Services_NNP
+24590c24590
+< over_RP
+---
+> over_IN
+24617c24617
+< Nations_NNPS
+---
+> Nations_NNP
+24621c24621
+< Activities_NNPS
+---
+> Activities_NNP
+24713,24714c24713,24714
+< get_VBP
+< noticed_VBN
+---
+> get_VB
+> noticed_VBD
+24719c24719
+< plunge_VBP
+---
+> plunge_NN
+24721c24721
+< Gold_NN
+---
+> Gold_NNP
+24736c24736
+< achieved_VBD
+---
+> achieved_VBN
+24758c24758
+< both_PDT
+---
+> both_DT
+24859c24859
+< either_RB
+---
+> either_DT
+24877c24877
+< particular_JJ
+---
+> particular_NN
+24882c24882
+< traded_VBD
+---
+> traded_VBN
+24888c24888
+< Gold_NN
+---
+> Gold_NNP
+24903c24903
+< gold_JJ
+---
+> gold_NN
+24913c24913
+< gold_JJ
+---
+> gold_NN
+24943c24943
+< -LCB-_-LRB-
+---
+> -LCB-_(
+24946c24946
+< -RCB-_-RRB-
+---
+> -RCB-_)
+24952c24952
+< out_RP
+---
+> out_IN
+24966c24966
+< regard_VB
+---
+> regard_NN
+25005c25005
+< more_RBR
+---
+> more_JJR
+25061c25061
+< -LCB-_-LRB-
+---
+> -LCB-_(
+25064c25064
+< -RCB-_-RRB-
+---
+> -RCB-_)
+25129c25129
+< up_RP
+---
+> up_IN
+25133c25133
+< gold_JJ
+---
+> gold_NN
+25187,25188c25187,25188
+< so_IN
+< drops_NNS
+---
+> so_RB
+> drops_VBZ
+25204c25204
+< chief_NN
+---
+> chief_JJ
+25244,25245c25244,25245
+< safety_NN
+< '_''
+---
+> safety_VB
+> '_POS
+25277c25277
+< handcuffed_VBD
+---
+> handcuffed_VBN
+25304c25304
+< gold_JJ
+---
+> gold_NN
+25340c25340
+< gold_JJ
+---
+> gold_NN
+25350c25350
+< that_IN
+---
+> that_DT
+25370c25370
+< gold_JJ
+---
+> gold_NN
+25374,25375c25374,25375
+< back_VB
+< off_RP
+---
+> back_RB
+> off_IN
+25384c25384
+< rise_VB
+---
+> rise_VBP
+25386c25386
+< much_RB
+---
+> much_JJ
+25431,25432c25431,25432
+< reacted_VBD
+< much_RB
+---
+> reacted_VBN
+> much_JJ
+25436c25436
+< so_IN
+---
+> so_RB
+25440c25440
+< either_RB
+---
+> either_DT
+25452c25452
+< ENERGY_NNP
+---
+> ENERGY_NN
+25527c25527
+< up_RP
+---
+> up_IN
+25539c25539
+< Heating_VBG
+---
+> Heating_NN
+25589c25589
+< all_PDT
+---
+> all_DT
+25686,25687c25686,25687
+< contract_NN
+< traded_VBD
+---
+> contract_VBP
+> traded_VBN
+25725c25725
+< off_RP
+---
+> off_IN
+25753c25753
+< most_JJS
+---
+> most_RBS
+25770c25770
+< signs_NNS
+---
+> signs_VBZ
+25791c25791
+< most_JJS
+---
+> most_RBS
+25863c25863
+< overseas_RB
+---
+> overseas_JJ
+25885c25885
+< Investors_NNPS
+---
+> Investors_NNP
+25898c25898
+< about_IN
+---
+> about_RB
+25917c25917
+< A-1_NN
+---
+> A-1_JJ
+25929c25929
+< preferred_VBN
+---
+> preferred_JJ
+25997c25997
+< rental_NN
+---
+> rental_JJ
+26004c26004
+< know_VBP
+---
+> know_VB
+26028c26028
+< better_RB
+---
+> better_JJR
+26115c26115
+< Greens_NNP
+---
+> Greens_NNPS
+26139c26139
+< surrendered_VBN
+---
+> surrendered_VBD
+26152c26152
+< Zimbabwean_JJ
+---
+> Zimbabwean_NNP
+26210c26210
+< fat_JJ
+---
+> fat_NN
+26260c26260
+< come_VBD
+---
+> come_VB
+26273c26273
+< most_JJS
+---
+> most_RBS
+26281c26281
+< about_IN
+---
+> about_RB
+26327c26327
+< up_RP
+---
+> up_IN
+26333c26333
+< business-to-business_NN
+---
+> business-to-business_JJ
+26342c26342
+< broadcast_VBD
+---
+> broadcast_NN
+26344c26344
+< hot-line_JJ
+---
+> hot-line_NN
+26352c26352
+< calls_NNS
+---
+> calls_VBZ
+26386,26387c26386,26387
+< fill_VB
+< out_RP
+---
+> fill_VBP
+> out_IN
+26398c26398
+< better_RB
+---
+> better_JJR
+26403c26403
+< 's_POS
+---
+> 's_VBZ
+26414c26414
+< says_VBZ
+---
+> says_NNS
+26440c26440
+< deficit-reduction_JJ
+---
+> deficit-reduction_NN
+26451c26451
+< voting_VBG
+---
+> voting_NN
+26518c26518
+< pre-empt_JJ
+---
+> pre-empt_VB
+26565c26565
+< -LRB-_-LRB-
+---
+> -LRB-_(
+26570c26570
+< -RRB-_-RRB-
+---
+> -RRB-_)
+26576c26576
+< in_RP
+---
+> in_IN
+26640c26640
+< offering_VBG
+---
+> offering_NN
+26657c26657
+< JUMPING_NN
+---
+> JUMPING_NNP
+26664c26664
+< -LRB-_-LRB-
+---
+> -LRB-_(
+26668c26668
+< -RRB-_-RRB-
+---
+> -RRB-_)
+26751c26751
+< -LRB-_-LRB-
+---
+> -LRB-_(
+26756,26757c26756,26757
+< -RRB-_-RRB-
+< protests_VBZ
+---
+> -RRB-_)
+> protests_NNS
+26823c26823
+< work_NN
+---
+> work_VB
+26832c26832
+< auto-repair_NN
+---
+> auto-repair_JJ
+26850c26850
+< -LRB-_-LRB-
+---
+> -LRB-_(
+26855c26855
+< -RRB-_-RRB-
+---
+> -RRB-_)
+26945c26945
+< Manufacturers_NNPS
+---
+> Manufacturers_NNP
+26947c26947
+< oppose_VBP
+---
+> oppose_VB
+26957c26957
+< longer_JJR
+---
+> longer_RB
+26962c26962
+< longer_JJR
+---
+> longer_RB
+26973,26974c26973,26974
+< find_VBP
+< non-warranty_JJ
+---
+> find_VB
+> non-warranty_NN
+27006c27006
+< longer_JJR
+---
+> longer_RB
+27014c27014
+< costs_VBZ
+---
+> costs_NNS
+27017c27017
+< much_RB
+---
+> much_JJ
+27055,27056c27055,27056
+< most_JJS
+< take_VBP
+---
+> most_RBS
+> take_VB
+27074c27074
+< recruiting_NN
+---
+> recruiting_VBG
+27143c27143
+< executive_NN
+---
+> executive_JJ
+27183c27183
+< merged_VBD
+---
+> merged_VBN
+27354c27354
+< Investors_NNPS
+---
+> Investors_NNP
+27362c27362
+< about_IN
+---
+> about_RB
+27384c27384
+< concern_NN
+---
+> concern_VBP
+27405c27405
+< subordinated_JJ
+---
+> subordinated_VBN
+27408c27408
+< single-B-3_JJ
+---
+> single-B-3_NNP
+27429c27429
+< potential_NN
+---
+> potential_JJ
+27440c27440
+< preferred_VBN
+---
+> preferred_JJ
+27455c27455
+< calls_NNS
+---
+> calls_VBZ
+27457c27457
+< comment_NN
+---
+> comment_VB
+27487c27487
+< much_RB
+---
+> much_JJ
+27519,27520c27519,27520
+< drowned_VBD
+< out_RP
+---
+> drowned_VBN
+> out_IN
+27533c27533
+< '_POS
+---
+> '_''
+27602c27602
+< as_RB
+---
+> as_IN
+27638c27638
+< means_NNS
+---
+> means_VBZ
+27719c27719
+< off_RP
+---
+> off_IN
+27768c27768
+< reduced_VBD
+---
+> reduced_VBN
+27787c27787
+< cut_VBD
+---
+> cut_NN
+27789c27789
+< further_RB
+---
+> further_JJ
+27792c27792
+< so_IN
+---
+> so_RB
+27802c27802
+< expected_VBD
+---
+> expected_VBN
+27805,27806c27805,27806
+< behind_RB
+< more_RBR
+---
+> behind_IN
+> more_JJR
+27838c27838
+< worth_NN
+---
+> worth_JJ
+27849c27849
+< equivalent_JJ
+---
+> equivalent_NN
+27880c27880
+< more_RBR
+---
+> more_JJR
+27925c27925
+< T-72_JJ
+---
+> T-72_NN
+27931c27931
+< BMP_NNP
+---
+> BMP_NN
+27985c27985
+< MiG-23BN_NNP
+---
+> MiG-23BN_NN
+27989c27989
+< MiG-29s_NNP
+---
+> MiG-29s_NNS
+27997c27997
+< F16s_NNP
+---
+> F16s_NNS
+28001c28001
+< SU-27_NNP
+---
+> SU-27_NN
+28008c28008
+< MiG-29s_NNP
+---
+> MiG-29s_NNS
+28052,28053c28052,28053
+< no_DT
+< longer_JJR
+---
+> no_RB
+> longer_RB
+28056c28056
+< only_JJ
+---
+> only_RB
+28072c28072
+< East_JJ
+---
+> East_NNP
+28096c28096
+< more_RBR
+---
+> more_JJR
+28108,28110c28108,28110
+< -LRB-_-LRB-
+< KHAD\/WAD_NNP
+< -RRB-_-RRB-
+---
+> -LRB-_(
+> KHAD\/WAD_NN
+> -RRB-_)
+28168c28168
+< Indian_JJ
+---
+> Indian_NNP
+28198c28198
+< Indian_JJ
+---
+> Indian_NNP
+28225c28225
+< cut_VBD
+---
+> cut_NN
+28232c28232
+< future_JJ
+---
+> future_NN
+28311c28311
+< -LRB-_-LRB-
+---
+> -LRB-_(
+28315,28316c28315,28316
+< -RRB-_-RRB-
+< reports_VBZ
+---
+> -RRB-_)
+> reports_NNS
+28363c28363
+< American_JJ
+---
+> American_NNP
+28369c28369
+< Saudi_JJ
+---
+> Saudi_NNP
+28378c28378
+< Islamic_JJ
+---
+> Islamic_NNP
+28392,28393c28392,28393
+< heavy_JJ
+< outside_JJ
+---
+> heavy_NN
+> outside_IN
+28445c28445
+< hated_VBN
+---
+> hated_VBD
+28447c28447
+< feared_VBN
+---
+> feared_VBD
+28467c28467
+< through_RB
+---
+> through_IN
+28499c28499
+< even_RB
+---
+> even_JJ
+28524c28524
+< pressured_JJ
+---
+> pressured_VBN
+28542c28542
+< more_RBR
+---
+> more_JJR
+28580c28580
+< fight_VB
+---
+> fight_NN
+28613c28613
+< off_RB
+---
+> off_IN
+28621c28621
+< much_RB
+---
+> much_NN
+28637c28637
+< defenseless_VBG
+---
+> defenseless_JJ
+28676c28676
+< what_WDT
+---
+> what_WP
+28732c28732
+< up_RP
+---
+> up_IN
+28760c28760
+< long_RB
+---
+> long_JJ
+28773c28773
+< The_NNP
+---
+> The_DT
+28778c28778
+< -LRB-_-LRB-
+---
+> -LRB-_(
+28781c28781
+< -RRB-_-RRB-
+---
+> -RRB-_)
+28803c28803
+< much_RB
+---
+> much_JJ
+28825c28825
+< out_RP
+---
+> out_IN
+28835c28835
+< preferred_VBN
+---
+> preferred_JJ
+28908c28908
+< around_RB
+---
+> around_IN
+28944c28944
+< up_RP
+---
+> up_IN
+28975c28975
+< 's_POS
+---
+> 's_VBZ
+28982c28982
+< more_RBR
+---
+> more_JJR
+28995c28995
+< down_IN
+---
+> down_RP
+28997c28997
+< national-priority_NN
+---
+> national-priority_JJ
+29044c29044
+< both_PDT
+---
+> both_DT
+29054c29054
+< Republican_JJ
+---
+> Republican_NNP
+29165c29165
+< neither_CC
+---
+> neither_DT
+29200c29200
+< next_IN
+---
+> next_JJ
+29233c29233
+< off_RP
+---
+> off_IN
+29237c29237
+< next_IN
+---
+> next_JJ
+29256c29256
+< 's_POS
+---
+> 's_VBZ
+29285c29285
+< best_RB
+---
+> best_JJS
+29338c29338
+< Wars_NNPS
+---
+> Wars_NNP
+29375c29375
+< listing_VBG
+---
+> listing_NN
+29416c29416
+< little_RB
+---
+> little_JJ
+29451c29451
+< off_RP
+---
+> off_IN
+29455c29455
+< spending_VBG
+---
+> spending_NN
+29466c29466
+< out_RB
+---
+> out_IN
+29475c29475
+< high-visibility_NN
+---
+> high-visibility_JJ
+29479c29479
+< up_RP
+---
+> up_IN
+29584c29584
+< strategic-arms_NNS
+---
+> strategic-arms_JJ
+29609,29610c29609,29610
+< hard_RB
+< down_IN
+---
+> hard_JJ
+> down_RP
+29621c29621
+< plans_NNS
+---
+> plans_VBZ
+29672c29672
+< strain_VBP
+---
+> strain_NN
+29761c29761
+< short_JJ
+---
+> short_NN
+29776c29776
+< sour_JJ
+---
+> sour_VB
+29841c29841
+< longtime_NN
+---
+> longtime_JJ
+29879c29879
+< longtime_NN
+---
+> longtime_JJ
+29907c29907
+< neither_CC
+---
+> neither_DT
+29917,29918c29917,29918
+< much_RB
+< further_RB
+---
+> much_JJ
+> further_JJ
+29920c29920
+< more_JJR
+---
+> more_RBR
+29953c29953
+< All_PDT
+---
+> All_DT
+29955c29955
+< causes_VBZ
+---
+> causes_NNS
+29966c29966
+< up_RP
+---
+> up_IN
+29981c29981
+< up_RB
+---
+> up_IN
+29992c29992
+< hustings_NNS
+---
+> hustings_NN
+30002c30002
+< says_VBZ
+---
+> says_NNS
+30039c30039
+< tired_JJ
+---
+> tired_VBN
+30066c30066
+< Minority_NN
+---
+> Minority_NNP
+30069c30069
+< caused_VBD
+---
+> caused_VBN
+30075,30076c30075,30076
+< leaked_VBD
+< out_IN
+---
+> leaked_VBN
+> out_RB
+30172c30172
+< read_VBN
+---
+> read_VB
+30294c30294
+< that_DT
+---
+> that_IN
+30311c30311
+< such_PDT
+---
+> such_JJ
+30330c30330
+< subject_JJ
+---
+> subject_NN
+30360c30360
+< select_JJ
+---
+> select_VB
+30386c30386
+< put_VBD
+---
+> put_VBP
+30447c30447
+< 's_POS
+---
+> 's_VBZ
+30516c30516
+< made_VBD
+---
+> made_VBN
+30524c30524
+< Indian_JJ
+---
+> Indian_NNP
+30550c30550
+< elevated_VBD
+---
+> elevated_VBN
+30556c30556
+< Indian_JJ
+---
+> Indian_NNP
+30644c30644
+< Rights_NNPS
+---
+> Rights_NNP
+30692c30692
+< executive_NN
+---
+> executive_JJ
+30699c30699
+< chief_NN
+---
+> chief_JJ
+30715c30715
+< chief_NN
+---
+> chief_JJ
+30723c30723
+< chief_NN
+---
+> chief_JJ
+30743c30743
+< power-transmission_NN
+---
+> power-transmission_JJ
+30794c30794
+< chief_NN
+---
+> chief_JJ
+30852c30852
+< Machines_NNPS
+---
+> Machines_NNP
+30863c30863
+< stand_NN
+---
+> stand_VB
+30946,30947c30946,30947
+< computer-chip_JJ
+< key_NN
+---
+> computer-chip_NN
+> key_JJ
+31018c31018
+< down_IN
+---
+> down_RB
+31037c31037
+< Industries_NNPS
+---
+> Industries_NNP
+31043,31044c31043,31044
+< yen_NNS
+< -LRB-_-LRB-
+---
+> yen_NN
+> -LRB-_(
+31047c31047
+< -RRB-_-RRB-
+---
+> -RRB-_)
+31062c31062
+< missile-guidance_NN
+---
+> missile-guidance_JJ
+31115c31115
+< Sale_NN
+---
+> Sale_NNP
+31123c31123
+< Communist_JJ
+---
+> Communist_NNP
+31140c31140
+< as_RB
+---
+> as_IN
+31213c31213
+< Soviet_NNP
+---
+> Soviet_JJ
+31242c31242
+< as_RB
+---
+> as_IN
+31314c31314
+< headquarters_NNS
+---
+> headquarters_NN
+31342c31342
+< -LRB-_-LRB-
+---
+> -LRB-_(
+31346c31346
+< -RRB-_-RRB-
+---
+> -RRB-_)
+31372c31372
+< up_RP
+---
+> up_IN
+31381c31381
+< next_IN
+---
+> next_JJ
+31430c31430
+< more_JJR
+---
+> more_RBR
+31436c31436
+< Major_JJ
+---
+> Major_NNP
+31483c31483
+< de_IN
+---
+> de_FW
+31491c31491
+< along_RB
+---
+> along_IN
+31509c31509
+< less_RBR
+---
+> less_JJR
+31565c31565
+< concerned_JJ
+---
+> concerned_VBN
+31645c31645
+< proposed_VBD
+---
+> proposed_VBN
+31666c31666
+< aimed_VBN
+---
+> aimed_VBD
+31679c31679
+< Islands_NNP
+---
+> Islands_NNPS
+31825c31825
+< more_RBR
+---
+> more_JJR
+31913c31913
+< base_JJ
+---
+> base_VB
+31929c31929
+< told_VBD
+---
+> told_VBN
+32086c32086
+< up_RB
+---
+> up_IN
+32120c32120
+< most_JJS
+---
+> most_RBS
+32143c32143
+< paled_VB
+---
+> paled_VBD
+32167c32167
+< off_RP
+---
+> off_IN
+32258c32258
+< most_JJS
+---
+> most_RBS
+32283c32283
+< up_RB
+---
+> up_IN
+32295c32295
+< over_RP
+---
+> over_IN
+32298c32298
+< ever-faster_NN
+---
+> ever-faster_JJ
+32320c32320
+< pension-fund_JJ
+---
+> pension-fund_NN
+32326c32326
+< Services_NNPS
+---
+> Services_NNP
+32336c32336
+< listen_VBP
+---
+> listen_VB
+32359c32359
+< that_DT
+---
+> that_IN
+32370,32371c32370,32371
+< now_RB
+< account_VBP
+---
+> now_JJ
+> account_NN
+32373c32373
+< most_JJS
+---
+> most_RBS
+32441c32441
+< up_RB
+---
+> up_IN
+32452c32452
+< up_RP
+---
+> up_IN
+32513c32513
+< own_VBP
+---
+> own_JJ
+32554c32554
+< easy_RB
+---
+> easy_JJ
+32557c32557
+< out_RB
+---
+> out_IN
+32567c32567
+< get_VBP
+---
+> get_VB
+32583c32583
+< shifts_VBZ
+---
+> shifts_NNS
+32633c32633
+< 55_CD
+---
+> 55_NN
+32646c32646
+< 5_CD
+---
+> 5_NN
+32752c32752
+< both_PDT
+---
+> both_DT
+32760c32760
+< even_RB
+---
+> even_JJ
+32776c32776
+< fro_IN
+---
+> fro_RB
+32809,32810c32809,32810
+< above_JJ
+< require_VBP
+---
+> above_IN
+> require_VB
+32814c32814
+< be_VB
+---
+> be_VBP
+32847c32847
+< that_IN
+---
+> that_DT
+32864c32864
+< 1970s_CD
+---
+> 1970s_NNS
+32911c32911
+< -LRB-_-LRB-
+---
+> -LRB-_(
+32913c32913
+< -RRB-_-RRB-
+---
+> -RRB-_)
+32915c32915
+< down_IN
+---
+> down_RB
+32934c32934
+< executive_NN
+---
+> executive_JJ
+32993c32993
+< put_VBN
+---
+> put_VB
+33031c33031
+< contract_NN
+---
+> contract_VBP
+33076c33076
+< off_RB
+---
+> off_IN
+33183,33184c33183,33184
+< now_RB
+< trading_VBG
+---
+> now_JJ
+> trading_NN
+33244,33245c33244,33245
+< that_IN
+< much_JJ
+---
+> that_NN
+> much_NN
+33367c33367
+< less_RBR
+---
+> less_JJR
+33418c33418
+< average_NN
+---
+> average_JJ
+33424c33424
 < about_RB
-< paid_VBN
-< provided_VBD
-< Western_NNP
-< chief_JJ
+---
+> about_IN
+33466c33466
+< short_RB
+---
+> short_NN
+33477c33477
+< out_RP
+---
+> out_IN
+33479c33479
+< say_VB
+---
+> say_VBP
+33629c33629
+< expected_VBD
+---
+> expected_VBN
+33667c33667
+< once_IN
+---
+> once_RB
+33736c33736
+< only_JJ
+---
+> only_RB
+33746c33746
+< operating_NN
+---
+> operating_VBG
+33759c33759
+< infected_VBD
+---
+> infected_VBN
+33805c33805
+< operating_NN
+---
+> operating_VBG
+33813c33813
+< boring_VBG
+---
+> boring_JJ
+33833c33833
+< up_RP
+---
+> up_IN
+33952,33954c33952,33954
+< logs_VBZ
+< on_RP
+< that_IN
+---
+> logs_NNS
+> on_IN
+> that_DT
+33959c33959
+< Against_NNP
+---
+> Against_IN
+33975c33975
+< prepare_VBP
+---
+> prepare_VB
+34012c34012
+< Do_VB
+---
+> Do_VBP
+34059c34059
+< up_RB
+---
+> up_IN
+34097c34097
+< on_RP
+---
+> on_IN
+34254c34254
+< space-shuttle_JJ
+---
+> space-shuttle_NN
+34287c34287
+< before_IN
+---
+> before_RB
+34306c34306
+< do_VB
+---
+> do_VBP
+34317c34317
+< up_RP
+---
+> up_IN
+34351c34351
+< Yet_CC
+---
+> Yet_RB
+34452c34452
+< long_RB
+---
+> long_JJ
+34509c34509
+< Dirks_NNS
+---
+> Dirks_NNP
+34606c34606
+< her_PRP
+---
+> her_PRP$
+34621c34621
+< her_PRP
+---
+> her_PRP$
+34644c34644
+< Hearing_VBG
+---
+> Hearing_NNP
+34689c34689
+< breach_VB
+---
+> breach_NN
+34693c34693
+< -LRB-_-LRB-
+---
+> -LRB-_(
+34701c34701
+< -RRB-_-RRB-
+---
+> -RRB-_)
+34709c34709
+< -LRB-_-LRB-
+---
+> -LRB-_(
+34715c34715
+< -RRB-_-RRB-
+---
+> -RRB-_)
+34726c34726
+< -LRB-_-LRB-
+---
+> -LRB-_(
+34728c34728
+< one_NN
+---
+> one_PRP
+34733c34733
+< -RRB-_-RRB-
+---
+> -RRB-_)
+34760c34760
+< head_NN
+---
+> head_VBP
+34892c34892
+< many_JJ
+---
+> many_VB
+34902c34902
+< trial_NN
+---
+> trial_VB
+34911c34911
+< there_RB
+---
+> there_EX
+34925,34926c34925,34926
+< have_VB
+< notice_VB
+---
+> have_VBP
+> notice_NN
+34946c34946
+< more_JJR
+---
+> more_RBR
+35030c35030
+< very_JJ
+---
+> very_RB
+35087c35087
+< making_NN
+---
+> making_VBG
+35103,35104c35103,35104
+< hoc_NN
+< -LRB-_-LRB-
+---
+> hoc_FW
+> -LRB-_(
+35108c35108
+< -RRB-_-RRB-
+---
+> -RRB-_)
+35195c35195
+< one_NN
+---
+> one_CD
+35202c35202
+< reverse_JJ
+---
+> reverse_NN
+35220c35220
+< call_VB
+---
+> call_NN
+35246c35246
+< have_VBP
+---
+> have_VB
+35308c35308
+< law-making_JJ
+---
+> law-making_NNS
+35312,35314c35312,35314
+< -LRB-_-LRB-
+< 1_LS
+< -RRB-_-RRB-
+---
+> -LRB-_(
+> 1_CD
+> -RRB-_)
+35346,35348c35346,35348
+< -LRB-_-LRB-
+< 2_LS
+< -RRB-_-RRB-
+---
+> -LRB-_(
+> 2_CD
+> -RRB-_)
+35376c35376
+< -LRB-_-LRB-
+---
+> -LRB-_(
+35391c35391
+< -RRB-_-RRB-
+---
+> -RRB-_)
+35394c35394
+< lawmaking_NN
+---
+> lawmaking_JJ
+35407c35407
+< most_JJS
+---
+> most_RBS
+35470c35470
+< McNally_RB
+---
+> McNally_NNP
+35507c35507
+< one-sentence_NN
+---
+> one-sentence_JJ
+35539c35539
+< -LRB-_-LRB-
+---
+> -LRB-_(
+35549c35549
+< -RRB-_-RRB-
+---
+> -RRB-_)
+35551c35551
+< Such_PDT
+---
+> Such_JJ
+35594c35594
+< less_RBR
+---
+> less_JJR
+35735c35735
+< laboratory-services_NNS
+---
+> laboratory-services_JJ
+35743c35743
+< tax-loss_JJ
+---
+> tax-loss_NN
+35779c35779
+< executive_NN
+---
+> executive_JJ
+35787c35787
+< operating_NN
+---
+> operating_VBG
+35866c35866
+< overseas_RB
+---
+> overseas_JJ
+35869c35869
+< affected_VBD
+---
+> affected_VBN
+35897c35897
+< hair-trigger_NN
+---
+> hair-trigger_JJ
+35917c35917
+< 11:13_JJ
+---
+> 11:13_CD
+36008c36008
+< down_IN
+---
+> down_RB
+36042c36042
+< traded_VBD
+---
+> traded_VBN
+36121c36121
+< used_VBN
+---
+> used_VBD
+36174c36174
+< witching_NN
+---
+> witching_JJ
+36261c36261
+< stock-index_JJ
+---
+> stock-index_NN
+36265c36265
+< Securities_NNPS
+---
+> Securities_NNP
+36278c36278
+< premier_JJ
+---
+> premier_NN
+36366c36366
+< Securities_NNPS
+---
+> Securities_NNP
+36390c36390
+< closed_VBN
+---
+> closed_VBD
+36403c36403
+< Manufacturers_NNPS
+---
+> Manufacturers_NNP
+36427c36427
+< Manufacturers_NNPS
+---
+> Manufacturers_NNP
+36443c36443
+< shares_NNS
+---
+> shares_VBZ
+36462c36462
+< -LRB-_-LRB-
+---
+> -LRB-_(
+36470c36470
+< sell_VBP
+---
+> sell_VB
+36481c36481
+< -RRB-_-RRB-
+---
+> -RRB-_)
+36484c36484
+< many_JJ
+---
+> many_NN
+36510c36510
+< as_RB
+---
+> as_IN
+36643c36643
+< filing_VBG
+---
+> filing_NN
+36765c36765
+< off_RP
+---
+> off_IN
+36862c36862
+< high_NN
+---
+> high_JJ
+37041c37041
+< plans_VBZ
+---
+> plans_NNS
+37058c37058
+< off_RP
+---
+> off_IN
+37240c37240
+< Fruit_NN
+---
+> Fruit_NNP
+37266c37266
+< Lines_NNPS
+---
+> Lines_NNP
+37268c37268
+< A_NNP
+---
+> A_DT
+37290c37290
+< preferred_VBN
+---
+> preferred_JJ
+37306c37306
+< filed_VBD
+---
+> filed_VBN
+37313c37313
+< Class_NN
+---
+> Class_NNP
+37315c37315
+< preferred_VBN
+---
+> preferred_JJ
+37330,37331c37330,37331
+< E_NNP
+< preferred_VBN
+---
+> E_NN
+> preferred_JJ
+37385c37385
+< wider_JJR
+---
+> wider_RBR
+37387c37387
+< fourth-quarter_NN
+---
+> fourth-quarter_JJ
+37483c37483
+< preferred_VBN
+---
+> preferred_JJ
+37490c37490
+< stock_NN
+---
+> stock_VB
+37523c37523
+< such_PDT
+---
+> such_JJ
+37571c37571
+< required_JJ
+---
+> required_VBN
+37605c37605
+< small-denomination_JJ
+---
+> small-denomination_NN
+37626c37626
+< Markets_NNP
+---
+> Markets_NNPS
+37657c37657
+< Banks_NNS
+---
+> Banks_NNP
+37745c37745
+< about_IN
+---
+> about_RB
+37747c37747
+< 5_CD
+---
+> 5_NN
+37813c37813
+< chief_NN
+---
+> chief_JJ
+37928c37928
+< small-denomination_JJ
+---
+> small-denomination_NN
+37939c37939
+< average_NN
+---
+> average_JJ
+37968c37968
+< aimed_VBD
+---
+> aimed_VBN
+37995c37995
+< less_RBR
+---
+> less_JJR
+38004c38004
+< ended_VBD
+---
+> ended_VBN
+38007c38007
+< down_IN
+---
+> down_RB
+38080c38080
+< large-denomination_JJ
+---
+> large-denomination_NN
+38087c38087
+< aimed_VBD
+---
+> aimed_VBN
+38100c38100
+< sold_VBD
+---
+> sold_VBN
+38119c38119
+< posted_VBN
+---
+> posted_VBD
+38121c38121
+< drops_NNS
+---
+> drops_VBZ
+38146c38146
+< fifth_JJ
+---
+> fifth_NN
+38170c38170
+< short-term_NNP
+---
+> short-term_JJ
+38176c38176
+< offering_VBG
+---
+> offering_NN
+38183c38183
+< more_RBR
+---
+> more_JJR
+38188c38188
+< CD_NN
+---
+> CD_JJ
+38195c38195
+< further_RB
+---
+> further_JJ
+38213c38213
+< reported_VBN
+---
+> reported_VBD
+38216c38216
+< make_VBP
+---
+> make_VB
+38245c38245
+< down_IN
+---
+> down_RB
+38265c38265
+< Manufacturers_NNPS
+---
+> Manufacturers_NNP
+38278c38278
+< CD_NN
+---
+> CD_NNP
+38384c38384
+< exchange-rate_JJ
+---
+> exchange-rate_NN
+38422c38422
+< 1970s_CD
+---
+> 1970s_NNS
+38432c38432
+< further_RB
+---
+> further_JJ
+38445c38445
+< approved_JJ
+---
+> approved_VBD
+38517c38517
+< feeling_VBG
+---
+> feeling_NN
+38541c38541
+< -LRB-_-LRB-
+---
+> -LRB-_(
+38545c38545
+< -RRB-_-RRB-
+---
+> -RRB-_)
+38649c38649
+< that_DT
+---
+> that_IN
+38659c38659
+< up_RP
+---
+> up_IN
+38673c38673
+< around_IN
+---
+> around_RB
+38694c38694
+< key_NN
+---
+> key_JJ
+38716c38716
+< point_NN
+---
+> point_VBP
+38724c38724
+< inflated_VBN
+---
+> inflated_JJ
+38824c38824
+< give_VBP
+---
+> give_NN
+38889c38889
+< limit_VB
+---
+> limit_NN
+38920c38920
+< G-7_NN
+---
+> G-7_NNP
+38957c38957
+< shortchanged_VBD
+---
+> shortchanged_VBN
+38968c38968
+< -LRB-_-LRB-
+---
+> -LRB-_(
+38975c38975
+< -RRB-_-RRB-
+---
+> -RRB-_)
+38982,38983c38982,38983
+< future_JJ
+< calls_NNS
+---
+> future_NN
+> calls_VBZ
+39034c39034
+< up_RP
+---
+> up_IN
+39036c39036
+< planning_VBG
+---
+> planning_NN
+39052c39052
+< further_RB
+---
+> further_RBR
+39076c39076
+< year-end_JJ
+---
+> year-end_NN
+39128c39128
+< up_RP
+---
+> up_IN
+39139c39139
+< Republican_JJ
+---
+> Republican_NNP
+39155c39155
+< suspended_VBD
+---
+> suspended_VBN
+39166c39166
+< other_JJ
+---
+> other_NN
+39169c39169
+< cheated_VBD
+---
+> cheated_VBN
+39173c39173
+< Merc_NNP
+---
+> Merc_NN
+39227c39227
+< suspended_VBD
+---
+> suspended_VBN
+39297c39297
+< Neither_DT
+---
+> Neither_CC
+39303c39303
+< indicted_VBN
+---
+> indicted_VBD
+39313c39313
+< both_PDT
+---
+> both_DT
+39345c39345
+< Tele-Communications_NNPS
+---
+> Tele-Communications_NNP
+39350c39350
+< half_DT
+---
+> half_NN
+39353c39353
+< Networks_NNPS
+---
+> Networks_NNP
+39508c39508
+< close_NN
+---
+> close_RB
+39654c39654
+< up_RP
+---
+> up_IN
+39699c39699
+< The_NNP
+---
+> The_DT
+39710c39710
+< further_RB
+---
+> further_JJ
+39715c39715
+< comment_NN
+---
+> comment_VB
+39729c39729
+< Communications_NNPS
+---
+> Communications_NNP
+39776,39777c39776,39777
+< chief_NN
+< executive_NN
+---
+> chief_JJ
+> executive_JJ
+39899,39900c39899,39900
+< called_VBD
+< off_RP
+---
+> called_VBN
+> off_IN
+39907c39907
+< labeled_VBD
+---
+> labeled_VBN
+39931c39931
+< Employees_NNPS
+---
+> Employees_NNP
+40043c40043
+< back_RP
+---
+> back_JJ
+40152c40152
+< off_RP
+---
+> off_IN
+40189c40189
+< purchased_VBD
+---
+> purchased_VBN
+40324c40324
+< encouraging_JJ
+---
+> encouraging_VBG
+40371c40371
+< alarmed_JJ
+---
+> alarmed_VBN
+40378,40379c40378,40379
+< more_RBR
+< sweeping_JJ
+---
+> more_JJR
+> sweeping_VBG
+40471c40471
+< estimated_VBD
+---
+> estimated_VBN
+40509c40509
+< provide_VB
+---
+> provide_VBP
+40565c40565
+< off_RP
+---
+> off_IN
+40597,40598c40597,40598
+< intraday_NN
+< low_JJ
+---
+> intraday_JJ
+> low_NN
+40614,40615c40614,40615
+< intraday_NN
+< low_JJ
+---
+> intraday_JJ
+> low_NN
+40626c40626
+< stabilized_VBD
+---
+> stabilized_VBN
+40662c40662
+< intraday_NN
+---
+> intraday_JJ
+40752c40752
+< Manufacturers_NNPS
+---
+> Manufacturers_NNP
+40817,40818c40817,40818
+< that_IN
+< manufactured_VBN
+---
+> that_WDT
+> manufactured_VBD
+40835c40835
+< currencny_JJ
+---
+> currencny_NN
+40874c40874
+< up_RB
+---
+> up_IN
+40881c40881
+< Sterling_NN
+---
+> Sterling_NNP
+40918c40918
+< yen_NNS
+---
+> yen_NN
+40941,40942c40941,40942
+< well_RB
+< bid_VBN
+---
+> well_JJ
+> bid_NN
+41015c41015
+< G-7_NN
+---
+> G-7_NNP
+41035c41035
+< so-called_JJ
+---
+> so-called_NNP
+41095c41095
+< repurchase_VBN
+---
+> repurchase_NN
+41191c41191
+< interest_NN
+---
+> interest_VBP
+41224c41224
+< other_JJ
+---
+> other_NN
+41262c41262
+< up_RB
+---
+> up_IN
+41335c41335
+< future_JJ
+---
+> future_NN
+41345c41345
+< binding_VBG
+---
+> binding_NN
+41356c41356
+< analog_JJ
+---
+> analog_NN
+41396c41396
+< about_RB
+---
+> about_IN
+41406c41406
+< concern_NN
+---
+> concern_VBP
+41516c41516
+< broadcast_VBD
+---
+> broadcast_NN
+41557c41557
+< -LRB-_-LRB-
+---
+> -LRB-_(
+41560c41560
+< point_NN
+---
+> point_VBP
+41575c41575
+< -RRB-_-RRB-
+---
+> -RRB-_)
+41591c41591
+< Giants_NNPS
+---
+> Giants_NNP
+41628c41628
+< shows_NNS
+---
+> shows_VBZ
+41645c41645
+< No._NNP
+---
+> No._NN
+41704c41704
+< Houston-based_JJ
+---
+> Houston-based_NNP
+41713c41713
+< about_IN
+---
+> about_RB
+41824,41825c41824,41825
+< Tender_NNP
+< Leaf_NNP
+---
+> Tender_NN
+> Leaf_NN
+41853c41853
+< coffee-roasting_NN
+---
+> coffee-roasting_JJ
+41877c41877
+< -LRB-_-LRB-
+---
+> -LRB-_(
+41881c41881
+< -RRB-_-RRB-
+---
+> -RRB-_)
+41901c41901
+< concern_NN
+---
+> concern_VBP
+41950c41950
+< Services_NNPS
+---
+> Services_NNP
+41981,41982c41981,41982
+< put_VBD
+< off_RP
+---
+> put_VBP
+> off_IN
+42047c42047
+< up_RP
+---
+> up_IN
+42087c42087
+< said_VBN
+---
+> said_VBD
+42140c42140
+< open_VBP
+---
+> open_VB
+42149c42149
+< NEWSPAPERS_NNPS
+---
+> NEWSPAPERS_NNS
+42172c42172
+< Publications_NNPS
+---
+> Publications_NNP
+42209c42209
+< Associates_NNP
+---
+> Associates_NNPS
+42269c42269
+< pay_NN
+---
+> pay_VB
+42300c42300
+< -LRB-_-LRB-
+---
+> -LRB-_(
+42304c42304
+< -RRB-_-RRB-
+---
+> -RRB-_)
+42332c42332
+< investment-bank_NN
+---
+> investment-bank_JJ
+42334c42334
+< securities-firm_JJ
+---
+> securities-firm_NN
+42428c42428
+< that_DT
+---
+> that_WDT
+42489c42489
+< made_VBD
+---
+> made_VBN
+42554,42555c42554,42555
+< infected_JJ
+< individual_NN
+---
+> infected_VBN
+> individual_JJ
+42607c42607
+< infected_JJ
+---
+> infected_VBN
+42623c42623
+< infected_JJ
+---
+> infected_VBN
+42632c42632
+< deteriorate_VBP
+---
+> deteriorate_VB
+42682c42682
+< -LRB-_-LRB-
+---
+> -LRB-_(
+42684c42684
+< -RRB-_-RRB-
+---
+> -RRB-_)
+42724c42724
+< Hills_NNPS
+---
+> Hills_NNP
+42753,42754c42753,42754
+< put_VBD
+< up_RP
+---
+> put_VBP
+> up_IN
+42762c42762
+< restructuring_VBG
+---
+> restructuring_NN
+42764c42764
+< announced_VBN
+---
+> announced_VBD
+42828c42828
+< accepted_VBN
+---
+> accepted_VBD
+42874c42874
+< accepted_VBN
+---
+> accepted_VBD
+42897c42897
+< next_IN
+---
+> next_JJ
+42905c42905
+< first-half_NN
+---
+> first-half_JJ
+42944c42944
+< consolidated_VBN
+---
+> consolidated_JJ
+42958c42958
+< -LRB-_-LRB-
+---
+> -LRB-_(
+42962c42962
+< -RRB-_-RRB-
+---
+> -RRB-_)
+42969c42969
+< -LRB-_-LRB-
+---
+> -LRB-_(
+42973c42973
+< -RRB-_-RRB-
+---
+> -RRB-_)
+43063c43063
+< before_IN
+---
+> before_RB
+43129c43129
+< -LRB-_-LRB-
+---
+> -LRB-_(
+43134c43134
+< -RRB-_-RRB-
+---
+> -RRB-_)
+43141c43141
+< -LRB-_-LRB-
+---
+> -LRB-_(
+43146c43146
+< -RRB-_-RRB-
+---
+> -RRB-_)
+43159c43159
+< voting_VBG
+---
+> voting_NN
+43166,43167c43166,43167
+< that_WDT
+< sets_VBZ
+---
+> that_IN
+> sets_NNS
+43246c43246
+< Fed_NNP
+---
+> Fed_JJ
+43313c43313
+< talks_VBZ
+---
+> talks_NNS
+43454c43454
+< more_RBR
+---
+> more_JJR
+43489c43489
+< segment_NN
+---
+> segment_VBP
+43514c43514
+< operating_VBG
+---
+> operating_NN
+43519c43519
+< group_NN
+---
+> group_VBP
+43558c43558
+< shares_NNS
+---
+> shares_VBZ
+43644c43644
+< Il_NNP
+---
+> Il_FW
+43699c43699
+< foremost_RB
+---
+> foremost_JJ
+43728c43728
+< closer_RBR
+---
+> closer_JJR
+43747c43747
+< that_IN
+---
+> that_DT
+43783c43783
+< exchanges_NNS
+---
+> exchanges_VBZ
+43794c43794
+< executive_NN
+---
+> executive_JJ
+43867c43867
+< future_JJ
+---
+> future_NN
+43887c43887
+< on_RP
+---
+> on_IN
+43940c43940
+< 5_CD
+---
+> 5_NN
+43947c43947
+< rival_NN
+---
+> rival_JJ
+43951c43951
+< set_VBD
+---
+> set_VBN
+43989c43989
+< operating_VBG
+---
+> operating_NN
+44046c44046
+< more_RBR
+---
+> more_JJR
+44070c44070
+< Will_NNP
+---
+> Will_MD
+44095c44095
+< -LRB-_-LRB-
+---
+> -LRB-_(
+44125c44125
+< -RRB-_-RRB-
+---
+> -RRB-_)
+44165c44165
+< much_JJ
+---
+> much_NN
+44191,44192c44191,44192
+< cooling_VBG
+< put_VBP
+---
+> cooling_NN
+> put_NN
+44223c44223
+< Will_NNP
+---
+> Will_MD
+44252c44252
+< tight_RB
+---
+> tight_JJ
+44300,44301c44300,44301
+< firms_NNS
+< up_RP
+---
+> firms_VBZ
+> up_IN
+44341c44341
+< -LRB-_-LRB-
+---
+> -LRB-_(
+44345c44345
+< -RRB-_-RRB-
+---
+> -RRB-_)
+44391c44391
+< Jaguar_NNP
+---
+> Jaguar_NN
+44397c44397
+< such_PDT
+---
+> such_JJ
+44424c44424
+< early_RB
+---
+> early_JJ
+44434c44434
+< out_RP
+---
+> out_IN
+44448c44448
+< -LCB-_-LRB-
+---
+> -LCB-_(
+44450c44450
+< -RCB-_-RRB-
+---
+> -RCB-_)
+44456c44456
+< takeover-stock_NN
+---
+> takeover-stock_JJ
+44475c44475
+< votes_NNS
+---
+> votes_VBZ
+44484c44484
+< counterbid_VB
+---
+> counterbid_NN
+44490c44490
+< Will_NNP
+---
+> Will_MD
+44525c44525
+< -LRB-_-LRB-
+---
+> -LRB-_(
+44531c44531
+< -RRB-_-RRB-
+---
+> -RRB-_)
+44544c44544
+< -LCB-_-LRB-
+---
+> -LCB-_(
+44546c44546
+< -RCB-_-RRB-
+---
+> -RCB-_)
+44554c44554
+< up_RP
+---
+> up_IN
+44604c44604
+< out_RP
+---
+> out_IN
+44607c44607
+< rival_NN
+---
+> rival_JJ
+44615c44615
+< -LCB-_-LRB-
+---
+> -LCB-_(
+44617c44617
+< -RCB-_-RRB-
+---
+> -RCB-_)
+44695c44695
+< sold_VBD
+---
+> sold_VBN
+44702c44702
+< ADRs_NNPS
+---
+> ADRs_NNS
+44714c44714
+< holding_NN
+---
+> holding_VBG
+44729c44729
+< -LCB-_-LRB-
+---
+> -LCB-_(
+44733c44733
+< -RCB-_-RRB-
+---
+> -RCB-_)
+44754c44754
+< -LRB-_-LRB-
+---
+> -LRB-_(
+44760c44760
+< -RRB-_-RRB-
+---
+> -RRB-_)
+44789c44789
+< First_NNP
+---
+> First_JJ
+44804c44804
+< vs._CC
+---
+> vs._IN
+44817c44817
+< Averae_JJ
+---
+> Averae_NNP
+44927c44927
+< next_IN
+---
+> next_JJ
+44937c44937
+< alternative_JJ
+---
+> alternative_NN
+44952,44953c44952,44953
+< acquired_VBD
+< most_JJS
+---
+> acquired_VBN
+> most_RBS
+45072c45072
+< -LRB-_-LRB-
+---
+> -LRB-_(
+45076c45076
+< -RRB-_-RRB-
+---
+> -RRB-_)
+45109c45109
+< led_VBD
+---
+> led_VBN
+45133c45133
+< Swiss_NNP
+---
+> Swiss_JJ
+45189c45189
+< -LRB-_-LRB-
+---
+> -LRB-_(
+45193c45193
+< -RRB-_-RRB-
+---
+> -RRB-_)
+45210c45210
+< -LRB-_-LRB-
+---
+> -LRB-_(
+45214c45214
+< -RRB-_-RRB-
+---
+> -RRB-_)
+45245c45245
+< increased_VBN
+---
+> increased_VB
+45305c45305
+< most_JJS
+---
+> most_RBS
+45374c45374
+< up_RB
+---
+> up_IN
+45469c45469
+< high_JJ
+---
+> high_NN
+45475c45475
+< early_RB
+---
+> early_JJ
+45571c45571
+< aftertax_NN
+---
+> aftertax_JJ
+45667c45667
+< quarter-to-quarter_NN
+---
+> quarter-to-quarter_JJ
+45672c45672
+< low-end_JJ
+---
+> low-end_NN
+45686,45687c45686,45687
+< even_JJ
+< sales_NNS
+---
+> even_RB
+> sales_VBZ
+45730c45730
+< Systems_NNPS
+---
+> Systems_NNP
+45739c45739
+< future_JJ
+---
+> future_NN
+45753c45753
+< computing_NN
+---
+> computing_VBG
+45789c45789
+< Computers_NNPS
+---
+> Computers_NNP
+45895c45895
+< British_NNP
+---
+> British_JJ
+45962c45962
+< earlier_JJR
+---
+> earlier_RBR
+45980c45980
+< selling_NN
+---
+> selling_VBG
+45996c45996
+< off_RB
+---
+> off_IN
+46080,46081c46080,46081
+< bottomed_VBD
+< out_RP
+---
+> bottomed_VBN
+> out_IN
+46107c46107
+< Bankers_NNPS
+---
+> Bankers_NNP
+46126c46126
+< such_PDT
+---
+> such_JJ
+46149c46149
+< Manufacturers_NNPS
+---
+> Manufacturers_NNP
+46171,46172c46171,46172
+< lay_VB
+< off_RP
+---
+> lay_VBD
+> off_IN
+46191c46191
+< Airlines_NNP
+---
+> Airlines_NNPS
+46197c46197
+< alternative_JJ
+---
+> alternative_NN
+46219c46219
+< half_DT
+---
+> half_NN
+46222c46222
+< Networks_NNPS
+---
+> Networks_NNP
+46247c46247
+< plans_NNS
+---
+> plans_VBZ
+46261c46261
+< sell_VBP
+---
+> sell_VB
+46305c46305
+< much_RB
+---
+> much_JJ
+46315c46315
+< spending_VBG
+---
+> spending_NN
+46400c46400
+< third-quarter_NN
+---
+> third-quarter_JJ
+46434c46434
+< off_RB
+---
+> off_IN
+46440c46440
+< off_RB
+---
+> off_IN
+46458c46458
+< off_RB
+---
+> off_IN
+46481c46481
+< up_RB
+---
+> up_IN
+46497c46497
+< Partners_NNP
+---
+> Partners_NNPS
+46539c46539
+< said_VBN
+---
+> said_VBD
+46555c46555
+< Associates_NNPS
+---
+> Associates_NNP
+46583c46583
+< disclosed_VBD
+---
+> disclosed_VBN
+46618c46618
+< tender_VB
+---
+> tender_VBP
+46704c46704
+< indicated_JJ
+---
+> indicated_VBN
+46843c46843
+< -LRB-_-LRB-
+---
+> -LRB-_(
+46847c46847
+< -RRB-_-RRB-
+---
+> -RRB-_)
+46864c46864
+< that_IN
+---
+> that_DT
+46879c46879
+< posted_VBN
+---
+> posted_VBD
+46897c46897
+< net_NN
+---
+> net_JJ
+46913c46913
+< double_RB
+---
+> double_VB
+47014c47014
+< spread_VBN
+---
+> spread_NN
+47113c47113
+< most_JJS
+---
+> most_RBS
+47132c47132
+< spread_VBN
+---
+> spread_NN
+47204,47205c47204,47205
+< projects_VBZ
+< about_IN
+---
+> projects_NNS
+> about_RB
+47265c47265
+< paid_VBD
+---
+> paid_VBN
+47272c47272
+< provided_VBN
+---
+> provided_VBD
+47292c47292
+< Western_JJ
+---
+> Western_NNP
+47338c47338
+< chief_NN
+---
+> chief_JJ
