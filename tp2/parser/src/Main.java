@@ -71,7 +71,7 @@ public class Main {
 						write(oracion);
 					
 				}else if(tipoSalida.equals("C")){
-					String chunk = "[";
+					String chunk = " [";
 					while(lector.hasNext()){
 						//Lee la siguiente linea. 
 						String linea = lector.nextLine();
@@ -82,23 +82,23 @@ public class Main {
 								chunk += " " + palabras[0] + "_" + palabras[1];
 							}
 							else if(palabras[palabras.length-1].equals("O")){
-								if(chunk.length()>1){
+								if(!chunk.equals(" [")){
 									write(chunk + " ]");
 								}
-								write(" " + palabras[0] + "_" + palabras[1] + " ");
-								chunk = "[" ;							
+								write(palabras[0] + "_" + palabras[1] + " ");
+								chunk = " [" ;							
 							}
 							else{
-								if(chunk.length()>1){
+								if(!chunk.equals(" [")){
 									write(chunk + " ]");
 								}
-								chunk = "["+ palabras[2].replace("B-","") + " " +palabras[0] + "_" + palabras[1];
+								chunk = " ["+ palabras[2].replace("B-","") + " " +palabras[0] + "_" + palabras[1];
 							}
 						}else{
 							writeNewLine();
 						}
 					}
-					if(chunk.length()>1)
+					if(!chunk.equals(" ["))
 						write(chunk + " ]");
 				}else{
 					String oracion = "";
@@ -132,7 +132,7 @@ public class Main {
 							write(palabra);
 						}
 					 */
-				}else{
+				}else if (tipoSalida.equals("C")){
 					/*
 					if(!linea.isEmpty()){
 						if(!linea.matches("(\\s)*\\[(.*)\\](\\s)*")){
@@ -162,6 +162,8 @@ public class Main {
 							}
 						}
 					}*/
+				}else{
+					System.out.println("Advertencia: No hay diferencias de formato...");
 				}
 			}
 			
