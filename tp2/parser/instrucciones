@@ -7,14 +7,17 @@ Tokenizar desde archivo:
 ./bin/opennlp TokenizerME ./bin/en-token.bin < input > tokenized
 
 
+
 Postaggear de un archivo tokenizado:
 
 ./bin/opennlp POSTagger ./bin/en-pos-maxent.bin < tokenized > postagged
-
+../../bin/opennlp POSTagger ../../bin/en-pos-maxent.bin < tokenized > nlp/postagged
  
 Chunkear de un archivo PosTaggeado:
 
 ./bin/opennlp ChunkerME ./bin/en-chunker.bin < postagged > chunked
+../../bin/opennlp ChunkerME ../../bin/en-chunker.bin < postagged > nlp/chunked
+
 
 
 Todo:
@@ -22,6 +25,17 @@ Todo:
 /home/ezecastellano/Documentos/pln/tp2/opennlp/bin/opennlp TokenizerME /home/ezecastellano/Documentos/pln/tp2/opennlp/bin/en-token.bin < input > tokenized
 /home/ezecastellano/Documentos/pln/tp2/opennlp/bin/opennlp POSTagger /home/ezecastellano/Documentos/pln/tp2/opennlp/bin/en-pos-maxent.bin < tokenized > postagged
 /home/ezecastellano/Documentos/pln/tp2/opennlp/bin/opennlp ChunkerME /home/ezecastellano/Documentos/pln/tp2/opennlp/bin/en-chunker.bin < postagged > chunked
+
+
+
+1. Primero convertir con el parser al formato utilizado por OpenNLP.
+
+2. Utilzando el tokenizado del original obtener el postagged por OpenNLP.
+../../bin/opennlp POSTagger ../../bin/en-pos-maxent.bin < tokenized > nlp/postagged
+
+3. Utilizando el postaggeado del original obtener el chunked por OpenNLP.
+../../bin/opennlp ChunkerME ../../bin/en-chunker.bin < postagged > nlp/chunked
+
 
 
 
