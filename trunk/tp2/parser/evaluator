@@ -1,0 +1,12 @@
+bin/opennlp ChunkerEvaluator -data /home/ezecastellano/Documentos/pln/tp2/files/wsjsubset -model bin/en-chunker.bin
+
+Precision: 0.9257575757575758
+Recall: 0.9221868187154117
+F-Measure: 0.9239687473746113
+
+bin/opennlp ChunkerEvaluator -data /home/ezecastellano/Documentos/pln/tp2/files/genia -model bin/en-chunker.bin
+
+Precision: 0.8873214044260153
+Recall: 0.8585695595290013
+F-Measure: 0.8727087350666046
+
