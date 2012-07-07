@@ -195,13 +195,16 @@ public class ChunkingStats {
 		String chunk = "";
 		boolean abrioLlave = false;
 		boolean empezoPalabraComun = false;
-		for(Character unaCharacter : oracionDeChunks.toCharArray()){
+		char[] chars = oracionDeChunks.toCharArray();
+		String charAnterior = " ";
+		for(int i = 0; i < oracionDeChunks.length();i++){
+			Character unaCharacter = chars[i];
 			String charActual = unaCharacter.toString();
 			//Chunks que van entre llaves. 
-			if(charActual.equals("[")){
+			if(charActual.equals("[") && charAnterior.equals(" ")){
 				abrioLlave = true;
 				chunk += charActual;
-			}else if(charActual.equals("]")){
+			}else if(charActual.equals("]") && charAnterior.equals(" ")){
 				abrioLlave = false;
 				chunk += charActual;
 				chunks.add(chunk);
@@ -219,6 +222,7 @@ public class ChunkingStats {
 			}else if(empezoPalabraComun){
 				chunk += charActual;
 			}
+			charAnterior = charActual;
 		}
 		
 		if(!chunk.isEmpty())
