@@ -1,0 +1,85 @@
+./bin/opennlp ChunkerTrainerME -encoding UTF-8 -lang es -data espaniol/train/AA.train -model espaniol/bin/es-AA-chunker.bin
+
+./bin/opennlp ChunkerEvaluator -encoding UTF-8 -data espaniol/test/AA.test -model espaniol/bin/es-AA-chunker.bin
+
+Entrenado con AA y testeado con AA. 
+
+Precision: 0.8170450806186246
+Recall: 0.7892561983471075
+F-Measure: 0.8029102667744543
+
+Entrenado con AA y testeado con A. 
+
+Precision: 0.771881461061337
+Recall: 0.7296416938110749
+F-Measure: 0.7501674480910918
+
+Entrenado con AA y testeado con P.
+
+Precision: 0.8196829590488771
+Recall: 0.7810762614077416
+F-Measure: 0.7999140570446366
+
+./bin/opennlp ChunkerTrainerME -encoding UTF-8 -lang es -data espaniol/train/A.train -model espaniol/bin/es-A-chunker.bin
+
+Entrenado con A y testeado con A.
+
+Precision: 0.7924784775713638
+Recall: 0.7596091205211727
+F-Measure: 0.7756957534094688
+
+Entrenado con A y testeado con P.
+
+Precision: 0.8016343893428859
+Recall: 0.751180111192699
+F-Measure: 0.775587566338135
+
+Entrenado con A y testeado con AA.
+
+Precision: 0.8012692050768203
+Recall: 0.7625556261919898
+F-Measure: 0.7814332247557003
+
+./bin/opennlp ChunkerTrainerME -encoding UTF-8 -lang es -data espaniol/train/P.train -model espaniol/bin/es-P-chunker.bin
+
+./bin/opennlp ChunkerEvaluator -encoding UTF-8 -data espaniol/test/A.test -model espaniol/bin/es-P-chunker.bin
+
+Entrenado con P y testeado con P.
+
+Precision: 0.853230869141682
+Recall: 0.8269170250708067
+F-Measure: 0.8398678883443426
+
+Entrenadon con P y testeado con A. 
+
+Precision: 0.7801656592791583
+Recall: 0.756786102062975
+F-Measure: 0.7682980599647266
+
+Entrenado con P y testeado con AA.
+
+Precision: 0.8306464745155512
+Recall: 0.8107120152574698
+F-Measure: 0.8205581919086301
+
+./bin/opennlp ChunkerTrainerME -encoding UTF-8 -lang es -data espaniol/train/all.train -model espaniol/bin/es-chunker.bin
+
+Entrenado con Todos y testeado con P.
+
+Precision: 0.8612941557740088
+Recall: 0.8363579146123991
+F-Measure: 0.8486428951569984
+
+Entrenado con Todos y testeado con A.
+
+Precision: 0.8256840247131509
+Recall: 0.8125950054288816
+F-Measure: 0.8190872277552808
+
+Entrenado con Todos y testesado con AA. 
+
+Precision: 0.8492927979190376
+Recall: 0.8302606484424666
+F-Measure: 0.8396688901390341
+
+
