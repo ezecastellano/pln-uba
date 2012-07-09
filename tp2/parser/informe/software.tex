@@ -39,6 +39,8 @@ A continuaci\'on describiremos el las distintas herramientas/scripts que fueron 
 	 	\item nombreArchivoProcesado: Nombre o ruta del archivo.
 	\end{itemize}
 
+\end{enumerate}
+
 \subsection{Archivos}
 
 En este informe se entregan los siguientes archivos que corresponden a cada uno de los procesamientos y pre-procesamientos en sus diferentes formatos. A continuaci\'on se detalla cada uno de los archivos seg\'un la estructura de carpetas.
@@ -47,14 +49,76 @@ En este informe se entregan los siguientes archivos que corresponden a cada uno 
 	\item archivos: Carpeta donde se encuentran todos los archivos de genia y wsjsubset.
 	\begin{itemize}
 		\item \texttt{gen}
-		\item \texttt{wsj}		
+			\begin{itemize}
+				\item genia: archivo original.
+				\item cmp: directorio donde se encuentrar archivos de comparaciones/estadísticas. 
+					\begin{itemize}
+						\item postagged.connl.stats: archivo obtenido de las estadísticas de comparar el postagging.
+						\item wsjsubset.compare: archivo de cuatro columnas para ser evaluado por connleval.pl.
+					\end{itemize}
+				\item nlp: directorio con los archivos procesados por OpenNLP.
+					\begin{itemize}
+						\item postagged: archivo postaggeado por OpenNLP utilizando como entrada el tokenized del original.
+						\item chunked: archivo chunkeado por OpenNLP utilizando como entrada el postagged del original
+						\item postagged.connl: version de postagged en formato de dos columnas.
+						\item chunked.connl: version de chunked en formato de tres columnas.
+					\end{itemize}
+				\item orig: directorio con los archivos procesados por la herramienta java del archivo original.
+					\begin{itemize}
+						\item tokenized: archivo tokenizado en formato OpenNLP basado en el archivo original.
+						\item postagged: archivo postaggeado en formato OpenNLP basado en el archivo original.
+						\item chunked: archivo chunkeado en formato OpenNLP basado en el archivo original.
+						\item postagged.connl: version de postagged en formato de dos columnas.
+						\item chunked.connl: version de chunked en formato de tres columnas.
+					\end{itemize}
+			\end{itemize}
+		\item \texttt{wsj}
+					\begin{itemize}
+				\item genia: archivo original.
+				\item cmp: directorio donde se encuentrar archivos de comparaciones/estadísticas. 
+					\begin{itemize}
+						\item postagged.connl.stats: archivo obtenido de las estadísticas de comparar el postagging.
+						\item genia.compare: archivo de cuatro columnas para ser evaluado por connleval.pl.
+					\end{itemize}
+				\item nlp: directorio con los archivos procesados por OpenNLP.
+					\begin{itemize}
+						\item postagged: archivo postaggeado por OpenNLP utilizando como entrada el tokenized del original.
+						\item chunked: archivo chunkeado por OpenNLP utilizando como entrada el postagged del original
+						\item postagged.connl: version de postagged en formato de dos columnas.
+						\item chunked.connl: version de chunked en formato de tres columnas.
+					\end{itemize}
+				\item orig: directorio con los archivos procesados por la herramienta java del archivo original.
+					\begin{itemize}
+						\item tokenized: archivo tokenizado en formato OpenNLP basado en el archivo original.
+						\item postagged: archivo postaggeado en formato OpenNLP basado en el archivo original.
+						\item chunked: archivo chunkeado en formato OpenNLP basado en el archivo original.
+						\item postagged.connl: version de postagged en formato de dos columnas.
+						\item chunked.connl: version de chunked en formato de tres columnas.
+					\end{itemize}
+			\end{itemize}	
 	\end{itemize}
-	\item espaniol: Carpeta donde se encuentran todos los archivos que se utilizaron para entrenar y testear en espaniol.
+	\item espaniol: carpeta donde se encuentran todos los archivos que se utilizaron para entrenar y testear en espaniol.
 	\begin{itemize}
-		\item \texttt{train}
-		\item \texttt{test}
-		\item \texttt{bin}		
-	\end{itemize}
+		\item \texttt{train}: archivos de entrenamiento.
+				\item A.train
+				\item AA.train
+				\item P.train 
+				\item all.train: concatenacion de todos los archivos de entrenamiento.
+		\item \texttt{test}: archivos de test.
+			\begin{itemize}
+				\item A.test
+				\item AA.test
+				\item P.test
+				\item all.test: concatenacion de todos los archivos de testeo.
+			\end{itemize}
+		\item \texttt{bin}: modelos entrenados con los distintos archivos de train.	
+			\begin{itemize}
+				\item es-AA-chunker.bin: entrenado con AA.train.
+				\item es-A-chunker.bin: entrenado con A.train.
+				\item es-chunker.bin: entrenado con all.train.
+				\item es-P-chunker.bin: entrenado con P.train.
+			\end{itemize}
+	\end{itemize}				
 	\item src: C\'odigo fuente de las herramientas realizadas para el pre-procesamiento y estad\'isticas.
 	\begin{itemize}
 		\item \texttt{UnirChunkedCONNL.java}

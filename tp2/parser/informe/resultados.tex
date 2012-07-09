@@ -1,48 +1,258 @@
 \section{Resultados}
 
-\subsection{Pruebas sobre el corpus original}
+\subsection{Postagging Accuracy y las cinco dimensiones de error más frecuentes}
 
-De la comparación en entre el archivo "bueno" y la tokenización con reglas obtuvimos una diferencia que decidimos no resolver. Este problema se debía a la aparición de una abreviatura que podía a su vez podía ser considerada con una palabra que finalizaba con punto final. 
+Para calcular esto primero convertimos los archivos de postagging en formato 
+OpenNLP a formato CONNL y luego utilizamos el programa CompararPostaggedCONNL
+que nos permitía obtener la métrica necesaria y las dimensiones de error más 
+frecuentes.
 
-El caso no del todo satisfactorio era el siguiente, "1.4MB/25 sec." que nuestro tokenizador lo separaba de la separaba de la siguiente manera: ["1.4MB/25", "sec", "."] mientras que nosotros considerábamos como bueno ["1.4MB/25", "sec."].  
+Decidimos que no importaba el en que archivo se produciera la diferencia de 
+etiqueta con el otro, es decir no importaba el orden. Por ejemplo que los errores 
+NP NNP eran equivalentes a los NNP NP a la hora de sacar la estadística. 
 
-Esto se debe a la noci\'on de abreviatura que utilizamos en las expresiones regulares, pues no hab\'ia ninguna que evitara que una palabra de tres caracteres que empiece con min\'uscula y finalice con un punto sea distinguida de un palabra de fin de oraci\'on. 
+\subsubsection{Genia}
 
-Para lograr salvar estos casos pensamos en la opci\'on de relevar cuales eran las abreviaturas m\'as conocidas del ingl\'es, pero no nos parec\'ia del todo correcto seguir agregando herramientas que no surgieran de las expresiones regulares. 
-
-\subsection{Pruebas sobre otro corpus en inglés}
-
-Para realizar una comparación entre el archivo de control y nuestro tokenizador procesamos el texto que figura en el sitio y lo comparamos también utilizando el comando diff para ver en que puntos había diferencia en nuestra tokenización. En el siguiente cuadro se pueden ver cuales fueron las diferencias. 
+Posttaging Accuracy: 0.866182504333326
 
 \begin{center}
-	\begin{tabular}{| c | c |}
-	\hline
-   	prueba.out 		& prueba\_bueno.out 	\\
-	\hline
-  	GCN2			& GCN2(-/-) 	\\
-  	( 				&				\\
-	-				&				\\
-	/				&				\\
-	-				&				\\
-	)				&				\\
-	\hline
-	\textless PP\textgreater	& \textless PP\textgreater		\\
-					& \textless PP\textgreater		\\
-	\hline
-	(				&(active)-mTOR	\\
-	active)-mTOR	&				\\
-	\hline
+	\begin{tabular}{| c | c | c |}\hline
+	Etiqueta & Cantidad & Incidencia\\\hline
+	NN NNP   & 2661     & 0.43630103295622236\\
+	JJ NN    & 1136     & 0.18626004262993934\\
+	JJ VBN   & 197      & 0.0323003771110018\\
+	NN CD    & 143      & 0.023446466633874407\\
+	NNS VBZ  & 137      & 0.022462698803082472\\\hline
+	Subtotal & 4274     &0.7007706181341203\\\hline
 	\end{tabular}
 \end{center}
- 
-De la primer y la tercer diferencia podemos tomar como conclusión que la expresión regular que utilizamos para las palabras compuestas con barra o guión medio no capturaba todas las posibilidades, ya que solo tenía en cuenta palabras compuestas con palabras y/o números. A su vez si es algo más complejo y que lo que consideramos un token y tiene símbolos en los alguno de los bordes decidimos comenzar a separarlos y este es el motivo de nuestro resultado. Para solucionar este tema deberíamos generar una regular más compleja que la utilizada actualmente, pero que no permita cualquier combinación (.+(-|/).+), pues si permitiese cualquier combinación no nos permitiría, entre otras cosas, sacar los paréntesis de alrededor de estas palabras, que es algo que desearíamos que pase. Por ejemplo(GCN2(-/-)) quisieramos que fuera tokenizado de la siguiente manera ["(","GCN2(-/-)",")"].
 
-De la segunda podemos detectar una ventaja de nuestra implementación en la detección de dobles salto de línea, que la implementación correspondiente a la otra tokenización no la presenta. 
+\subsubsection{WsjSubset}
 
-\subsection{Pruebas sobre un corpus en español}
+Posttaging Accuracy: 0.9715262680203475
 
-Respecto al texto que fue seleccionado del español el principal problema hallado fueron las tildes, pues no las reconocía como un caracter de una palabra, motivo por el cual nos etiquetaba todo lo que tuviera tilde bajo la regla \textless raro\textgreater. 
+\begin{center}
+	\begin{tabular}{| c | c | c |}\hline
+	Etiqueta & Cantidad & Incidencia\\\hline
+	JJ NN    & 187      & 0.13862120088954782\\
+	VBN VBD  & 129      & 0.09562638991845812\\
+	IN RP    & 95       & 0.07042253521126761\\
+	RB IN    & 87       & 0.06449221645663454\\
+	NNP NNPS & 77       & 0.05707931801334322\\\hline
+	Subtotal & 575      & 0.4262416604892513\\\hline
+	\end{tabular}
+\end{center}
 
-Luego solo hubo una diferencia la tokenización semi-manual, \textless guion\textgreater [a-zA-Z]\textbackslash d\textless /guion\textgreater fue tokenizado como \textless simbolo\textgreater[\textless /simbolo\textgreater\textless raro\textgreater a-zA-Z]\textbackslash d\textless /raro\textgreater.
+\subsection{Chunking Precision y Recall para chunks verbales y nominales}
 
-En el resto de la tokenización el proceso fue satisfactorio. De todas maneras la mayoría de los problemas obtenidos fueron motivo de las tildes, por lo que fue etiquetado como algo anómalo, pero tokenizado correctamente. 
+Para calcular estas dos métricas primero pasamos el archivo de chunking generado 
+por OpenNLP al formato de CONNL y luego utilizando un script hecho en java tomamos 
+el archivo original y el procesado por opennlp para generar un archivo que en las 
+tres primeras columnas tenía la información original y en la última la obtenida del 
+procesamiento para luego poder utilizar el script conlleval.pl .
+
+\subsubsection{Genia}
+
+./conlleval.pl -l < original/gen/genia.compare 
+
+\begin{center}
+	\begin{tabular}{| c | c | c | c |}
+		\hline
+			& Precision &  Recall  & F-Measure \\\hline
+		ADJP    &   80.54\% &  70.92\% &  75.42 \\
+		ADVP    &   74.36\% &  78.52\% &  76.38 \\
+		CC      &    0.00\% &   0.00\% &   0.00 \\
+		CD      &    0.00\% &   0.00\% &   0.00 \\
+		CONJP   &  100.00\% &  18.03\% &  30.56 \\
+		DT      &    0.00\% &   0.00\% &   0.00 \\
+		FW      &    0.00\% &   0.00\% &   0.00 \\
+		IN      &    0.00\% &   0.00\% &   0.00 \\
+		JJ      &    0.00\% &   0.00\% &   0.00 \\
+		JJ|RB   &    0.00\% &   0.00\% &   0.00 \\
+		LS      &    0.00\% &   0.00\% &   0.00 \\
+		LST     &    0.00\% &   0.00\% &   0.00 \\
+		NN      &    0.00\% &   0.00\% &   0.00 \\
+		NNS     &    0.00\% &   0.00\% &   0.00 \\
+		NP      &   86.60\% &  82.57\% &  84.54 \\
+		PP      &   92.32\% &  95.41\% &  93.84 \\
+		PRT     &  100.00\% &  33.33\% &  50.00 \\
+		RB      &    0.00\% &   0.00\% &   0.00 \\
+		SBAR    &   92.93\% &  60.88\% &  73.57 \\
+		VBN     &    0.00\% &   0.00\% &   0.00 \\
+		VP      &   92.39\% &  92.91\% &  92.65 \\
+ 		DQE &    0.00\% &   0.00\% &   0.00 \\\hline
+		Overall &   84.95\% &  86.34\% &  85.64 \\\hline
+	\end{tabular}
+\end{center}
+
+
+De estas métricas las que nos interesan son VP (P:92.39\% - R:92.91\%) 
+y NP (P:86.60\% - R:82.57\%). 
+
+
+\subsubsection{WsjSubset}
+
+../../conlleval.pl -l < cmp/wsjsubset.compare 
+
+\begin{center}
+	\begin{tabular}{| c | c | c | c |}
+		\hline
+			& Precision &  Recall  & FF-Measure \\\hline
+		''      &    0.00\% &   0.00\% &   0.00 \\
+		ADJP    &   79.89\% &  67.12\% &  72.95 \\
+		ADVP    &   80.79\% &  77.71\% &  79.22 \\
+		CC      &    0.00\% &   0.00\% &   0.00 \\
+		CD      &    0.00\% &   0.00\% &   0.00 \\
+		CONJP   &   57.14\% &  44.44\% &  50.00 \\
+		DT      &    0.00\% &   0.00\% &   0.00 \\
+		IN      &    0.00\% &   0.00\% &   0.00 \\
+		INTJ    &   50.00\% &  50.00\% &  50.00 \\
+		JJ      &    0.00\% &   0.00\% &   0.00 \\
+		JJR     &    0.00\% &   0.00\% &   0.00 \\
+		LST     &    0.00\% &   0.00\% &   0.00 \\
+		MD      &    0.00\% &   0.00\% &   0.00 \\
+		NN      &    0.00\% &   0.00\% &   0.00 \\
+		NNP     &    0.00\% &   0.00\% &   0.00 \\
+		NNPS    &    0.00\% &   0.00\% &   0.00 \\
+		NP      &   88.56\% &  90.06\% &  89.30 \\
+		PP      &   94.23\% &  97.69\% &  95.93 \\
+		PRP     &    0.00\% &   0.00\% &   0.00 \\
+		PRT     &   75.00\% &  59.43\% &  66.32 \\
+		RB      &    0.00\% &   0.00\% &   0.00 \\
+		RBS     &    0.00\% &   0.00\% &   0.00 \\
+		SBAR    &   87.84\% &  66.17\% &  75.48 \\
+		TO      &    0.00\% &   0.00\% &   0.00 \\
+		VB      &    0.00\% &   0.00\% &   0.00 \\
+		VBD     &    0.00\% &   0.00\% &   0.00 \\
+		VBN     &    0.00\% &   0.00\% &   0.00 \\
+		VBZ     &    0.00\% &   0.00\% &   0.00 \\
+		VP      &   93.06\% &  92.94\% &  93.00 \\
+		``      &    0.00\% &   0.00\% &   0.00 \\\hline
+		Overall &   84.88\% &  90.58\% &  87.63 \\\hline
+	\end{tabular}
+\end{center}
+
+De estas métricas las que nos interesan son VP (P:93.06\% - R:92.94\%) 
+y NP (P:88.56\% - R:90.06\%). 
+
+\subsection{Evaluacion de un chunker en español}
+
+Para esto utilizamos ChunkerTrainerMe de OpenNLP que nos permite generar un 
+binario con nuestro modelo a partir de un archivo de entrenamiento. 
+
+Luego testeamos este binario con el ChunkerEvaluator y los distintos archivos de testeo.
+
+Probamos entrenarlo con A, AA, P y todos. Para esto utilizamos un script en java que nos permitía 
+unir todos los archivos de un directorio especificado en uno solo. 
+
+El comando para generar el modelo es:
+
+./bin/opennlp ChunkerTrainerME -encoding UTF-8 -lang es -data espaniol/train/AA.train -model espaniol/bin/es-AA-chunker.bin
+
+Mientras que para evaluar los archivos de test:
+
+./bin/opennlp ChunkerEvaluator -encoding UTF-8 -data espaniol/test/AA.test -model espaniol/bin/es-AA-chunker.bin
+
+Entrenado con AA y testeado con AA. 
+
+\begin{itemize}
+	\item Precision: 0.8170450806186246
+	\item Recall: 0.7892561983471075
+	\item F-Measure: 0.8029102667744543
+\end{itemize}
+
+Entrenado con AA y testeado con A. 
+
+\begin{itemize}
+	\item Precision: 0.771881461061337
+	\item Recall: 0.7296416938110749
+	\item F-Measure: 0.7501674480910918
+\end{itemize}
+
+Entrenado con AA y testeado con P.
+
+\begin{itemize}
+	\item Precision: 0.8196829590488771
+	\item Recall: 0.7810762614077416
+	\item F-Measure: 0.7999140570446366
+\end{itemize}
+
+./bin/opennlp ChunkerTrainerME -encoding UTF-8 -lang es -data espaniol/train/A.train -model espaniol/bin/es-A-chunker.bin
+
+Entrenado con A y testeado con A.
+
+\begin{itemize}
+	\item Precision: 0.7924784775713638
+	\item Recall: 0.7596091205211727
+	\item F-Measure: 0.7756957534094688
+\end{itemize}
+Entrenado con A y testeado con P.
+
+\begin{itemize}
+	\item Precision: 0.8016343893428859
+	\item Recall: 0.751180111192699
+	\item F-Measure: 0.775587566338135
+\end{itemize}
+
+Entrenado con A y testeado con AA.
+
+\begin{itemize}
+	\item Precision: 0.8012692050768203
+	\item Recall: 0.7625556261919898
+	\item F-Measure: 0.7814332247557003
+\end{itemize}
+
+./bin/opennlp ChunkerTrainerME -encoding UTF-8 -lang es -data espaniol/train/P.train -model espaniol/bin/es-P-chunker.bin
+
+./bin/opennlp ChunkerEvaluator -encoding UTF-8 -data espaniol/test/A.test -model espaniol/bin/es-P-chunker.bin
+
+Entrenado con P y testeado con P.
+
+\begin{itemize}
+	\item Precision: 0.853230869141682
+	\item Recall: 0.8269170250708067
+	\item F-Measure: 0.8398678883443426
+\end{itemize}
+
+Entrenadon con P y testeado con A. 
+
+\begin{itemize}
+	\item Precision: 0.7801656592791583
+	\item Recall: 0.756786102062975
+	\item F-Measure: 0.7682980599647266
+\end{itemize}
+
+Entrenado con P y testeado con AA.
+
+\begin{itemize}
+	\item Precision: 0.8306464745155512
+	\item Recall: 0.8107120152574698
+	\item F-Measure: 0.8205581919086301
+\end{itemize}
+
+./bin/opennlp ChunkerTrainerME -encoding UTF-8 -lang es -data espaniol/train/all.train -model espaniol/bin/es-chunker.bin
+
+Entrenado con Todos y testeado con P.
+
+\begin{itemize}
+	\item Precision: 0.8612941557740088
+	\item Recall: 0.8363579146123991
+	\item F-Measure: 0.8486428951569984
+\end{itemize}
+
+Entrenado con Todos y testeado con A.
+
+\begin{itemize}
+	\item Precision: 0.8256840247131509
+	\item Recall: 0.8125950054288816
+	\item F-Measure: 0.8190872277552808
+\end{itemize}
+
+Entrenado con Todos y testesado con AA. 
+
+\begin{itemize}
+	\item Precision: 0.8492927979190376
+	\item Recall: 0.8302606484424666
+	\item F-Measure: 0.8396688901390341
+\end{itemize}
+
