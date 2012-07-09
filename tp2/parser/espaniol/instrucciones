@@ -1,4 +1,18 @@
+Evaluacion de un chunker en español
+
+Para esto utilizamos ChunkerTrainerMe de OpenNLP que nos permite generar un 
+binario con nuestro modelo a partir de un archivo de entrenamiento. 
+
+Luego testeamos este binario con el ChunkerEvaluator y los distintos archivos de testeo.
+
+Probamos entrenarlo con A, AA, P y todos. Para esto utilizamos un script en java que nos permitía 
+unir todos los archivos de un directorio especificado en uno solo. 
+
+El comando para generar el modelo es:
+
 ./bin/opennlp ChunkerTrainerME -encoding UTF-8 -lang es -data espaniol/train/AA.train -model espaniol/bin/es-AA-chunker.bin
+
+Mientras que para evaluar los archivos de test:
 
 ./bin/opennlp ChunkerEvaluator -encoding UTF-8 -data espaniol/test/AA.test -model espaniol/bin/es-AA-chunker.bin
 
@@ -81,5 +95,124 @@ Entrenado con Todos y testesado con AA.
 Precision: 0.8492927979190376
 Recall: 0.8302606484424666
 F-Measure: 0.8396688901390341
+
+Postagging Accuracy y las cinco dimensiones de error más frecuentes
+
+Para calcular esto primero convertimos los archivos de postagging en formato 
+OpenNLP a formato CONNL y luego utilizamos el programa CompararPostaggedCONNL
+que nos permitía obtener la métrica necesaria y las dimensiones de error más 
+frecuentes.
+
+Decidimos que no importaba el en que archivo se produciera la diferencia de 
+etiqueta con el otro, es decir no importaba el orden. Por ejemplo que los errores 
+NP NNP eran equivalentes a los NNP NP a la hora de sacar la estadística. 
+
+Genia
+
+Posttaging Accuracy: 0.866182504333326
+
+Etiqueta Cantidad Incidencia
+NN|NNP 2661 0.43630103295622236
+JJ|NN 1136 0.18626004262993934
+JJ|VBN 197 0.0323003771110018
+NN|CD 143 0.023446466633874407
+NNS|VBZ 137 0.022462698803082472
+Subtotal 4274 0.7007706181341203
+
+WsjSubset
+
+Posttaging Accuracy: 0.9715262680203475
+
+Etiqueta Cantidad Incidencia
+JJ|NN 187 0.13862120088954782
+VBN|VBD 129 0.09562638991845812
+IN|RP 95 0.07042253521126761
+RB|IN 87 0.06449221645663454
+NNP|NNPS 77 0.05707931801334322
+Subtotal 575 0.4262416604892513
+
+Chunking Precision y Recall para chunks verbales y nominales
+
+Para calcular estas dos métricas primero pasamos el archivo de chunking generado 
+por OpenNLP al formato de CONNL y luego utilizando un script hecho en java tomamos 
+el archivo original y el procesado por opennlp para generar un archivo que en las 
+tres primeras columnas tenía la información original y en la última la obtenida del 
+procesamiento para luego poder utilizar el script conlleval.pl .
+
+Genia
+
+./conlleval.pl -l < original/gen/genia.compare 
+
+        & Precision &  Recall  & F$_{\beta=1} \\\hline
+ADJP    &   80.54\% &  70.92\% &  75.42 \\
+ADVP    &   74.36\% &  78.52\% &  76.38 \\
+CC      &    0.00\% &   0.00\% &   0.00 \\
+CD      &    0.00\% &   0.00\% &   0.00 \\
+CONJP   &  100.00\% &  18.03\% &  30.56 \\
+DT      &    0.00\% &   0.00\% &   0.00 \\
+FW      &    0.00\% &   0.00\% &   0.00 \\
+IN      &    0.00\% &   0.00\% &   0.00 \\
+JJ      &    0.00\% &   0.00\% &   0.00 \\
+JJ|RB   &    0.00\% &   0.00\% &   0.00 \\
+LS      &    0.00\% &   0.00\% &   0.00 \\
+LST     &    0.00\% &   0.00\% &   0.00 \\
+NN      &    0.00\% &   0.00\% &   0.00 \\
+NNS     &    0.00\% &   0.00\% &   0.00 \\
+NP      &   86.60\% &  82.57\% &  84.54 \\
+PP      &   92.32\% &  95.41\% &  93.84 \\
+PRT     &  100.00\% &  33.33\% &  50.00 \\
+RB      &    0.00\% &   0.00\% &   0.00 \\
+SBAR    &   92.93\% &  60.88\% &  73.57 \\
+VBN     &    0.00\% &   0.00\% &   0.00 \\
+VP      &   92.39\% &  92.91\% &  92.65 \\
+[[DQE]] &    0.00\% &   0.00\% &   0.00 \\\hline
+Overall &   84.95\% &  86.34\% &  85.64 \\\hline
+
+De estas métricas las que nos interesan son VP (P:92.39\% - R:92.91\%) 
+y NP (P:86.60\% - R:82.57\%). 
+
+
+WsjSubset
+
+../../conlleval.pl -l < cmp/wsjsubset.compare 
+        & Precision &  Recall  & F$_{\beta=1} \\\hline
+''      &    0.00\% &   0.00\% &   0.00 \\
+ADJP    &   79.89\% &  67.12\% &  72.95 \\
+ADVP    &   80.79\% &  77.71\% &  79.22 \\
+CC      &    0.00\% &   0.00\% &   0.00 \\
+CD      &    0.00\% &   0.00\% &   0.00 \\
+CONJP   &   57.14\% &  44.44\% &  50.00 \\
+DT      &    0.00\% &   0.00\% &   0.00 \\
+IN      &    0.00\% &   0.00\% &   0.00 \\
+INTJ    &   50.00\% &  50.00\% &  50.00 \\
+JJ      &    0.00\% &   0.00\% &   0.00 \\
+JJR     &    0.00\% &   0.00\% &   0.00 \\
+LST     &    0.00\% &   0.00\% &   0.00 \\
+MD      &    0.00\% &   0.00\% &   0.00 \\
+NN      &    0.00\% &   0.00\% &   0.00 \\
+NNP     &    0.00\% &   0.00\% &   0.00 \\
+NNPS    &    0.00\% &   0.00\% &   0.00 \\
+NP      &   88.56\% &  90.06\% &  89.30 \\
+PP      &   94.23\% &  97.69\% &  95.93 \\
+PRP     &    0.00\% &   0.00\% &   0.00 \\
+PRT     &   75.00\% &  59.43\% &  66.32 \\
+RB      &    0.00\% &   0.00\% &   0.00 \\
+RBS     &    0.00\% &   0.00\% &   0.00 \\
+SBAR    &   87.84\% &  66.17\% &  75.48 \\
+TO      &    0.00\% &   0.00\% &   0.00 \\
+VB      &    0.00\% &   0.00\% &   0.00 \\
+VBD     &    0.00\% &   0.00\% &   0.00 \\
+VBN     &    0.00\% &   0.00\% &   0.00 \\
+VBZ     &    0.00\% &   0.00\% &   0.00 \\
+VP      &   93.06\% &  92.94\% &  93.00 \\
+``      &    0.00\% &   0.00\% &   0.00 \\\hline
+Overall &   84.88\% &  90.58\% &  87.63 \\\hline
+
+De estas métricas las que nos interesan son VP (P:93.06\% - R:92.94\%) 
+y NP (P:88.56\% - R:90.06\%). 
+
+
+
+
 
 

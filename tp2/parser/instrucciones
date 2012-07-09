@@ -37,6 +37,13 @@ Todo:
 ../../bin/opennlp ChunkerME ../../bin/en-chunker.bin < postagged > nlp/chunked
 
 
+Obtener el archivo de postagged.
+
+./bin/opennlp POSTagger bin/en-pos-maxent.bin < original/wsj/orig/tokenized > original/wsj/nlp/postagged
+
+Obtener el archivo de chunked.
+
+./bin/opennlp ChunkerME bin/en-chunker.bin < original/wsj/orig/postagged > original/wsj/nlp/chunked
 
 
 

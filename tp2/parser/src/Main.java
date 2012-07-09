@@ -3,6 +3,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -122,46 +123,26 @@ public class Main {
 					
 			}else{
 				if(tipoSalida.equals("P")){
-					/*
-					//Lee la siguiente linea. 
-					String linea = lector.nextLine();
-					//Separa la linea por espacios.
-					String[] palabras = linea.split("\\s");
-					if(!linea.isEmpty())
-						for (String palabra : palabras) {
-							write(palabra);
+					while(lector.hasNext()){
+						String linea = lector.nextLine();
+						String []partes = linea.split("\\s");
+						for (String parte : partes) {
+							write(getPalabra(parte) + " " + getCONNLTag(parte));
+							writeNewLine();
 						}
-					 */
+						writeNewLine();
+					}
+					
 				}else if (tipoSalida.equals("C")){
-					/*
-					if(!linea.isEmpty()){
-						if(!linea.matches("(\\s)*\\[(.*)\\](\\s)*")){
-//						System.out.println("El archivo no se encontraba correctamente chunkeado en el formato [X A_Y B_Z]");
-							int separator = linea.lastIndexOf("_");
-							String label = linea.substring(separator+1, linea.length());
-							write(transform(linea, label));
+					
+					while(lector.hasNext()){
+						String linea = lector.nextLine();
+						ArrayList<String> chunks = obtenerChunks(linea);
+						for (String chunk : chunks) {
+							writeChunk(chunk);
 						}
-						else{
-//							linea = linea.replaceFirst("(\\s)*\\[", "");
-//							linea = linea.replace("(\\s)*\\](\\s)*","");
-							int open = linea.indexOf("[");
-							int close = linea.lastIndexOf("]");
-							linea = linea.substring(open+1,close);
-							//linea = (String) linea.subSequence(1, linea.length()-2);
-							//Separa la linea por espacios.
-							String[] palabras = linea.split("\\s");
-							if(!linea.isEmpty()){
-								
-								String label = palabras[0];
-								
-								write(transform(palabras[1],"B-"+label));		
-								
-								for (int i = 2; i < palabras.length ; i++) {
-									write(transform(palabras[i],"I-"+label));
-								}
-							}
-						}
-					}*/
+						writeNewLine();
+					}
 				}else{
 					System.out.println("Advertencia: No hay diferencias de formato...");
 				}
@@ -180,7 +161,6 @@ public class Main {
 		}
 	}
 	
-	
 	static String transform(String palabra, String label){
 		int separator_palabra_beggin = palabra.lastIndexOf("_");
 		if(separator_palabra_beggin!=-1)
@@ -197,4 +177,115 @@ public class Main {
 		out.newLine();
 		out.flush();
 	}
+	
+	static void writeChunk(String chunk) throws IOException {
+		String label = label(chunk);
+		int i = 0;
+		if(chunk.startsWith("[") && chunk.endsWith("]")){
+			chunk = chunk.substring(1,chunk.length()-2);
+			i = 1;
+		}
+		String[] partes = chunk.split("\\s");
+		//Dependiendo si usa llaves o no tengo una etiqueta en la primera parte.
+		for(; i < partes.length ; i++){
+			String parte = partes[i];
+			String lineaCONNL = getPalabra(parte) + " " + getTag(parte) + " " + getCONNLLabel((parte.length()>1 && i==1) || parte.length()==1, parte, label);
+			write(lineaCONNL);
+			writeNewLine();
+		}
+	}
+	
+	static String getCONNLTag(String parte){
+		if(getTag(parte).matches("\\W|-(L|R)RB-"))
+			return "O";
+		else
+			return getTag(parte);
+	}
+	
+	static String getCONNLLabel(boolean esPrimero, String parte, String label){
+		if(getTag(parte).matches("\\W|-(L|R)RB-"))
+			return "O";
+		else
+			if(esPrimero)
+				return "B-"+label;
+			else
+				return "I-"+label;
+	}
+	
+	static String getPalabra(String parte){
+		String palabra = "";
+		int separator_index = parte.lastIndexOf("_");
+		if(separator_index!=-1)
+			palabra = parte.substring(0,separator_index);
+		else
+			System.out.println("ERROR: Obteniendo la palabra de la parte del chunk " + parte + ".");
+		return palabra;
+	}
+	
+	static String label(String chunk){
+		String label = "";
+		if(chunk.startsWith("[") && chunk.endsWith("]")){
+			chunk = chunk.substring(1,chunk.length()-2);
+			String[] partes = chunk.split("\\s");
+			label =  partes[0];
+		}else{
+			int separator_index = chunk.lastIndexOf("_");
+			if(separator_index!=-1)
+				label =  chunk.substring(separator_index + 1);
+			else
+				System.out.println("ERROR: Obteniendo etiqueta de una parte del chunk " + chunk +".");
+		}
+		return label;
+	}
+	
+	static ArrayList<String> obtenerChunks(String oracionDeChunks){
+		ArrayList<String> chunks = new ArrayList<String>();
+		String chunk = "";
+		boolean abrioLlave = false;
+		boolean empezoPalabraComun = false;
+		char[] chars = oracionDeChunks.toCharArray();
+		String charAnterior = " ";
+		for(int i = 0; i < oracionDeChunks.length();i++){
+			Character unaCharacter = chars[i];
+			String charActual = unaCharacter.toString();
+			//Chunks que van entre llaves. 
+			if(charActual.equals("[") && charAnterior.equals(" ")){
+				abrioLlave = true;
+				chunk += charActual;
+			}else if(charActual.equals("]") && charAnterior.equals(" ")){
+				abrioLlave = false;
+				chunk += charActual;
+				chunks.add(chunk);
+				chunk = "";
+			}else if(abrioLlave){
+				chunk += charActual;
+			}//Chunks que no van entre llaves.
+			else if(!abrioLlave && !empezoPalabraComun && !charActual.equals(" ")){
+				empezoPalabraComun = true;
+				chunk += charActual;
+			}else if(empezoPalabraComun && charActual.equals(" ")){
+				empezoPalabraComun = false;
+				chunks.add(chunk);
+				chunk = "";
+			}else if(empezoPalabraComun){
+				chunk += charActual;
+			}
+			charAnterior = charActual;
+		}
+		
+		if(!chunk.isEmpty())
+			chunks.add(chunk);
+		
+		return chunks;
+	}
+	
+	
+	static String getTag(String palabra){
+		int underscore = palabra.lastIndexOf("_");
+		return palabra.substring(underscore+1);
+	}
 }
+
+
+
+
