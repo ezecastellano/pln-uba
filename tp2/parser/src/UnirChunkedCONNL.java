@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class UnirChunkedCONNL {
 	/*
-	 * Este archivo toma dos archivos de chunking en formato CONNL 
+	 * Este programa toma dos archivos de chunking en formato CONNL 
 	 * y deja en las tres primeras columnas los valores del original, 
 	 * mientras que en la última el valor a verificar. 
 	 * Las estadísticas de esta comparación pueden verse usando el
