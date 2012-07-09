@@ -1,0 +1,67 @@
+\section{Informaci\'on y requerimientos de software}
+
+En esta secci\'on se indicar\'asn los requerimientos y las instrucciones necesarias para la ejecuci\'on del trabajo pr\'actico.
+
+\subsection{Requerimientos}
+
+El trabajo pr\'actico fue realizado con OpenNLP, como herramienta de procesamiento de lenguajes, y Java, como lenguaje utilizado para realizar pequeñas herramientas que fueron necesarias a la hora de obtener estad\'isticas de los resultados y para poder parsear el texto al formato de la herramienta. 
+
+\subsection{Herramientas realizadas}
+
+A continuaci\'on describiremos el las distintas herramientas/scripts que fueron realizados y el fin de acada uno de ellos. 
+
+\begin{enumerate}
+	\item Transformador:  Nos permite obtener del archivo original (que ten\'ia las tres columnas palabra, postag, chunktag) los archivos de tokenizados, postaggeados o chunkeados en el formato necesario para ser utilizados por OpenNLP. Tambi\'en nos permite dado un archivo de Chunking o Postagging de OpenNLP, llevarlo al formato que de las tres columnas, que nos permite realizar mejor las comparaciones ya que tengo una fila por palabra.
+	Par\'ametros: 
+	\begin{itemize}
+		\item nombreArchivo: Nombre o ruta del archivo.
+		\item tipoSalida: P (Postaggged) T (Tokenized) o C (Chunked)
+		\item formatoSalida: NLP (OpenNLP) o PPC (Palabra, Postag, Chunktag).
+	\end{itemize}
+
+	\item Concatenar: Nos permite concatenar varios archivos que se encuentran en un directorio en uno solo. Adem\'as reemplaza cualquier tipo de espacio por espacio simple.
+	Par\'ametros:
+	\begin{itemize}
+		\item pathDirectorio: Nombre o ruta del directorio.
+	\end{itemize}
+	
+	\item UnirChunkedCONNL:  Toma dos archivos de chunking en formato CONNL y deja en las tres primeras columnas los valores del original, mientras que en la \'ultima el valor a verificar. Las estad\'isticas de la comparaci\'on de estas \'ultimas dos columnas pueden verse usando el script conlleval.pl.
+	 Par\'ametros:
+	 \begin{itemize}
+		\item nombreArchivoOriginal: Nombre o ruta del archivo original. 
+		\item nombreArchivoProcesado: Nombre o ruta del archivo procesado.
+	 \end{itemize}
+	
+	\item CompararPostaggedCONNL: Toma dos archivos de postagged en formato CONNL y calcula el postagging accuracy y los cinco valores de error m\'as frecuente, teniendo en cuenta que el primer archivo es el orginal.
+	 Par\'ametros:
+	\begin{itemize}
+		\item nombreArchivoOriginal: Nombre o ruta del archivo. 
+	 	\item nombreArchivoProcesado: Nombre o ruta del archivo.
+	\end{itemize}
+
+\subsection{Archivos}
+
+En este informe se entregan los siguientes archivos que corresponden a cada uno de los procesamientos y pre-procesamientos en sus diferentes formatos. A continuaci\'on se detalla cada uno de los archivos seg\'un la estructura de carpetas.
+
+\begin{enumerate}
+	\item archivos: Carpeta donde se encuentran todos los archivos de genia y wsjsubset.
+	\begin{itemize}
+		\item \texttt{gen}
+		\item \texttt{wsj}		
+	\end{itemize}
+	\item espaniol: Carpeta donde se encuentran todos los archivos que se utilizaron para entrenar y testear en espaniol.
+	\begin{itemize}
+		\item \texttt{train}
+		\item \texttt{test}
+		\item \texttt{bin}		
+	\end{itemize}
+	\item src: C\'odigo fuente de las herramientas realizadas para el pre-procesamiento y estad\'isticas.
+	\begin{itemize}
+		\item \texttt{UnirChunkedCONNL.java}
+		\item \texttt{Concatenar.java}
+		\item \texttt{CompararPostaggedCONNL.java}		
+		\item \texttt{Main.java}: El Transformador.		
+	\end{itemize}
+\end{enumerate}
+
+
