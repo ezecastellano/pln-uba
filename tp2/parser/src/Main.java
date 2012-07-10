@@ -12,7 +12,7 @@ public class Main {
 	 * @param 
 	 * nombreArchivo: Nombre o ruta del archivo. 
 	 * tipoSalida: P (Postagged) T (Tokenized) o C (Chunked)
-	 * formatoSalida: NLP (OpenNLP) o PPC (Palabra, Postag, Chunktag).
+	 * formatoSalida: NLP (OpenNLP) o BIO (Palabra, Postag, Chunktag).
 	 */
 	static BufferedWriter out;
 	static String tipoSalida;
@@ -21,7 +21,7 @@ public class Main {
 		if(args.length != 3){
 			System.out.println("Se esperan dos argumentos. El primero el nombre del archivo a pasear. " +
 								"El segundo 'P' para obtener la salida de un archivo de Postagging, 'T' de Tokenizing o 'C' de Chunking. " +
-								"El tercero 'NLP para obtenerlo en formato OpenNLP o 'PPC' para formato PPC");
+								"El tercero 'NLP para obtenerlo en formato OpenNLP o 'BIO' para formato BIO");
 			return;
 		} 
 		
@@ -46,8 +46,8 @@ public class Main {
 			System.out.println("Formato de entrada inválido, ingrese 'P' o 'C' o 'T'.");
 			return;
 		}
-		if(!formatoSalida.matches("NLP|PPC")){
-			System.out.println("Formato de entrada inválido, ingrese 'NLP' o 'PPC'.");
+		if(!formatoSalida.matches("NLP|BIO")){
+			System.out.println("Formato de entrada inválido, ingrese 'NLP' o 'BIO'.");
 			return;
 		}
 		try {
