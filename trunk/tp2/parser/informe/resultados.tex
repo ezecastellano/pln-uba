@@ -3,7 +3,7 @@
 \subsection{Postagging Accuracy y las cinco dimensiones de error más frecuentes}
 
 Para calcular esto primero convertimos los archivos de postagging en formato 
-OpenNLP a formato CONNL y luego utilizamos el programa CompararPostaggedCONNL
+OpenNLP a formato BIO y luego utilizamos el programa para comparar postagged
 que nos permitía obtener la métrica necesaria y las dimensiones de error más 
 frecuentes.
 
@@ -46,7 +46,7 @@ Posttaging Accuracy: 0.9715262680203475
 \subsection{Chunking Precision y Recall para chunks verbales y nominales}
 
 Para calcular estas dos métricas primero pasamos el archivo de chunking generado 
-por OpenNLP al formato de CONNL y luego utilizando un script hecho en java tomamos 
+por OpenNLP al formato de BIO y luego utilizando un script hecho en java tomamos 
 el archivo original y el procesado por opennlp para generar un archivo que en las 
 tres primeras columnas tenía la información original y en la última la obtenida del 
 procesamiento para luego poder utilizar el script conlleval.pl .
@@ -147,13 +147,17 @@ unir todos los archivos de un directorio especificado en uno solo.
 
 El comando para generar el modelo es:
 
-./bin/opennlp ChunkerTrainerME -encoding UTF-8 -lang es -data espaniol/train/AA.train -model espaniol/bin/es-AA-chunker.bin
+./bin/opennlp ChunkerTrainerME -encoding UTF-8 -lang es -data espaniol/train/X.train -model espaniol/bin/es-chunker.bin
 
 Mientras que para evaluar los archivos de test:
 
-./bin/opennlp ChunkerEvaluator -encoding UTF-8 -data espaniol/test/AA.test -model espaniol/bin/es-AA-chunker.bin
+./bin/opennlp ChunkerEvaluator -encoding UTF-8 -data espaniol/test/X.test -model espaniol/bin/es-chunker.bin
 
-Entrenado con AA y testeado con AA. 
+\subsubsection{Entrenado con AA}
+
+\begin{enumerate}
+
+\item Testeado con AA
 
 \begin{itemize}
 	\item Precision: 0.8170450806186246
@@ -161,7 +165,7 @@ Entrenado con AA y testeado con AA.
 	\item F-Measure: 0.8029102667744543
 \end{itemize}
 
-Entrenado con AA y testeado con A. 
+\item Testeado con A
 
 \begin{itemize}
 	\item Precision: 0.771881461061337
@@ -169,7 +173,7 @@ Entrenado con AA y testeado con A.
 	\item F-Measure: 0.7501674480910918
 \end{itemize}
 
-Entrenado con AA y testeado con P.
+\item Testeado con P
 
 \begin{itemize}
 	\item Precision: 0.8196829590488771
@@ -177,16 +181,21 @@ Entrenado con AA y testeado con P.
 	\item F-Measure: 0.7999140570446366
 \end{itemize}
 
-./bin/opennlp ChunkerTrainerME -encoding UTF-8 -lang es -data espaniol/train/A.train -model espaniol/bin/es-A-chunker.bin
+\end{enumerate}
 
-Entrenado con A y testeado con A.
+\subsubsection{Entrenado con A}
+
+\begin{enumerate}
+
+\item Testeado con A
 
 \begin{itemize}
 	\item Precision: 0.7924784775713638
 	\item Recall: 0.7596091205211727
 	\item F-Measure: 0.7756957534094688
 \end{itemize}
-Entrenado con A y testeado con P.
+
+\item Testeado con P
 
 \begin{itemize}
 	\item Precision: 0.8016343893428859
@@ -194,7 +203,7 @@ Entrenado con A y testeado con P.
 	\item F-Measure: 0.775587566338135
 \end{itemize}
 
-Entrenado con A y testeado con AA.
+\item Testeado con AA
 
 \begin{itemize}
 	\item Precision: 0.8012692050768203
@@ -202,11 +211,13 @@ Entrenado con A y testeado con AA.
 	\item F-Measure: 0.7814332247557003
 \end{itemize}
 
-./bin/opennlp ChunkerTrainerME -encoding UTF-8 -lang es -data espaniol/train/P.train -model espaniol/bin/es-P-chunker.bin
+\end{enumerate}
 
-./bin/opennlp ChunkerEvaluator -encoding UTF-8 -data espaniol/test/A.test -model espaniol/bin/es-P-chunker.bin
+\subsubsection{Entrenado con P}
 
-Entrenado con P y testeado con P.
+\begin{enumerate}
+
+\item Testeado con P
 
 \begin{itemize}
 	\item Precision: 0.853230869141682
@@ -214,7 +225,7 @@ Entrenado con P y testeado con P.
 	\item F-Measure: 0.8398678883443426
 \end{itemize}
 
-Entrenadon con P y testeado con A. 
+\item Testeado con A
 
 \begin{itemize}
 	\item Precision: 0.7801656592791583
@@ -222,7 +233,7 @@ Entrenadon con P y testeado con A.
 	\item F-Measure: 0.7682980599647266
 \end{itemize}
 
-Entrenado con P y testeado con AA.
+\item Testeado con AA
 
 \begin{itemize}
 	\item Precision: 0.8306464745155512
@@ -230,29 +241,36 @@ Entrenado con P y testeado con AA.
 	\item F-Measure: 0.8205581919086301
 \end{itemize}
 
-./bin/opennlp ChunkerTrainerME -encoding UTF-8 -lang es -data espaniol/train/all.train -model espaniol/bin/es-chunker.bin
 
-Entrenado con Todos y testeado con P.
+\end{enumerate}
 
-\begin{itemize}
-	\item Precision: 0.8612941557740088
-	\item Recall: 0.8363579146123991
-	\item F-Measure: 0.8486428951569984
-\end{itemize}
+\subsubsection{Entrenado con Todos}
 
-Entrenado con Todos y testeado con A.
+\begin{enumerate}
 
-\begin{itemize}
-	\item Precision: 0.8256840247131509
-	\item Recall: 0.8125950054288816
-	\item F-Measure: 0.8190872277552808
-\end{itemize}
+	\item Testeado con P
 
-Entrenado con Todos y testesado con AA. 
+	\begin{itemize}
+		\item Precision: 0.8612941557740088
+		\item Recall: 0.8363579146123991
+		\item F-Measure: 0.8486428951569984
+	\end{itemize}
 
-\begin{itemize}
-	\item Precision: 0.8492927979190376
-	\item Recall: 0.8302606484424666
-	\item F-Measure: 0.8396688901390341
-\end{itemize}
+	\item Testeado con A
+
+	\begin{itemize}
+		\item Precision: 0.8256840247131509
+		\item Recall: 0.8125950054288816
+		\item F-Measure: 0.8190872277552808
+	\end{itemize}
+
+	\item Testesado con AA
+
+	\begin{itemize}
+		\item Precision: 0.8492927979190376
+		\item Recall: 0.8302606484424666
+		\item F-Measure: 0.8396688901390341
+	\end{itemize}
+
+\end{enumerate}
 

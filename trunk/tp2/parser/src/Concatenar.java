@@ -27,8 +27,9 @@ public class Concatenar {
 			System.out.println("No es un directorio.");
 			return;
 		}
+		String nombreSalida = "all.train";
 		try {
-			out = new BufferedWriter(new FileWriter(pathDirectorio + "/all.train"));
+			out = new BufferedWriter(new FileWriter(pathDirectorio + "/"+ nombreSalida));
 		} catch (IOException e) {
 			System.out.println("No se pudo crear el archivo de salida.");
 			return;
@@ -37,7 +38,7 @@ public class Concatenar {
 		String []archivos = directorio.list();
 		
 		for (String archivo : archivos) {
-			if(!archivo.equals("all.train")){
+			if(!archivo.equals(nombreSalida) && !archivo.equals("\\..*")){
 				Scanner lector;
 				try {
 					lector = new Scanner(new FileReader(pathDirectorio + archivo));

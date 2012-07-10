@@ -1,3 +1,8 @@
+
+./opennlp/bin/opennlp POSTaggerTrainer -encoding UTF-8 -lang es -type maxent -data espaniol/train/posttag.train -model es-pos-maxent.bin
+
+
+
 Evaluacion de un chunker en español
 
 Para esto utilizamos ChunkerTrainerMe de OpenNLP que nos permite generar un 
@@ -99,7 +104,7 @@ F-Measure: 0.8396688901390341
 Postagging Accuracy y las cinco dimensiones de error más frecuentes
 
 Para calcular esto primero convertimos los archivos de postagging en formato 
-OpenNLP a formato CONNL y luego utilizamos el programa CompararPostaggedCONNL
+OpenNLP a formato BIO y luego utilizamos el programa para comparar postagged
 que nos permitía obtener la métrica necesaria y las dimensiones de error más 
 frecuentes.
 
@@ -134,7 +139,7 @@ Subtotal 575 0.4262416604892513
 Chunking Precision y Recall para chunks verbales y nominales
 
 Para calcular estas dos métricas primero pasamos el archivo de chunking generado 
-por OpenNLP al formato de CONNL y luego utilizando un script hecho en java tomamos 
+por OpenNLP al formato de BIO y luego utilizando un script hecho en java tomamos 
 el archivo original y el procesado por opennlp para generar un archivo que en las 
 tres primeras columnas tenía la información original y en la última la obtenida del 
 procesamiento para luego poder utilizar el script conlleval.pl .
