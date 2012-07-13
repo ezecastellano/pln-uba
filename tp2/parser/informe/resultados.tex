@@ -137,6 +137,10 @@ y NP (P:88.56\% - R:90.06\%).
 
 \subsection{Evaluacion de un chunker en español}
 
+En esta sección se entrenará y probará la herramienta para ver su reacción ante un idioma más complejo y menos investigado, como el español.
+
+\subsubsection{Entrenamiento y evaluación de performance}
+
 Para esto utilizamos ChunkerTrainerMe de OpenNLP que nos permite generar un 
 binario con nuestro modelo a partir de un archivo de entrenamiento. 
 
@@ -153,7 +157,7 @@ Mientras que para evaluar los archivos de test:
 
 ./bin/opennlp ChunkerEvaluator -encoding UTF-8 -data espaniol/test/X.test -model espaniol/bin/es-chunker.bin
 
-\subsubsection{Entrenado con AA}
+\subsubsubsection{Entrenado con AA}
 
 \begin{enumerate}
 
@@ -183,7 +187,7 @@ Mientras que para evaluar los archivos de test:
 
 \end{enumerate}
 
-\subsubsection{Entrenado con A}
+\subsubsubsection{Entrenado con A}
 
 \begin{enumerate}
 
@@ -213,7 +217,7 @@ Mientras que para evaluar los archivos de test:
 
 \end{enumerate}
 
-\subsubsection{Entrenado con P}
+\subsubsubsection{Entrenado con P}
 
 \begin{enumerate}
 
@@ -244,7 +248,7 @@ Mientras que para evaluar los archivos de test:
 
 \end{enumerate}
 
-\subsubsection{Entrenado con Todos}
+\subsubsubsection{Entrenado con Todos}
 
 \begin{enumerate}
 
@@ -273,4 +277,35 @@ Mientras que para evaluar los archivos de test:
 	\end{itemize}
 
 \end{enumerate}
+
+\subsubsubsection{Conclusiones del entrenamiento}
+
+Claramente se puede apreciar que al haber combinado todos los corpus de entrenamiento la performance aumentó de forma general. Habiendo superado en todos los tests a los modelos que estaban basado en uno solo de los archivos.
+
+Respecto a los demás se puede ver que P es el texto que parece ofrecer mejores resultados en los test con todos los entrenamientos y a su vez el que mejor resultados ofrece de los demás textos, y sobre todo de si mismo (sin tener el cuenta el que agrupa todos).
+
+
+\subsubsection{Analizando resultados respecto de la construcción algorítmica}
+
+
+\subsubsection{Analizando textos en español}
+
+Para analizar algunos textos en español realizamos el proceso de tokenización, postagging y chunking. Para la tokenización decidimos utilizar el modelo en inglés de OpenNLP ya que no consideramos que variase mucho la tokenización respecto del idioma para los textos seleccionados. Para postagging y chunking utilizamos los archivos de entrenamiento brindados por la cátedra. Para poder el archivo de entrenamiento de postagging al formato neceesario por la herramienta utilizamos el Transformador, indicando salida de posttaging sobre el archivo que contenía todos los archivos de entrenamiento. 
+
+Uno de los textos seleccionados fue la descripción de la carrera (http://www.dc.uba.ar/aca/carr/grado/licenciatura/desc) porque nos pareció un texto sin muchas estructuras complejas en cuanto a la tokenización y sin caracteres extraños, pero con varias frases nominales que nos pareció interesante ver como 
+eran resueltas. 
+
+El otro texto seleccionado fue una sección del artículo de wikipedia de uno de los temas científicos del momento, el bosón de Higgs (http://es.wikipedia.org/wiki/Bos\%C3\%B3n\_de_Higgs). Este texto nos pareció interesante para ver como reaccionaban los modelos utilizando un texto más científico, que contenga algunos porcentajes y unidades que compliquen al un poco más el problema.
+
+Respecto del primer texto los resultados fueron bastante buenos y detecto algunas frases nominales que no parecían tan triviales como por ejemplo: "Descripción de la carrera de Licenciatura en Ciencias de la Computación", "El plan de estudios de la Licenciatura en Ciencias de la Computación", "el título de Analista Universitario de Computación", entre otras. Aunque también hubo algunos problemas como la inclusión de un paréntesis que abre en una de las frases nominales "[NP las_da0fp0 del_spcms área_ncfs000 de_sps00 métodos_ncmp000 no_rn numéricos_aq0mp0 (_fpa ]", quedando el que cierra en el principio de otra "[NP )_fpt ,_fc del_spcms área_ncfs000 de_sps00 métodos_ncmp000 numéricos_aq0mp0 ]". Con las frases verbales también hubo algunos problemas, como por ejemplo "[VP es_vsip3s0 ] [NP obligatoria_ncfs000 salvo_aq0fs0 ]" donde dividió "es obligatoria" convirtiendo a "obligatoria salvo" en una frase nominal sin ningún sentido. También tiene problemas con otras frases verbales como "se_p0300000 [VP compone_vmip3s0 ] de_sps00", "[VP Está_vmip3s0 ] compuesto_aq0msp por_sps00" entre otras. Consideramos que con las frases verbales hubo algunos problemas más que con las nominales.
+
+Respecto al otro texto, creemos que si bien los resultados no fueron del todo buenos es interesante rescatar que se detectaron algunas frases nominales complejas como "[NP su_dp3cs0 colección_ncfs000 de_sps00 datos_ncmp000 de_sps00 2012_default (_fpa en_sps00 energías_ncfp000 de_sps00 8_default TeV_np00000 )_fpt ]" donde se respetaron también los paréntesis. Se repitieron errores en las frases verbales como por ejemplo "[VP haya_vasp3s0 ] [NP sido_vsp00sm examinada_ncfs000 ]" o "[VP CL._np00000]". Nos llamó la atención que los números fueran asociados al tag default que pareciera que a la hora de armar el chunk, se amoldara a los tags que se encuentran a su alrededor. Otra cosa que nos despertó curiosidad fue como trataba los valores con unidad, ya que generalmente eran asociados correctamente, pero otras ante una situación similar no sucedía lo mismo, como por ejemplo en este caso donde aparecen dos valores separados por una conjunción, "[NP 122.1_default GeV_np00000 ] ,_fc y_cc 129.2_default [NP GeV_np00000 ]".
+
+
+
+
+
+
+
+
 
