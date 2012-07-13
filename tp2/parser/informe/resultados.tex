@@ -1,7 +1,23 @@
 \section{Procesamiento de textos en Inglés}
 
-\subsection{Postagging Accuracy y las cinco dimensiones de error más frecuentes}
+\subsection{Tagging y Chunking sobre los textos originales}
 
+Para poder realizar este proceso creamos utilizamos el Transformador que realizamos en java para quedarnos con las tres versiones (chunked, postagged, tokenized) de los archivos en el formato de OpenNLP. 
+
+Para que la herramienta pueda realizar el proceso, descargamos modelos ya entrenados para el inglés del sitio web de OpenNLP (http://opennlp.sourceforge.net/models-1.5/). 
+
+Luego postaggeamos el tokenizado con la herramienta. Decidimos realizar las pruebas con el modelo basado en maxent y el de perceptron para ver las diferencias en los resultados. Para ejectuar la herramienta utilizamos el siguiente comando:
+
+\texttt{opennlp POSTagger en-pos-maxent.bin < tokenized > postagged}
+
+\texttt{opennlp POSTagger en-pos-perceptron.bin < tokenized > postagged}
+
+Hicimos lo mismo con la versión postaggeada del original para obtener la versión chunkeada por opennlp:
+
+\texttt{opennlp ChunkerME en-chunker.bin < tokenized > postaggged}
+
+\subsection{Postagging Accuracy y las cinco dimensiones de error más frecuentes}
+	
 Para calcular esto primero convertimos los archivos de postagging en formato 
 OpenNLP a formato BIO y luego utilizamos el programa para comparar postagged
 que nos permitía obtener la métrica necesaria y las dimensiones de error más 
@@ -11,37 +27,80 @@ Decidimos que no importaba el en que archivo se produciera la diferencia de
 etiqueta con el otro, es decir no importaba el orden. Por ejemplo que los errores 
 NP NNP eran equivalentes a los NNP NP a la hora de sacar la estadística. 
 
-\subsubsection{Genia}
+\subsubsection{Maxent}
 
-Posttaging Accuracy: 0.866182504333326
+\begin{itemize}
 
-\begin{center}
-	\begin{tabular}{| c | c | c |}\hline
-	Etiqueta & Cantidad & Incidencia\\\hline
-	NN NNP   & 2661     & 0.43630103295622236\\
-	JJ NN    & 1136     & 0.18626004262993934\\
-	JJ VBN   & 197      & 0.0323003771110018\\
-	NN CD    & 143      & 0.023446466633874407\\
-	NNS VBZ  & 137      & 0.022462698803082472\\\hline
-	Subtotal & 4274     &0.7007706181341203\\\hline
-	\end{tabular}
-\end{center}
+		\item Genia
+		
+		Posttaging Accuracy: 0.866182504333326
 
-\subsubsection{WsjSubset}
+		\begin{center}
+			\begin{tabular}{| c | c | c |}\hline
+			Etiqueta & Cantidad & Incidencia\\\hline
+			NN NNP   & 2661     & 0.43630103295622236\\
+			JJ NN    & 1136     & 0.18626004262993934\\
+			JJ VBN   & 197      & 0.0323003771110018\\
+			NN CD    & 143      & 0.023446466633874407\\
+			NNS VBZ  & 137      & 0.022462698803082472\\\hline
+			Subtotal & 4274     & 0.7007706181341203\\\hline
+			\end{tabular}
+		\end{center}
 
-Posttaging Accuracy: 0.9715262680203475
+		\item WsjSubset
 
-\begin{center}
-	\begin{tabular}{| c | c | c |}\hline
-	Etiqueta & Cantidad & Incidencia\\\hline
-	JJ NN    & 187      & 0.13862120088954782\\
-	VBN VBD  & 129      & 0.09562638991845812\\
-	IN RP    & 95       & 0.07042253521126761\\
-	RB IN    & 87       & 0.06449221645663454\\
-	NNP NNPS & 77       & 0.05707931801334322\\\hline
-	Subtotal & 575      & 0.4262416604892513\\\hline
-	\end{tabular}
-\end{center}
+		Posttaging Accuracy: 0.9715262680203475
+		
+		\begin{center}
+			\begin{tabular}{| c | c | c |}\hline
+			Etiqueta & Cantidad & Incidencia\\\hline
+			JJ NN    & 187      & 0.13862120088954782\\
+			VBN VBD  & 129      & 0.09562638991845812\\
+			IN RP    & 95       & 0.07042253521126761\\
+			RB IN    & 87       & 0.06449221645663454\\
+			NNP NNPS & 77       & 0.05707931801334322\\\hline
+			Subtotal & 575      & 0.4262416604892513\\\hline
+			\end{tabular}
+		\end{center}
+\end{itemize}
+
+
+\subsubsection{Perceptron}
+
+\begin{itemize}
+
+		\item Genia
+		
+		Posttaging Accuracy: 0.8222568400728437
+		\begin{center}
+			\begin{tabular}{| c | c | c |}\hline
+			Etiqueta & Cantidad & Incidencia\\\hline
+			NN NNP 		& 2337 	& 0.288482903345266\\
+			NN `` 		& 1831 	& 0.2260214788297741\\
+			JJ NN 		& 815 	& 0.10060486359708679\\
+			JJ `` 		& 489 	& 0.060362918158252066\\
+			NN O 		& 297 	& 0.03666214047648438\\\hline
+			Subtotal	& 5769 	& 0.7121343044068633\\\hline
+			\end{tabular}
+		\end{center}
+
+		
+		\item WsjSubset
+		
+		Posttaging Accuracy: 0.965299617958081
+		
+		\begin{center}
+			\begin{tabular}{| c | c | c |}\hline
+			Etiqueta & Cantidad & Incidencia\\\hline
+			JJ NN 		& 173 	& 0.10523114355231143\\
+			VBN VBD 	& 134 	& 0.08150851581508516\\
+			IN RP 		& 106 	& 0.06447688564476886\\
+			NNP NNPS 	& 79 	& 0.04805352798053528\\
+			IN RB 		& 77 	& 0.04683698296836983\\\hline
+			Subtotal 	& 569 	& 0.34610705596107055\\\hline
+			\end{tabular}
+		\end{center}
+\end{itemize}
 
 \subsection{Chunking Precision y Recall para chunks verbales y nominales}
 
@@ -141,6 +200,8 @@ Se puede observar como mejoran los resultados tanto en chunking como postagging 
 
 También se puede destacar como en las cinco dimensiones de error más frecuentes, se encuentran la mayoría de lo errores, siendo de gran incidencia en ambos casos. 
 
-En el caso de Genia es destacable que la principal y mayor causa de error es NN y NNP. Y en relación ambos es relevante que alrededor del 0.15 se deben a JJ y NN.
+En el caso de Genia es destacable que la principal y mayor causa de error es NN y NNP con ambos modelos. Y en relación ambos es relevante que con maxent alrededor del 0.15 se deben a JJ y NN, mientras que con perceptron tienen una incidencia un poco menor debido a la aparición de del tag `` que se ve confundido con NN y JJ. 
+
+Si bien no es tan alta la diferencia de la métrica de postagging accuracy entre perceptron y maxent, este último lo supera en ambos corpus. También se puede ver que las principales causas de error se mantienen y con valores similares, sobre todo en Wsjsubset, y que lo mismo sucede con el porcentaje de incidencia total. 
 
 
