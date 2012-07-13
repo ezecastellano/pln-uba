@@ -104,6 +104,7 @@ En este informe se entregan los siguientes archivos que corresponden a cada uno 
 				\item AA.train
 				\item P.train 
 				\item all.train: concatenacion de todos los archivos de entrenamiento.
+				\item posttag.train: versión en el formato de OpenNLP para entrenamiento de postagging.
 		\item \texttt{test}: archivos de test.
 			\begin{itemize}
 				\item A.test
@@ -113,11 +114,29 @@ En este informe se entregan los siguientes archivos que corresponden a cada uno 
 			\end{itemize}
 		\item \texttt{bin}: modelos entrenados con los distintos archivos de train.	
 			\begin{itemize}
-				\item es-AA-chunker.bin: entrenado con AA.train.
-				\item es-A-chunker.bin: entrenado con A.train.
-				\item es-chunker.bin: entrenado con all.train.
-				\item es-P-chunker.bin: entrenado con P.train.
+				\item es-AA-chunker.bin: modelo de chunking entrenado con AA.train.
+				\item es-A-chunker.bin: modelo de chunking entrenado con A.train.
+				\item es-chunker.bin: modelo de chunking entrenado con all.train.
+				\item es-P-chunker.bin: modelo de chunking entrenado con P.train.
+				\item es-pos-maxent.bin: modelo de posttaging con maxent entrenado sobre posttag.train.
 			\end{itemize}
+		\item \texttt{textos}: textos seleccionados del español en sus diferentes formatos.
+			\begin{itemize}
+				\item boson:
+					\begin{itemize}
+						\item higgs : fragmento original del artículo seleccionado.
+						\item higgs.tokenized
+						\item higgs.postagged
+						\item higgs.chunked 
+					\end{itemize}	
+				\item lic:
+					\begin{itemize}
+						\item lic-cs : fragmento original del artículo seleccionado.
+						\item lic-cs.tokenized
+						\item lic-cs.postagged
+						\item lic-cs.chunked 
+					\end{itemize}
+			\end{itemize}	
 	\end{itemize}				
 	\item src: C\'odigo fuente de las herramientas realizadas para el pre-procesamiento y estad\'isticas.
 	\begin{itemize}
