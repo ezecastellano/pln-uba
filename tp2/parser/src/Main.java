@@ -53,30 +53,22 @@ public class Main {
 		try {
 			if(formatoSalida.equals("NLP")){
 				if(tipoSalida.equals("P")){
-//					String oracion = "";
 					Long ciclos = 0L;
 					boolean nuevaOracion = true;
 					while(lector.hasNext()){
 						//Lee la siguiente linea. 
 						String linea = lector.nextLine();
 						if(linea.isEmpty()){
-//							write(oracion);
-//							writeNewLine();
 							out.newLine();
-//							oracion = "";
 							nuevaOracion = true;
 						}else{
 							String[] palabras = linea.split("\\s");
-//							if(oracion.length()>0){
-//								oracion += " ";
-//							}
 							if(!nuevaOracion)
 								out.write(" ");
 							else
 								nuevaOracion = false;
 							
 							out.write( palabras[0] + "_" + palabras[1]);
-//							oracion +=  palabras[0] + "_" + palabras[1];
 						}
 						if(ciclos > 2000L){
 							out.flush();
@@ -84,9 +76,6 @@ public class Main {
 							System.out.println("Reiniciando ciclo...");
 						}
 					}
-//					if(!oracion.isEmpty())
-//						write(oracion);
-					
 				}else if(tipoSalida.equals("C")){
 					String chunk = " [";
 					while(lector.hasNext()){
