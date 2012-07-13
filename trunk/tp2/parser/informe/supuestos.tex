@@ -1,3 +1,7 @@
 \section{Aclaraciones}
 
-A veces llamamos formato CONNL al formato de las tres columnas que viene tanto genia o wsjsubset, que en realidad era BIO. Aclaramos esto porque en varias oportunidades lo mencionamos de esta manera.
+A veces llamamos formato CONNL al formato de las tres columnas que viene tanto genia o wsjsubset, que en realidad era BIO. 
+Aclaramos esto porque en varias oportunidades lo mencionamos de esta manera.
+
+A la hora del parseo se convirtieron los tags de símbolos como \texttt{. , ( )} en el tag O para ``omitirlos'' 
+ya que no nos pareció relevante esta perdida de información respecto de OpenNLP que utilizaba como tag el mismo símbolo. 
